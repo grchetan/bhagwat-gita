@@ -1,0 +1,153 @@
+.footer {
+  background: #78350f;
+  color: #fffbeb;
+  font-family: system-ui, serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 64px 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+/* Brand */
+.footer-brand p {
+  font-size: 14px;
+  color: #fde68a;
+  line-height: 1.6;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.brand-header img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-header span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fcd34d;
+  margin-bottom: 16px;
+}
+
+/* Links */
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #fde68a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link i {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff7d6;
+}
+
+.footer-link:hover i {
+  opacity: 1;
+}
+
+/* Newsletter */
+.footer-text {
+  font-size: 14px;
+  color: #fde68a;
+  margin-bottom: 12px;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fcd34d;
+  color: #fff7d6;
+  padding: 6px 0;
+  outline: none;
+}
+
+.newsletter button {
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d97706;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background: #f59e0b;
+}
+
+.privacy {
+  font-size: 12px;
+  color: #fcd34d;
+  margin-top: 10px;
+}
+
+.privacy a {
+  color: #fde68a;
+  text-decoration: underline;
+}
+
+/* Om Section */
+.om-section {
+  background: #451a03;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(251, 191, 36, 0.3);
+  padding: 48px 0;
+}
+
+/* Bottom */
+.footer-bottom {
+  background: #451a03;
+  border-top: 1px solid #92400e;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fcd34d;
+}
+
+.footer-bottom a {
+  color: #fde68a;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff7d6;
+}

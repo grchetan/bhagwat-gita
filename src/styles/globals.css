@@ -1,0 +1,14 @@
+/* Full page layout */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* background gradient */
+  background: linear-gradient(to bottom, #fff7ed, #fffbeb);
+}
+
+/* Main content should take remaining height */
+.layout-main {
+  flex: 1;
+}

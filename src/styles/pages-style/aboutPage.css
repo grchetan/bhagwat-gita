@@ -1,0 +1,135 @@
+.about-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 48px 24px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #d97706;
+  margin-bottom: 32px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #d97706;
+}
+
+.breadcrumb span {
+  color: #92400e;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.about-header h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #78350f;
+  font-family: serif;
+  margin-bottom: 16px;
+}
+
+.about-header p {
+  font-size: 20px;
+  color: #a16207;
+}
+
+/* Cards */
+.about-card {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.about-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #78350f;
+  margin-bottom: 16px;
+}
+
+/* Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid #fde68a;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Yoga */
+.yoga-section h2 {
+  font-size: 32px;
+  color: #78350f;
+  font-family: serif;
+  margin-bottom: 16px;
+}
+
+.yoga-card {
+  background: linear-gradient(to right, #fffbeb, #fff7ed);
+  border: 1px solid #fde68a;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Teachings */
+.key-teachings {
+  background: #ffffff;
+  border: 1px solid #fde68a;
+  border-radius: 20px;
+  padding: 32px;
+  margin: 48px 0;
+}
+
+.teachings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 14px 32px;
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #d97706, #b45309);
+}

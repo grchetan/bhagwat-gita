@@ -1,0 +1,67 @@
+.notfound {
+  position: relative;
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Big 404 in background */
+.notfound-bg {
+  position: absolute;
+  bottom: -20px;
+  font-size: 9rem;
+  font-weight: 900;
+  color: #f3f4f6;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .notfound-bg {
+    font-size: 12rem;
+  }
+}
+
+/* Content */
+.notfound-content {
+  position: relative;
+  z-index: 1;
+}
+
+.notfound-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 24px;
+  color: #111827;
+}
+
+@media (min-width: 768px) {
+  .notfound-content h2 {
+    font-size: 26px;
+  }
+}
+
+.path {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #9ca3af;
+  font-family: monospace;
+}
+
+.hint {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .hint {
+    font-size: 20px;
+  }
+}
