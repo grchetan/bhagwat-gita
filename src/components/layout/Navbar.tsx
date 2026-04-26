@@ -5,6 +5,7 @@ import "../../styles/navbar.css";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isChaptersOpen, setIsChaptersOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -12,6 +13,12 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close menus on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsChaptersOpen(false);
+  }, [location.pathname]);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -52,7 +59,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Chapters */}
+            {/* Chapters Dropdown */}
             <div
               className="chapters"
               onMouseEnter={() => setIsChaptersOpen(true)}
@@ -79,16 +86,65 @@ const Navbar = () => {
                       <i className="ri-arrow-right-line arrow"></i>
                     </Link>
                   ))}
+                  <Link to="/chapters" className="chapter-item view-all-link">
+                    <i className="ri-list-unordered"></i>
+                    <div className="chapter-info">
+                      <div className="chapter-title">All 18 Chapters</div>
+                      <div className="chapter-sub">View complete list</div>
+                    </div>
+                    <i className="ri-arrow-right-line arrow"></i>
+                  </Link>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Mobile */}
-          <button className="mobile-btn">
-            <i className="ri-menu-line"></i>
+          {/* Mobile Menu Button */}
+          <button
+            className="mobile-btn"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <i className={isMobileMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="mobile-menu">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                className={`mobile-link ${
+                  location.pathname === link.path ? "active" : ""
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <div className="mobile-divider">Chapters</div>
+            {chapters.map((ch) => (
+              <Link
+                key={ch.number}
+                to={ch.path}
+                className="mobile-link mobile-chapter"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span className="mobile-ch-num">{ch.number}</span>
+                {ch.title}
+              </Link>
+            ))}
+            <Link
+              to="/chapters"
+              className="mobile-link mobile-view-all"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="ri-list-unordered"></i> View All 18 Chapters
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );
