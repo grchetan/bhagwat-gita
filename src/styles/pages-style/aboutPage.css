@@ -192,43 +192,11 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Hero Content - Redesigned as a stunning, premium glassmorphic sanctuary card! */
+/* Hero Content */
 .hero-content {
-  max-width: 620px; /* Constrain text width to prevent overlapping the chariot */
-  background: rgba(33, 0, 3, 0.55);
-  border: 2px solid rgba(212, 175, 55, 0.35);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 48px;
-  border-radius: 28px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35), inset 0 0 30px rgba(212, 175, 55, 0.1);
-  animation: floatHeroCard 6s ease-in-out infinite alternate;
+  max-width: 600px; /* Constrain text width to prevent overlapping the chariot */
   position: relative;
-  overflow: hidden;
-}
-
-/* Elegant inside dashed border line */
-.hero-content::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
-  border: 1px dashed rgba(212, 175, 55, 0.18);
-  border-radius: 20px;
-  pointer-events: none;
-}
-
-@keyframes floatHeroCard {
-  0% {
-    transform: translateY(0);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-  }
-  100% {
-    transform: translateY(-8px);
-    box-shadow: 0 32px 70px rgba(212, 175, 55, 0.15);
-  }
+  z-index: 10;
 }
 
 .hero-badge {
