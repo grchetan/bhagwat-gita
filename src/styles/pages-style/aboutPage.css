@@ -1,135 +1,1013 @@
+/* ==========================================================================
+   ABOUT PAGE — Premium Spiritual & Visual Redesign
+   ========================================================================== */
+
 .about-page {
   min-height: 100vh;
+  background: linear-gradient(to bottom, #fdfaf4 0%, #faf3e6 100%);
+  color: var(--color-maroon-dark);
+  font-family: var(--font-english);
+  overflow-x: hidden;
+}
+
+.about-sections-wrapper {
+  padding-bottom: 80px;
+}
+
+/* --- Shared Layout & Typography Elements --- */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-label {
+  display: block;
+  font-family: var(--font-ui);
+  color: var(--color-saffron);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-ui);
+  color: var(--color-maroon);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--color-saffron-dark);
+  max-width: 800px;
+  margin: 0 auto 32px auto;
+  line-height: 1.6;
+}
+
+.divider-gold {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  margin: 20px 0 32px 0;
+  border-radius: 999px;
+}
+
+.divider-gold.center {
+  margin: 20px auto 40px auto;
+}
+
+.scholarly-text p {
+  font-size: var(--size-english);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #4a3e3d;
+  text-align: justify;
+}
+
+/* ==========================================================================
+   1. HERO BATTLEFIELD BANNER
+   ========================================================================== */
+
+.about-hero {
+  position: relative;
+  height: 85vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
   padding-top: 80px;
 }
 
-.about-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 48px 24px;
+.about-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-/* Breadcrumb */
-.breadcrumb {
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 15%; /* Shift chariot and Krishna to the right, and shift the image content downwards slightly for perfect framing */
+  filter: contrast(1.02); /* Removed brightness reduction so the background image is 100% clear, bright, and sharp! */
+  transform: scale(1.02);
+  transition: transform 10s ease-out;
+}
+
+.about-hero:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Fades completely to transparent on the right so the holy painting is 100% unfiltered and crystal clear! */
+  background: linear-gradient(
+    90deg,
+    rgba(33, 0, 3, 0.95) 0%,
+    rgba(33, 0, 3, 0.85) 30%,
+    rgba(33, 0, 3, 0.55) 50%,
+    rgba(33, 0, 3, 0.15) 75%,
+    transparent 100%
+  );
+}
+
+/* Bottom fade to transition smoothly into the cream page background */
+.about-hero-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(to bottom, transparent, rgba(253, 250, 244, 1));
+  pointer-events: none;
+}
+
+.about-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 48px;
   display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: #d97706;
-  margin-bottom: 32px;
+  flex-direction: column;
+  align-items: flex-start; /* Align elements to the left */
+  text-align: left;
+  gap: 16px;
 }
 
-.breadcrumb a {
+/* Breadcrumb in Hero */
+.about-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  align-self: flex-start;
+}
+
+.about-breadcrumb a {
   text-decoration: none;
-  color: #d97706;
+  color: var(--color-gold);
+  transition: color 0.3s;
 }
 
-.breadcrumb span {
-  color: #92400e;
+.about-breadcrumb a:hover {
+  color: #ffffff;
 }
 
-/* Header */
-.about-header {
-  text-align: center;
-  margin-bottom: 64px;
+.about-breadcrumb i {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.about-header h1 {
-  font-size: 52px;
-  font-weight: 700;
-  color: #78350f;
-  font-family: serif;
-  margin-bottom: 16px;
+/* Hero Content */
+.hero-content {
+  max-width: 600px; /* Constrain text width to prevent overlapping the chariot */
 }
 
-.about-header p {
-  font-size: 20px;
-  color: #a16207;
+.hero-badge {
+  display: inline-block;
+  font-family: var(--font-sanskrit);
+  font-size: 22px;
+  color: var(--color-gold);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
-/* Cards */
-.about-card {
-  background: #fffbeb;
-  border: 1px solid #fde68a;
-  border-radius: 20px;
-  padding: 32px;
-  margin-bottom: 48px;
-}
-
-.about-card h2 {
+.hero-title {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #78350f;
-  margin-bottom: 16px;
-}
-
-/* Grid */
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-bottom: 48px;
-}
-
-.info-card {
-  background: #ffffff;
-  border: 1px solid #fde68a;
-  border-radius: 16px;
-  padding: 24px;
-}
-
-/* Yoga */
-.yoga-section h2 {
-  font-size: 32px;
-  color: #78350f;
-  font-family: serif;
-  margin-bottom: 16px;
-}
-
-.yoga-card {
-  background: linear-gradient(to right, #fffbeb, #fff7ed);
-  border: 1px solid #fde68a;
-  border-radius: 16px;
-  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start; /* Left aligned title */
+  gap: 12px;
   margin-bottom: 20px;
 }
 
-/* Teachings */
-.key-teachings {
-  background: #ffffff;
-  border: 1px solid #fde68a;
-  border-radius: 20px;
-  padding: 32px;
-  margin: 48px 0;
+.sanskrit-title-main {
+  font-family: var(--font-sanskrit);
+  font-size: 68px;
+  font-weight: 700;
+  color: var(--color-gold);
+  text-shadow: 0 4px 16px rgba(51, 0, 5, 0.95), 0 0 20px rgba(212, 175, 55, 0.4);
+  letter-spacing: 2px;
+  line-height: 1.2;
 }
 
-.teachings-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+.hero-title-en {
+  font-family: var(--font-ui);
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-/* CTA */
-.about-cta {
-  text-align: center;
+.hero-subtitle {
+  font-size: 19px;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.cta-btn {
-  display: inline-flex;
+.hero-quote-box {
+  background: rgba(92, 6, 18, 0.35);
+  border: var(--border-spiritual);
+  backdrop-filter: blur(8px);
+  padding: 24px 32px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: glowAnimation 4s infinite alternate;
+}
+
+.hero-quote {
+  font-style: italic;
+  font-size: var(--size-english);
+  line-height: 1.7;
+  color: var(--color-gold-light);
+  margin-bottom: 8px;
+}
+
+.hero-quote-author {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color-gold);
+}
+
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 10px 30px rgba(92, 6, 18, 0.15), inset 0 0 15px rgba(214, 175, 55, 0.1);
+  }
+  100% {
+    box-shadow: 0 10px 30px rgba(92, 6, 18, 0.3), inset 0 0 25px rgba(214, 175, 55, 0.25);
+  }
+}
+
+/* ==========================================================================
+   2. & 3. SPLIT SECTION LAYOUTS (KRISHNA & ORIGIN STORY)
+   ========================================================================== */
+
+.split-layout {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.split-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-side {
+  flex: 1.2;
+}
+
+.image-side {
+  flex: 0.8;
+}
+
+/* Spiritual Image Card */
+.spiritual-img-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: var(--border-spiritual);
+  box-shadow: var(--shadow-spiritual);
+  background: var(--color-gold-light);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.spiritual-img-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.section-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Beautiful square layout for the portrait of Krishna */
+  object-fit: cover;
+  display: block;
+  filter: sepia(0.02) contrast(1.02); /* Reduced sepia to keep Krishna's beautiful blue skin tone and starry night sky vibrant! */
+  transition: transform 0.5s ease;
+}
+
+.spiritual-img-card:hover .section-img {
+  transform: scale(1.03);
+}
+
+.img-overlay-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 40px rgba(92, 6, 18, 0.15); /* Softer overlay glow */
+  pointer-events: none;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(33, 0, 3, 0.9) 0%, rgba(33, 0, 3, 0.4) 60%, transparent 100%); /* Elegant softer gradient to reveal more image detail */
+  padding: 18px 20px 16px 20px;
+  color: var(--color-gold-light);
+  display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 24px;
-  padding: 14px 32px;
-  background: linear-gradient(to right, #f59e0b, #d97706);
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 999px;
-  text-decoration: none;
-  transition: transform 0.3s, background 0.3s;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  letter-spacing: 1px;
 }
 
-.cta-btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to right, #d97706, #b45309);
+.image-caption i {
+  font-size: 16px;
+  color: var(--color-gold);
 }
+
+/* ==========================================================================
+   4. MOMENTS GALLERY
+   ========================================================================== */
+
+.about-gallery-section {
+  background: var(--color-maroon-light);
+  border-top: 1px solid rgba(92, 6, 18, 0.08);
+  border-bottom: 1px solid rgba(92, 6, 18, 0.08);
+}
+
+.gita-moments-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.moment-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: var(--border-maroon);
+  box-shadow: 0 10px 24px rgba(92, 6, 18, 0.04);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.moment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(212, 175, 55, 0.6);
+}
+
+.moment-img-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.moment-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.moment-card:hover .moment-img {
+  transform: scale(1.08);
+}
+
+.moment-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 40%, rgba(92, 6, 18, 0.15) 100%);
+  pointer-events: none;
+}
+
+.moment-info {
+  padding: 24px;
+  text-align: left;
+}
+
+.moment-info h3 {
+  font-family: var(--font-ui);
+  color: var(--color-maroon);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.sanskrit-moment {
+  display: block;
+  font-family: var(--font-sanskrit);
+  color: var(--color-saffron);
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.moment-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #665b5a;
+}
+
+/* ==========================================================================
+   5. 18 CHAPTERS INTERACTIVE GRID
+   ========================================================================== */
+
+.about-chapters-section {
+  background: transparent;
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.chapter-visual-card {
+  position: relative;
+  background: var(--color-gold-light);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.chapter-visual-card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-gold);
+  background: #ffffff;
+}
+
+.chapter-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.chapter-badge {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-maroon);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: var(--font-ui);
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.chapter-badge strong {
+  font-size: 18px;
+  color: var(--color-gold);
+}
+
+.chapter-icon-box {
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-saffron);
+  font-size: 22px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.15);
+}
+
+.chapter-visual-card:hover .chapter-icon-box {
+  transform: rotate(15deg);
+  background: var(--color-saffron);
+  color: #ffffff;
+  border-color: var(--color-saffron);
+}
+
+.chapter-card-body h3 {
+  font-family: var(--font-ui);
+  color: var(--color-maroon);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.chapter-translation {
+  display: block;
+  font-size: 13px;
+  color: var(--color-saffron-dark);
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.chapter-card-body p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #665b5a;
+}
+
+.card-border-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 0px var(--color-gold);
+  pointer-events: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.chapter-visual-card:hover .card-border-glow {
+  box-shadow: inset 0 0 0 2px var(--color-gold);
+}
+
+/* ==========================================================================
+   6. HISTORICAL TIMELINE SECTION
+   ========================================================================== */
+
+.about-timeline-section {
+  background: var(--color-gold-light);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.historical-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
+  padding: 20px 0;
+}
+
+/* Central Line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-saffron) 0%,
+    var(--color-gold) 50%,
+    var(--color-maroon) 100%
+  );
+  transform: translateX(-50%);
+  border-radius: 99px;
+}
+
+/* Timeline Cards */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 4px solid var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-gold);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.3);
+  background-color: var(--color-saffron);
+}
+
+.timeline-card {
+  width: 44%;
+  background: #ffffff;
+  border-radius: 20px;
+  border: var(--border-maroon);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(92, 6, 18, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-card {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-gold);
+}
+
+.timeline-image-box {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.timeline-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.timeline-item:hover .timeline-image-box img {
+  transform: scale(1.05);
+}
+
+.timeline-content {
+  padding: 24px;
+}
+
+.timeline-year {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--color-saffron);
+  padding: 4px 14px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.timeline-item.right .timeline-year {
+  background: var(--color-maroon);
+}
+
+.timeline-content h3 {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  color: var(--color-maroon);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #665b5a;
+}
+
+/* Positioning left vs right card alignment */
+.timeline-item.left {
+  flex-direction: row;
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+/* Adjust timeline details on desktop */
+@media (min-width: 901px) {
+  .timeline-item.left .timeline-card {
+    text-align: right;
+  }
+}
+
+/* ==========================================================================
+   7. CALL TO ACTION (CTA)
+   ========================================================================== */
+
+.about-cta {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--color-maroon-dark) 0%, var(--color-maroon) 100%);
+  border: 2px solid var(--color-gold);
+  border-radius: 28px;
+  padding: 60px 40px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(51, 0, 5, 0.25);
+}
+
+.cta-container::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.cta-ornament {
+  font-size: 36px;
+  color: var(--color-gold);
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.cta-container h2 {
+  font-family: var(--font-ui);
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.cta-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto 36px auto;
+}
+
+/* Golden Gilded Button */
+.cta-btn-gilded {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #b45309, #d97706, #b45309);
+  background-size: 200% auto;
+  border: 2px solid var(--color-gold);
+  border-radius: 999px;
+  padding: 18px 48px;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25);
+  transition: all 0.5s ease;
+}
+
+.cta-btn-gilded:hover {
+  background-position: right center;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.45);
+}
+
+.cta-btn-gilded:active {
+  transform: translateY(-1px);
+}
+
+.btn-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.2) 70%,
+    transparent 100%
+  );
+  transition: none;
+}
+
+.cta-btn-gilded:hover .btn-shine {
+  left: 100%;
+  transition: left 0.8s ease-in-out;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-text i {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn-gilded:hover .btn-text i {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 46px;
+  }
+  
+  .split-layout {
+    gap: 40px;
+  }
+  
+  .section-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .split-layout,
+  .split-layout.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .text-side, .image-side {
+    width: 100%;
+  }
+
+  .scholarly-text p {
+    text-align: center;
+  }
+
+  .divider-gold {
+    margin: 20px auto 32px auto;
+  }
+
+  /* Timeline Transformation to single column */
+  .timeline-line {
+    left: 24px;
+  }
+
+  .timeline-item {
+    flex-direction: row !important;
+    margin-bottom: 40px;
+  }
+
+  .timeline-dot-wrapper {
+    left: 24px;
+    top: 24px;
+  }
+
+  .timeline-card {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+
+  .timeline-content {
+    text-align: left !important;
+  }
+
+  /* Responsive Hero Overrides for Mobile/Tablet */
+  .about-hero {
+    height: auto;
+    min-height: 520px;
+    padding: 120px 24px 60px 24px;
+  }
+
+  .hero-image {
+    object-position: center center; /* Re-center the painting of Lord Krishna & Arjuna */
+  }
+
+  .about-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(33, 0, 3, 0.95) 0%,
+      rgba(51, 3, 7, 0.85) 60%,
+      rgba(253, 250, 244, 1) 100%
+    );
+  }
+
+  .about-hero-overlay::after {
+    display: none; /* Hide desktop horizontal/bottom fade */
+  }
+
+  .about-hero-container {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-breadcrumb {
+    align-self: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sanskrit-title-main {
+    font-size: 46px;
+  }
+
+  .hero-title-en {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: auto; /* Prevent vertical crop */
+    min-height: 480px;
+  }
+
+  .hero-title {
+    gap: 6px;
+  }
+
+  .sanskrit-title-main {
+    font-size: 40px;
+  }
+
+  .hero-title-en {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-subtitle {
+    font-size: 14.5px;
+  }
+  
+  .cta-container {
+    padding: 40px 24px;
+  }
+
+  .cta-container h2 {
+    font-size: 26px;
+  }
+
+  .cta-btn-gilded {
+    padding: 14px 32px;
+    font-size: 13px;
+  }
+}
+

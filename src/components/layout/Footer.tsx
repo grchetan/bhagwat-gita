@@ -122,10 +122,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Decorative Om Watermark Section */}
-      <div className="om-watermark-container">
-        <span className="om-watermark-text">ॐ शान्तिः शान्तिः शान्तिः</span>
-      </div>
+
 
       {/* Bottom Footer copyright info */}
       <div className="footer-bottom">

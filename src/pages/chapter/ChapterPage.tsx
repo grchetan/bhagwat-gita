@@ -5,6 +5,25 @@ import ShlokCard from "../../components/shlok/ShlokCard";
 import { chapter1Shlokas, type Shlok } from "../../data/chapter1";
 import "../../styles/pages-style/chapterPage.css";
 
+// Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
+const PeacockFeather = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 100 150" className={`peacock-feather-svg ${className || ""}`} xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 145 C50 115, 48 85, 50 20" stroke="#aa820a" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+    <path d="M50 135 Q30 115 20 85 Q10 52 50 20 M50 135 Q70 115 80 85 Q90 52 50 20" stroke="rgba(27, 77, 62, 0.12)" strokeWidth="1" fill="none" />
+    
+    {/* Concentric glowing rings of the peacock eye (Ocellus) */}
+    <ellipse cx="50" cy="50" rx="18" ry="22" fill="#aa820a" opacity="0.8" />
+    <ellipse cx="50" cy="52" rx="14" ry="17" fill="#1b4d3e" />
+    <ellipse cx="50" cy="54" rx="11" ry="13" fill="#d4af37" />
+    <ellipse cx="50" cy="56" rx="8" ry="9" fill="#0c1d3b" />
+    <ellipse cx="48" cy="57" rx="4" ry="4" fill="#00e5ff" opacity="0.9" />
+    
+    {/* Fine barbs along the center stem */}
+    <path d="M50 65 Q35 55 25 45 M50 75 Q30 65 18 50 M50 85 Q32 75 15 57 M50 95 Q35 85 20 67 M50 105 Q38 95 25 75 M50 115 Q40 105 28 85 M50 125 Q42 115 32 95" stroke="#aa820a" strokeWidth="1" fill="none" opacity="0.75" />
+    <path d="M50 65 Q65 55 75 45 M50 75 Q70 65 82 50 M50 85 Q68 75 85 57 M50 95 Q65 85 80 67 M50 105 Q62 95 75 75 M50 115 Q60 105 72 85 M50 125 Q58 115 68 95" stroke="#aa820a" strokeWidth="1" fill="none" opacity="0.75" />
+  </svg>
+);
+
 interface ChapterData {
   number: number;
   title: string;
@@ -132,12 +151,17 @@ const ChapterPage = () => {
 
           {/* Main Content */}
           <main className="chapter-content">
-            {/* Header */}
+            {/* Header with peacock feather ornament */}
             <div className="chapter-header">
-              <div className="chapter-number">{chapter.number}</div>
-              <div>
-                <h1>{chapter.title}</h1>
-                <p className="sanskrit">{chapter.sanskritTitle}</p>
+              <div className="chapter-header-left">
+                <div className="chapter-number">{chapter.number}</div>
+                <div>
+                  <h1>{chapter.title}</h1>
+                  <p className="sanskrit">{chapter.sanskritTitle}</p>
+                </div>
+              </div>
+              <div className="chapter-header-right">
+                <PeacockFeather className="header-feather" />
               </div>
             </div>
 
@@ -154,8 +178,11 @@ const ChapterPage = () => {
               </span>
             </div>
 
-            {/* Intro */}
+            {/* Intro with peacock feather watermark */}
             <div className="chapter-intro">
+              <div className="intro-peacock-watermark">
+                <PeacockFeather />
+              </div>
               <h2>
                 <i className="ri-information-line"></i> Chapter Introduction
               </h2>
