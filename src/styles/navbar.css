@@ -93,6 +93,19 @@
   position: relative;
 }
 
+/* Invisible hover bridge to prevent dropdown from closing when cursor crosses the 12px margin gap */
+.chapters::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  right: -20px;
+  height: 16px;
+  background: transparent;
+  z-index: 10;
+  pointer-events: auto;
+}
+
 .chapters-btn {
   background: none;
   border: none;
