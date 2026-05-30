@@ -82,13 +82,13 @@ const ChapterPage = () => {
   const shlokas =
     chapter.shlokas.length > 0
       ? chapter.shlokas
-      : Array.from({ length: chapter.totalShlokas }, (_, i) => ({
+      : (Array.from({ length: chapter.totalShlokas }, (_, i) => ({
           number: i + 1,
           sanskritText: `श्लोक ${i + 1} — जल्द आ रहा है`,
           transliteration: `Shlok ${i + 1} — Coming Soon`,
           hindiMeaning: `अध्याय ${chapter.number} के श्लोक ${i + 1} का हिंदी अर्थ जल्द ही जोड़ा जाएगा।`,
           englishMeaning: `The meaning for Shlok ${i + 1} of Chapter ${chapter.number} will be added soon.`,
-        }));
+        })) as Shlok[]);
 
   return (
     <div className="chapter-page">
@@ -169,8 +169,10 @@ const ChapterPage = () => {
                 number={shlok.number}
                 sanskritText={shlok.sanskritText}
                 transliteration={shlok.transliteration}
+                wordMeanings={shlok.wordMeanings}
                 hindiMeaning={shlok.hindiMeaning}
                 englishMeaning={shlok.englishMeaning}
+                lifeLesson={shlok.lifeLesson}
               />
             ))}
 

@@ -1,7 +1,16 @@
+@import './variables.css';
+
+/* =====================================================
+   FOOTER STYLE — Sacred Temple Gold & Royal Maroon Theme
+   ===================================================== */
+
 .footer {
-  background: #78350f;
-  color: #fffbeb;
-  font-family: system-ui, serif;
+  background: linear-gradient(135deg, var(--color-maroon-dark) 0%, #1a0003 100%);
+  color: var(--color-gold-light);
+  font-family: var(--font-english);
+  border-top: 4px solid var(--color-gold); /* Golden line on top */
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -13,21 +22,21 @@
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 32px;
+  gap: 40px;
 }
 
 /* Brand */
 .footer-brand p {
-  font-size: 14px;
-  color: #fde68a;
-  line-height: 1.6;
+  font-size: 14.5px;
+  color: rgba(250, 245, 230, 0.85);
+  line-height: 1.7;
 }
 
 .brand-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .brand-header img {
@@ -37,48 +46,64 @@
 }
 
 .brand-header span {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 /* Titles */
 .footer-title {
-  font-size: 14px;
+  font-family: var(--font-ui);
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #fcd34d;
-  margin-bottom: 16px;
+  letter-spacing: 1.5px;
+  color: var(--color-gold);
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .footer-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 14px;
-  color: #fde68a;
+  color: rgba(250, 245, 230, 0.8);
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.25s ease;
 }
 
 .footer-link i {
   opacity: 0;
-  transition: 0.3s;
+  transform: translateX(-4px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--color-gold);
 }
 
 .footer-link:hover {
-  color: #fff7d6;
+  color: #ffffff;
+  transform: translateX(2px);
 }
 
 .footer-link:hover i {
   opacity: 1;
+  transform: translateX(0);
 }
 
-/* Newsletter */
+/* Newsletter Input field */
 .footer-text {
   font-size: 14px;
-  color: #fde68a;
-  margin-bottom: 12px;
+  color: rgba(250, 245, 230, 0.85);
+  margin-bottom: 14px;
+  line-height: 1.6;
 }
 
 .newsletter {
@@ -90,64 +115,102 @@
   flex: 1;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fcd34d;
-  color: #fff7d6;
-  padding: 6px 0;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.5);
+  color: #ffffff;
+  padding: 8px 0;
   outline: none;
+  font-family: var(--font-english);
+  font-size: 14.5px;
+  transition: all 0.2s ease;
+}
+
+.newsletter input:focus {
+  border-bottom-color: var(--color-saffron);
 }
 
 .newsletter button {
-  margin-left: 10px;
-  width: 32px;
-  height: 32px;
+  margin-left: 12px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: #d97706;
-  border: none;
+  background: linear-gradient(135deg, var(--color-saffron), var(--color-saffron-dark));
+  border: 1px solid var(--color-gold);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .newsletter button:hover {
-  background: #f59e0b;
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(230, 81, 0, 0.3);
 }
 
 .privacy {
   font-size: 12px;
-  color: #fcd34d;
-  margin-top: 10px;
+  color: rgba(250, 245, 230, 0.6);
+  margin-top: 14px;
 }
 
 .privacy a {
-  color: #fde68a;
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.privacy a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* Om Section */
+/* Grand sacred Om watermark section */
 .om-section {
-  background: #451a03;
+  background: rgba(0, 0, 0, 0.15);
   text-align: center;
   font-size: 80px;
-  color: rgba(251, 191, 36, 0.3);
-  padding: 48px 0;
+  color: rgba(212, 175, 55, 0.04);
+  padding: 32px 0;
+  font-family: var(--font-ui);
+  letter-spacing: 4px;
+  user-select: none;
 }
 
-/* Bottom */
+/* Bottom Copyright Bar */
 .footer-bottom {
-  background: #451a03;
-  border-top: 1px solid #92400e;
-  padding: 20px;
+  background: #150002;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  padding: 20px 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 14px;
-  color: #fcd34d;
+  align-items: center;
+  font-size: 13.5px;
+  color: rgba(250, 245, 230, 0.7);
+  font-family: var(--font-ui);
+  letter-spacing: 0.5px;
+  gap: 12px;
 }
 
 .footer-bottom a {
-  color: #fde68a;
+  color: var(--color-gold);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .footer-bottom a:hover {
-  color: #fff7d6;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 48px 16px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+  }
 }

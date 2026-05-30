@@ -5,8 +5,10 @@ interface ShlokCardProps {
   number: number;
   sanskritText?: string;
   transliteration?: string;
+  wordMeanings?: string;
   hindiMeaning?: string;
   englishMeaning?: string;
+  lifeLesson?: string;
   imageUrl?: string;
 }
 
@@ -14,8 +16,10 @@ const ShlokCard = ({
   number,
   sanskritText = "श्लोक का पाठ यहाँ दिखाई देगा",
   transliteration = "Shlok transliteration will appear here",
+  wordMeanings,
   hindiMeaning = "इस श्लोक का हिंदी अर्थ यहाँ दिखाई देगा।",
   englishMeaning = "The English meaning of this shlok will appear here.",
+  lifeLesson,
   imageUrl,
 }: ShlokCardProps) => {
   const [lang, setLang] = useState<"both" | "hindi" | "english">("both");
@@ -35,6 +39,16 @@ const ShlokCard = ({
       {/* Transliteration */}
       {transliteration && (
         <p className="transliteration">{transliteration}</p>
+      )}
+
+      {/* Word Meanings Breakdown */}
+      {wordMeanings && (
+        <div className="word-meanings">
+          <div className="word-meanings-header">
+            <span>📜 शब्दार्थ / Word Meanings</span>
+          </div>
+          <p className="word-meanings-text">{wordMeanings}</p>
+        </div>
       )}
 
       {/* Language Toggle */}
@@ -63,7 +77,7 @@ const ShlokCard = ({
       {(lang === "hindi" || lang === "both") && (
         <div className="meaning meaning-hindi">
           <div className="meaning-header">
-            <h3>🇮🇳 हिंदी अर्थ</h3>
+            <h3>🇮🇳 हिंदी व्याख्या</h3>
             <div className="line"></div>
           </div>
           <p className="explanation">{hindiMeaning}</p>
@@ -74,10 +88,22 @@ const ShlokCard = ({
       {(lang === "english" || lang === "both") && (
         <div className="meaning meaning-english">
           <div className="meaning-header">
-            <h3>🇬🇧 English Meaning</h3>
+            <h3>🇬🇧 English Commentary</h3>
             <div className="line"></div>
           </div>
           <p className="explanation">{englishMeaning}</p>
+        </div>
+      )}
+
+      {/* Life Lesson */}
+      {lifeLesson && (
+        <div className="life-lesson">
+          <div className="life-lesson-header">
+            <span className="lamp-icon">🪔</span>
+            <h3>Life Lesson</h3>
+            <div className="line"></div>
+          </div>
+          <p className="life-lesson-text">{lifeLesson}</p>
         </div>
       )}
 

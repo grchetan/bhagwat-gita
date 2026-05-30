@@ -2,6 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/pages-style/contactPage.css";
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,6 +19,9 @@ const ContactPage = () => {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+
+  // State to manage the active FAQ index for the interactive accordion
+  const [activeFaq, setActiveFaq] = useState<number | null>(0); // Default open the first one
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -39,6 +47,29 @@ const ContactPage = () => {
     }
   };
 
+  const toggleFaq = (index: number) => {
+    setActiveFaq((prev) => (prev === index ? null : index));
+  };
+
+  const faqs: FAQItem[] = [
+    {
+      question: "How can I start reading the Bhagavad Gita?",
+      answer: "We recommend starting with Chapter 1, which sets the entire battlefield context. Our website provides clear, step-by-step translations, Sanskrit audio references, word meanings, and scholarly commentary to help you read at your own comfortable pace.",
+    },
+    {
+      question: "Do I need any prior knowledge of Sanskrit or Hindu philosophy?",
+      answer: "No, absolutely not. The teachings of the Gita are universal and timeless. Every shlok is translated word-by-word with rich explanations in both Hindi and English, making it incredibly accessible for absolute beginners and spiritual seekers alike.",
+    },
+    {
+      question: "Are all 18 chapters and 700 shlokas available?",
+      answer: "Currently, Chapter 1 is fully detailed with deep spiritual commentaries, word breakdowns, and real-life lessons. The subsequent chapters (Chapters 2 and 3) are available in translation, and our team of scholars is actively expanding the remaining chapters.",
+    },
+    {
+      question: "What is the significance of the Saffron and Gold color theme?",
+      answer: "Saffron represents renunciation, spiritual fire, and search for truth, while Gold represents pure divine consciousness and eternal wisdom. The Deep Maroon represents the ancient temple walls, reminding us of our deep sacred roots.",
+    },
+  ];
+
   return (
     <div className="contact-page">
       <div className="contact-container">
@@ -46,164 +77,233 @@ const ContactPage = () => {
         <nav className="breadcrumb">
           <Link to="/">Home</Link>
           <i className="ri-arrow-right-s-line"></i>
-          <span>Contact</span>
+          <span className="active-breadcrumb">Contact</span>
         </nav>
 
         {/* Header */}
         <header className="contact-header">
-          <h1>Contact Us</h1>
+          <div className="header-decoration">
+            <span className="decorative-line"></span>
+            <i className="ri-quill-pen-line decoration-icon"></i>
+            <span className="decorative-line"></span>
+          </div>
+          <h1>Get in Touch</h1>
           <p>
-            Have questions about the Gita or need guidance on your spiritual
-            journey? We’re here to help.
+            Have questions about the shlokas, need guidance on your spiritual seeking, 
+            or want to share your feedback? Connect with us today.
           </p>
         </header>
 
         <div className="contact-grid">
           {/* Form */}
-          <div className="contact-card">
+          <div className="contact-card message-form-card">
+            <div className="card-header-decor"></div>
             <h2>
-              <i className="ri-mail-line"></i>
+              <i className="ri-mail-send-line"></i>
               Send us a Message
             </h2>
+            <p className="card-subtitle">Feel free to share your thoughts, inquiries, or realizations with us.</p>
 
             {submitStatus === "success" && (
-              <div className="alert success">
-                <i className="ri-check-line"></i>
-                Message sent successfully!
+              <div className="alert success-alert">
+                <i className="ri-checkbox-circle-line alert-icon"></i>
+                <div className="alert-text">
+                  <strong>Jai Shri Krishna!</strong>
+                  <p>Your message has been received with gratitude. We will reach back to you shortly.</p>
+                </div>
               </div>
             )}
 
             {submitStatus === "error" && (
-              <div className="alert error">
-                <i className="ri-error-warning-line"></i>
-                Something went wrong. Try again.
+              <div className="alert error-alert">
+                <i className="ri-error-warning-line alert-icon"></i>
+                <div className="alert-text">
+                  <strong>Submission Failed</strong>
+                  <p>Something went wrong. Please check your connection and try again.</p>
+                </div>
               </div>
             )}
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="spiritual-form">
               <div className="two-col">
-                <div>
-                  <label>Full Name *</label>
-                  <input
-                    name="name"
-                    value={formData.name}
+                <div className="form-group">
+                  <label htmlFor="name">Full Name <span className="required-star">*</span></label>
+                  <div className="input-wrapper">
+                    <i className="ri-user-line input-icon"></i>
+                    <input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="Enter your name"
+                      className="spiritual-input"
+                    />
+                  </div>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email Address <span className="required-star">*</span></label>
+                  <div className="input-wrapper">
+                    <i className="ri-mail-line input-icon"></i>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="you@example.com"
+                      className="spiritual-input"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="subject">Subject <span className="required-star">*</span></label>
+                <div className="input-wrapper">
+                  <i className="ri-chat-voice-line input-icon"></i>
+                  <select
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    placeholder="Your full name"
-                  />
+                    className="spiritual-select"
+                  >
+                    <option value="">Choose a topic of discussion</option>
+                    <option value="spiritual">Spiritual Seeking & Guidance</option>
+                    <option value="shlok">Shlok Explanation Query</option>
+                    <option value="content">Content Suggestion / Contribution</option>
+                    <option value="technical">Technical Issue on Website</option>
+                    <option value="feedback">General Feedback & Appreciation</option>
+                  </select>
                 </div>
-                <div>
-                  <label>Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Your Message <span className="required-star">*</span></label>
+                <div className="textarea-wrapper">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={6}
+                    maxLength={500}
+                    value={formData.message}
                     onChange={handleInputChange}
+                    placeholder="Type your message here with love and mindfulness..."
                     required
-                    placeholder="your@email.com"
+                    className="spiritual-textarea"
                   />
+                  <div className="character-count-box">
+                    <span className="current-count">{formData.message.length}</span> / 500 characters
+                  </div>
                 </div>
               </div>
 
-              <div>
-                <label>Subject *</label>
-                <select
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  required
-                >
-                  <option value="">Select a subject</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="spiritual">Spiritual Guidance</option>
-                  <option value="technical">Technical Support</option>
-                  <option value="content">Content Suggestion</option>
-                  <option value="feedback">Feedback</option>
-                </select>
-              </div>
-
-              <div>
-                <label>Message *</label>
-                <textarea
-                  name="message"
-                  rows={6}
-                  maxLength={500}
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Share your thoughts…"
-                  required
-                />
-                <div className="count">
-                  {formData.message.length}/500 characters
-                </div>
-              </div>
-
-              <button disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
+              <button type="submit" disabled={isSubmitting} className="spiritual-btn">
+                {isSubmitting ? (
+                  <>
+                    <span className="spinner"></span>
+                    <span>Delivering Message...</span>
+                  </>
+                ) : (
+                  <>
+                    <i className="ri-send-plane-fill"></i>
+                    <span>Send Message</span>
+                  </>
+                )}
               </button>
             </form>
           </div>
 
-          {/* Info */}
-          <div className="contact-info">
-            <div className="info-box">
+          {/* Info & FAQs */}
+          <div className="contact-info-section">
+            <div className="contact-card info-card">
+              <div className="card-header-decor"></div>
               <h2>
-                <i className="ri-information-line"></i>
+                <i className="ri-compass-3-line"></i>
                 Get in Touch
               </h2>
-              <p>
-                We welcome questions, feedback, and discussions about the
-                teachings of the Bhagavad Gita.
-              </p>
+              <p className="card-subtitle">We welcome all seekers, scholars, and readers to connect with us.</p>
 
-              <div className="info-item">
-                <i className="ri-time-line"></i>
-                <div>
-                  <strong>Response Time</strong>
-                  <p>24–48 hours</p>
+              <div className="info-list">
+                <div className="info-card-item">
+                  <div className="info-icon-wrapper">
+                    <i className="ri-time-line"></i>
+                  </div>
+                  <div className="info-item-content">
+                    <strong>Response Commitment</strong>
+                    <p>Usually within 24 to 48 hours with deep care.</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="info-item">
-                <i className="ri-heart-line"></i>
-                <div>
-                  <strong>Our Mission</strong>
-                  <p>Ancient wisdom for modern seekers</p>
+                <div className="info-card-item">
+                  <div className="info-icon-wrapper">
+                    <i className="ri-sparkling-2-line"></i>
+                  </div>
+                  <div className="info-item-content">
+                    <strong>Our Humble Mission</strong>
+                    <p>Unfolding ancient Vedic wisdom for modern-day seekers.</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="info-item">
-                <i className="ri-community-line"></i>
-                <div>
-                  <strong>Community</strong>
-                  <p>Join thousands of readers</p>
+                <div className="info-card-item">
+                  <div className="info-icon-wrapper">
+                    <i className="ri-global-line"></i>
+                  </div>
+                  <div className="info-item-content">
+                    <strong>Online Satsang Community</strong>
+                    <p>Connect, share, and grow with thousands of readers.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="faq">
-              <h3>
-                <i className="ri-question-line"></i>
-                FAQs
-              </h3>
+            {/* Interactive FAQs Accordion */}
+            <div className="contact-card faq-accordion-card">
+              <div className="card-header-decor"></div>
+              <h2>
+                <i className="ri-questionnaire-line"></i>
+                Frequently Asked Questions
+              </h2>
+              <p className="card-subtitle">Quick guidance to assist you on this auspicious journey.</p>
 
-              <div>
-                <strong>How can I start reading?</strong>
-                <p>Begin with Chapter 1 at your own pace.</p>
-              </div>
-              <div>
-                <strong>Do I need prior knowledge?</strong>
-                <p>No, it’s universal and beginner friendly.</p>
-              </div>
-              <div>
-                <strong>Are all chapters available?</strong>
-                <p>Currently Chapters 1–3.</p>
+              <div className="accordion-list">
+                {faqs.map((faq, index) => {
+                  const isOpen = activeFaq === index;
+                  return (
+                    <div 
+                      key={index} 
+                      className={`accordion-item ${isOpen ? "open" : ""}`}
+                    >
+                      <button 
+                        type="button"
+                        onClick={() => toggleFaq(index)} 
+                        className="accordion-toggle"
+                        aria-expanded={isOpen}
+                      >
+                        <span className="faq-question">{faq.question}</span>
+                        <span className="faq-icon-wrapper">
+                          <i className={`ri-${isOpen ? "subtract-line" : "add-line"} faq-icon`}></i>
+                        </span>
+                      </button>
+                      
+                      <div className={`accordion-collapse ${isOpen ? "expanded" : ""}`}>
+                        <div className="accordion-content">
+                          <p>{faq.answer}</p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
-            <div className="cta-link">
-              <Link to="/chapter/1">
-                Start Reading Now <i className="ri-arrow-right-line"></i>
+            <div className="cta-action-container">
+              <Link to="/chapter/1" className="spiritual-cta-btn">
+                <span>Start Reading Now</span>
+                <i className="ri-arrow-right-line"></i>
               </Link>
             </div>
           </div>

@@ -1,11 +1,20 @@
-/* Full page layout */
+@import './variables.css';
+
+/* Full page layout with a premium parchment/sacred temple background */
 .layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, #fdfaf4 0%, #faf3e6 100%);
+  color: var(--color-maroon-dark);
+}
 
-  /* background gradient */
-  background: linear-gradient(to bottom, #fff7ed, #fffbeb);
+/* Body baseline font */
+body {
+  font-family: var(--font-english);
+  background-color: #faf5e6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Main content should take remaining height */
