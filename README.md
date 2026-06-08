@@ -85,7 +85,7 @@ Follow these steps to set up the project on your local machine:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/chetanprajapat/bhagwat-gita.git
+    git clone https://github.com/grchetan/bhagwat-gita.git
     cd bhagwat-gita
     ```
 
@@ -132,4 +132,4 @@ The project is fully pre-configured to build static files and deploy them automa
 
 ---
 
-_“कुरुक्षेत्रे समवेता युयुत्सवः...” — May the wisdom of the Gita guide your path._ 📿
+May the wisdom of the Gita guide your path.
