@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import ShlokNavigation from "../../components/navigation/ShlokNavigation";
 import ShlokCard from "../../components/shlok/ShlokCard";
 import { chapter1Shlokas, type Shlok } from "../../data/chapter1";
+import { chapter2Shlokas } from "../../data/chapter2";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -50,7 +51,7 @@ const chapterData: Record<string, ChapterData> = {
     introduction:
       "In this pivotal chapter, Krishna begins his spiritual instruction to Arjuna by explaining the eternal nature of the soul (Atman). He describes the immortal self that cannot be killed, and introduces the concept of Nishkama Karma — performing one's duty without attachment to results. This chapter lays the philosophical foundation of the Gita.",
     totalShlokas: 72,
-    shlokas: [],
+    shlokas: chapter2Shlokas,
   },
   "3": {
     number: 3,
