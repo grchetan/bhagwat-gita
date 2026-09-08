@@ -4,6 +4,7 @@ import ShlokNavigation from "../../components/navigation/ShlokNavigation";
 import ShlokCard from "../../components/shlok/ShlokCard";
 import { chapter1Shlokas, type Shlok } from "../../data/chapter1";
 import { chapter2Shlokas } from "../../data/chapter2";
+import { chapter3Shlokas } from "../../data/chapter3";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -58,9 +59,9 @@ const chapterData: Record<string, ChapterData> = {
     title: "Karma Yoga",
     sanskritTitle: "कर्म योग",
     introduction:
-      "Krishna elaborates on the path of selfless action (Karma Yoga). He explains that one cannot avoid action and that it is better to perform one's own duty imperfectly than to perform another's duty perfectly. He stresses the importance of performing actions as a sacrifice to God, without attachment to results.",
+      "भगवद्गीता का तृतीय अध्याय 'कर्म योग' जीवन में कर्म की अनिवार्यता और निष्काम कर्म के दिव्य विज्ञान का उद्घाटन करता है। अर्जुन ज्ञान और कर्म के द्वंद्व में उलझकर कर्म से भागने का विचार करते हैं। तब भगवान श्री कृष्ण उन्हें समझाते हैं कि कर्म से कोई भी प्राणी बच नहीं सकता; इसलिए आसक्ति और फल की चिंता छोड़कर लोक-कल्याण की भावना से कर्म करना ही सच्चा योग और मुक्ति का मार्ग है। || The third chapter of the Bhagavad Gita, 'Karma Yoga', unveils the divine science of selfless action and the inevitability of work in human life. Perplexed by the apparent contradiction between contemplative wisdom and active duty, Arjuna contemplates abandoning action. Sri Krishna enlightens him that no living being can remain inactive even for a moment; therefore, performing one's natural duty with dedication, without selfish attachment to the fruits of work, is the supreme path to inner purification and spiritual liberation.",
     totalShlokas: 43,
-    shlokas: [],
+    shlokas: chapter3Shlokas,
   },
 };
 
