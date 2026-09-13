@@ -406,3 +406,96 @@
     height: 200px;
   }
 }
+
+/* ── Shlok Card Topbar & Copy Button ──────────────── */
+.shlok-card-topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+.shlok-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--color-maroon);
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.shlok-copy-btn:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-saffron);
+  color: var(--color-saffron-dark);
+  transform: translateY(-1px);
+}
+
+.shlok-copy-btn.copied {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #15803d;
+}
+
+/* ── Dynamic Font Scaling Support ─────────────────── */
+.shlok-font-large .sanskrit-text {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.shlok-font-large .transliteration {
+  font-size: 17px;
+}
+
+.shlok-font-large .meaning-hindi .explanation {
+  font-size: 19.5px;
+  line-height: 1.85;
+}
+
+.shlok-font-large .meaning-english .explanation {
+  font-size: 17.5px;
+  line-height: 1.85;
+}
+
+.shlok-font-large .life-lesson-text {
+  font-size: 16.5px;
+}
+
+.shlok-font-large .word-meanings-text {
+  font-size: 15.5px;
+}
+
+.shlok-font-xlarge .sanskrit-text {
+  font-size: 27px;
+  line-height: 2.1;
+}
+
+.shlok-font-xlarge .transliteration {
+  font-size: 18.5px;
+}
+
+.shlok-font-xlarge .meaning-hindi .explanation {
+  font-size: 21.5px;
+  line-height: 1.9;
+}
+
+.shlok-font-xlarge .meaning-english .explanation {
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.shlok-font-xlarge .life-lesson-text {
+  font-size: 18px;
+}
+
+.shlok-font-xlarge .word-meanings-text {
+  font-size: 16.5px;
+}

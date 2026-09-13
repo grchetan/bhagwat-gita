@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/shlokCard.css";
 
 interface ShlokCardProps {
@@ -10,6 +10,8 @@ interface ShlokCardProps {
   englishMeaning?: string;
   lifeLesson?: string;
   imageUrl?: string;
+  globalLang?: "both" | "hindi" | "english";
+  fontScale?: "normal" | "large" | "xlarge";
 }
 
 const ShlokCard = ({
@@ -21,14 +23,61 @@ const ShlokCard = ({
   englishMeaning = "The English meaning of this shlok will appear here.",
   lifeLesson,
   imageUrl,
+  globalLang = "both",
+  fontScale = "normal",
 }: ShlokCardProps) => {
-  const [lang, setLang] = useState<"both" | "hindi" | "english">("both");
+  const [lang, setLang] = useState<"both" | "hindi" | "english">(globalLang);
+  const [isCopied, setIsCopied] = useState(false);
+
+  // Sync with global language filter when changed by parent
+  useEffect(() => {
+    setLang(globalLang);
+  }, [globalLang]);
+
+  const handleCopy = async () => {
+    const textToCopy = `भगवद्गीता — श्लोक ${number}\n\n${sanskritText}\n\n${transliteration}\n\n[हिंदी भावार्थ]\n${hindiMeaning}\n\n[English Meaning]\n${englishMeaning}${
+      lifeLesson ? `\n\n[जीवन सूत्र / Life Lesson]\n${lifeLesson}` : ""
+    }`;
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2200);
+    } catch {
+      // Fallback
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2200);
+    }
+  };
 
   return (
-    <div id={`shlok-${number}`} className="shlok-card">
+    <div
+      id={`shlok-${number}`}
+      className={`shlok-card shlok-font-${fontScale}`}
+      data-shlok-number={number}
+    >
       {/* Number Badge */}
       <div className="shlok-badge">
         <span>{number}</span>
+      </div>
+
+      {/* Top Action Bar (Copy Button) */}
+      <div className="shlok-card-topbar">
+        <button
+          className={`shlok-copy-btn ${isCopied ? "copied" : ""}`}
+          onClick={handleCopy}
+          title="श्लोक और अर्थ कॉपी करें / Copy Shlok"
+          aria-label="Copy shlok and meaning"
+        >
+          <i className={isCopied ? "ri-check-line" : "ri-file-copy-line"}></i>
+          <span>{isCopied ? "कॉपी हो गया! / Copied" : "कॉपी करें / Copy"}</span>
+        </button>
       </div>
 
       {/* Sanskrit */}
@@ -100,7 +149,7 @@ const ShlokCard = ({
         <div className="life-lesson">
           <div className="life-lesson-header">
             <span className="lamp-icon">🪔</span>
-            <h3>Life Lesson</h3>
+            <h3>Life Lesson / जीवन सूत्र</h3>
             <div className="line"></div>
           </div>
           <p className="life-lesson-text">{lifeLesson}</p>

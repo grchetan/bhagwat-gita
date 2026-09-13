@@ -30,7 +30,12 @@ interface ChapterData {
   number: number;
   title: string;
   sanskritTitle: string;
+  tagline: string;
   introduction: string;
+  keyThemes: {
+    heading: string;
+    points: string[];
+  };
   totalShlokas: number;
   shlokas: Shlok[];
 }
@@ -40,8 +45,17 @@ const chapterData: Record<string, ChapterData> = {
     number: 1,
     title: "Arjuna Vishada Yoga",
     sanskritTitle: "अर्जुन विषाद योग",
+    tagline: "कुरुक्षेत्र के रणभूमि पर अर्जुन का मोह एवं विषाद",
     introduction:
       "भगवद्गीता का प्रथम अध्याय 'अर्जुन विषाद योग' कुरुक्षेत्र की रणभूमि पर घटित होता है। जब अर्जुन दोनों सेनाओं में अपने प्रियजनों — गुरुओं, पितामहों, भाइयों और मित्रों को देखते हैं, तो वे गहरे विषाद में डूब जाते हैं। उनके हाथ से धनुष गिर जाता है, अंग शिथिल हो जाते हैं और वे युद्ध न करने का निश्चय कर लेते हैं। यही विषाद (दुःख) समस्त गीता उपदेश की नींव बनता है। || The first chapter of the Bhagavad Gita, 'Arjuna Vishada Yoga', is set on the battlefield of Kurukshetra. When Arjuna sees his dear ones — teachers, grandfathers, brothers, and friends — arrayed on both sides, he is overcome with grief. His bow slips from his hand, his limbs fail, and he resolves not to fight. This sorrow (vishada) becomes the very foundation of the entire divine discourse that follows.",
+    keyThemes: {
+      heading: "अध्याय 1 के प्रमुख सूत्र एवं शिक्षाएं (Core Insights)",
+      points: [
+        "कुरुक्षेत्र में दोनों सेनाओं का अवलोकन और अर्जुन का गहरा मानसिक संशय।",
+        "अहंकार और मोह के कारण कर्तव्य से पलायन का प्रयास एवं विषाद।",
+        "सच्चे आत्म-विकास का आरंभ तब होता है जब मनुष्य अपनी सीमाएं पहचानकर भगवान के आगे समर्पित होता है।"
+      ],
+    },
     totalShlokas: 47,
     shlokas: chapter1Shlokas,
   },
@@ -49,8 +63,17 @@ const chapterData: Record<string, ChapterData> = {
     number: 2,
     title: "Sankhya Yoga",
     sanskritTitle: "सांख्य योग",
+    tagline: "आत्मा का अमरत्व, निष्काम कर्म और स्थितप्रज्ञ ज्ञान",
     introduction:
-      "In this pivotal chapter, Krishna begins his spiritual instruction to Arjuna by explaining the eternal nature of the soul (Atman). He describes the immortal self that cannot be killed, and introduces the concept of Nishkama Karma — performing one's duty without attachment to results. This chapter lays the philosophical foundation of the Gita.",
+      "भगवद्गीता का द्वितीय अध्याय 'सांख्य योग' गीता का दार्शनिक आधार है। भगवान श्री कृष्ण यहाँ अर्जुन को आत्मा के अजन्मा और अविनाशी स्वरूप का बोध कराते हैं। वे समझाते हैं कि शरीर नश्वर है किंतु आत्मा शाश्वत है। इसके उपरांत, कृष्ण निष्काम कर्मयोग का अमर सूत्र 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन' देते हैं और एक समत्व बुद्धियुक्त 'स्थितप्रज्ञ' साधक के लक्षण प्रस्तुत करते हैं। || In this pivotal chapter, Krishna begins his spiritual instruction to Arjuna by explaining the eternal nature of the soul (Atman). He describes the immortal self that cannot be killed, and introduces the concept of Nishkama Karma — performing one's duty without attachment to results. This chapter lays the philosophical foundation of the Gita.",
+    keyThemes: {
+      heading: "अध्याय 2 के प्रमुख सूत्र एवं शिक्षाएं (Core Insights)",
+      points: [
+        "आत्मा शाश्वत और अमर है — न यह कभी जन्म लेती है और न कभी मरती है (न जायते म्रियते वा)।",
+        "निष्काम कर्मयोग — केवल कर्म पर तुम्हारा अधिकार है, उसके फलों पर कभी नहीं।",
+        "स्थितप्रज्ञ के लक्षण — जो सुख-दुःख, राग-द्वेष और भय में समभाव रखता है, वही सच्चा ज्ञानी है।"
+      ],
+    },
     totalShlokas: 72,
     shlokas: chapter2Shlokas,
   },
@@ -58,8 +81,18 @@ const chapterData: Record<string, ChapterData> = {
     number: 3,
     title: "Karma Yoga",
     sanskritTitle: "कर्म योग",
+    tagline: "कर्म की अनिवार्यता, सृष्टि का यज्ञ चक्र और लोक-संग्रह",
     introduction:
       "भगवद्गीता का तृतीय अध्याय 'कर्म योग' जीवन में कर्म की अनिवार्यता और निष्काम कर्म के दिव्य विज्ञान का उद्घाटन करता है। अर्जुन ज्ञान और कर्म के द्वंद्व में उलझकर कर्म से भागने का विचार करते हैं। तब भगवान श्री कृष्ण उन्हें समझाते हैं कि कर्म से कोई भी प्राणी बच नहीं सकता; इसलिए आसक्ति और फल की चिंता छोड़कर लोक-कल्याण की भावना से कर्म करना ही सच्चा योग और मुक्ति का मार्ग है। || The third chapter of the Bhagavad Gita, 'Karma Yoga', unveils the divine science of selfless action and the inevitability of work in human life. Perplexed by the apparent contradiction between contemplative wisdom and active duty, Arjuna contemplates abandoning action. Sri Krishna enlightens him that no living being can remain inactive even for a moment; therefore, performing one's natural duty with dedication, without selfish attachment to the fruits of work, is the supreme path to inner purification and spiritual liberation.",
+    keyThemes: {
+      heading: "अध्याय 3 के प्रमुख सूत्र एवं शिक्षाएं (Core Insights)",
+      points: [
+        "कर्म से कोई प्राणी एक क्षण भी मुक्त नहीं रह सकता; अतः निस्वार्थ कर्तव्य-पालन ही सर्वश्रेष्ठ योग है।",
+        "यज्ञ-चक्र (पारस्परिक त्याग) — प्रकृति और समाज से जो प्राप्त हो, उसे सेवा रूपी आहुति से लौटाना।",
+        "लोक-संग्रह (नेतृत्व) — श्रेष्ठ पुरुष जैसा आचरण करते हैं, सारा समाज उसी का अनुकरण करता है।",
+        "काम (वासना) और क्रोध आत्मा के सबसे बड़े शत्रु हैं, जिन्हें बुद्धि और आत्म-संयम से जीतना आवश्यक है।"
+      ],
+    },
     totalShlokas: 43,
     shlokas: chapter3Shlokas,
   },
@@ -69,6 +102,10 @@ const ChapterPage = () => {
   const { chapterNumber } = useParams<{ chapterNumber: string }>();
   const [currentShlok, setCurrentShlok] = useState(1);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [globalLang, setGlobalLang] = useState<"both" | "hindi" | "english">("both");
+  const [fontScale, setFontScale] = useState<"normal" | "large" | "xlarge">("normal");
+  const [showThemes, setShowThemes] = useState(true);
+  const [jumpInput, setJumpInput] = useState("");
 
   const chapter = chapterData[chapterNumber || "1"];
 
@@ -76,12 +113,32 @@ const ChapterPage = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setCurrentShlok(1);
     setIsMobileNavOpen(false);
+    setJumpInput("");
+  }, [chapterNumber]);
+
+  // Observer to track which shlok is currently in view
+  useEffect(() => {
+    const handleScrollTracking = () => {
+      const shlokCards = document.querySelectorAll<HTMLElement>("[data-shlok-number]");
+      const scrollPosition = window.scrollY + 180;
+
+      for (let i = shlokCards.length - 1; i >= 0; i--) {
+        const card = shlokCards[i];
+        if (card.offsetTop <= scrollPosition) {
+          const num = parseInt(card.getAttribute("data-shlok-number") || "1", 10);
+          setCurrentShlok(num);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScrollTracking, { passive: true });
+    return () => window.removeEventListener("scroll", handleScrollTracking);
   }, [chapterNumber]);
 
   const handleShlokSelect = (shlok: number) => {
     setCurrentShlok(shlok);
     setIsMobileNavOpen(false);
-    // Scroll to shlok after short delay to allow re-render
     setTimeout(() => {
       const element = document.getElementById(`shlok-${shlok}`);
       if (element) {
@@ -90,16 +147,27 @@ const ChapterPage = () => {
     }, 50);
   };
 
+  const handleJumpSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const num = parseInt(jumpInput, 10);
+    if (!isNaN(num) && num >= 1 && num <= chapter.totalShlokas) {
+      handleShlokSelect(num);
+      setJumpInput("");
+    }
+  };
+
   if (!chapter) {
     return (
       <div className="chapter-error">
         <h1>Chapter Not Found</h1>
-        <Link to="/">Return to Home</Link>
+        <p>This chapter is currently in preparation.</p>
+        <Link to="/chapters" className="btn dark">
+          View All Chapters
+        </Link>
       </div>
     );
   }
 
-  // Use real shlokas for Chapter 1; placeholder for others
   const shlokas =
     chapter.shlokas.length > 0
       ? chapter.shlokas
@@ -123,11 +191,51 @@ const ChapterPage = () => {
           <span>Chapter {chapter.number}</span>
         </nav>
 
+        {/* Quick Chapter Pill Switcher Bar */}
+        <div className="chapter-pill-switcher">
+          <div className="pill-switcher-label">
+            <i className="ri-compass-3-line"></i>
+            <span>अध्याय चुनें / Select Chapter:</span>
+          </div>
+          <div className="pill-list">
+            <Link
+              to="/chapter/1"
+              className={`chapter-pill ${chapter.number === 1 ? "active" : ""}`}
+            >
+              <span className="pill-num">1</span>
+              <span>अर्जुन विषाद योग</span>
+            </Link>
+            <Link
+              to="/chapter/2"
+              className={`chapter-pill ${chapter.number === 2 ? "active" : ""}`}
+            >
+              <span className="pill-num">2</span>
+              <span>सांख्य योग</span>
+            </Link>
+            <Link
+              to="/chapter/3"
+              className={`chapter-pill ${chapter.number === 3 ? "active" : ""}`}
+            >
+              <span className="pill-num">3</span>
+              <span>कर्म योग</span>
+            </Link>
+            <Link to="/chapters" className="chapter-pill all-pill">
+              <i className="ri-list-unordered"></i>
+              <span>सभी 18 अध्याय</span>
+            </Link>
+          </div>
+        </div>
+
         <div className="chapter-layout">
           {/* Mobile Nav Toggle */}
           <div className="mobile-nav">
-            <button onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-              Shlok Navigation
+            <button
+              onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+              aria-label="Toggle shlok list"
+            >
+              <span>
+                <i className="ri-book-open-line"></i> श्लोक सूची (Shlok {currentShlok}/{chapter.totalShlokas})
+              </span>
               <i
                 className={`ri-arrow-${isMobileNavOpen ? "up" : "down"}-s-line`}
               ></i>
@@ -158,8 +266,11 @@ const ChapterPage = () => {
               <div className="chapter-header-left">
                 <div className="chapter-number">{chapter.number}</div>
                 <div>
-                  <h1>{chapter.title}</h1>
-                  <p className="sanskrit">{chapter.sanskritTitle}</p>
+                  <h1>{chapter.sanskritTitle}</h1>
+                  <p className="chapter-subtitle-en">
+                    Chapter {chapter.number}: {chapter.title}
+                  </p>
+                  <p className="chapter-tagline">{chapter.tagline}</p>
                 </div>
               </div>
               <div className="chapter-header-right">
@@ -170,15 +281,52 @@ const ChapterPage = () => {
             {/* Stats Bar */}
             <div className="chapter-stats">
               <span>
-                <i className="ri-book-2-line"></i> {chapter.totalShlokas} Shlokas
+                <i className="ri-book-2-line"></i> {chapter.totalShlokas} श्लोक (Verses)
               </span>
               <span>
-                <i className="ri-translate-line"></i> Hindi & English
+                <i className="ri-translate-line"></i> हिंदी व English व्याख्या
               </span>
               <span>
-                <i className="ri-file-text-line"></i> Full Sanskrit
+                <i className="ri-file-text-line"></i> मूल संस्कृत व शब्दार्थ
               </span>
             </div>
+
+            {/* Key Themes Guide Banner (अध्याय सार एवं प्रमुख सूत्र) */}
+            {chapter.keyThemes && (
+              <div className="chapter-themes-box">
+                <div
+                  className="themes-header"
+                  onClick={() => setShowThemes(!showThemes)}
+                >
+                  <div className="themes-title">
+                    <span className="themes-icon">🕉️</span>
+                    <h3>{chapter.keyThemes.heading}</h3>
+                  </div>
+                  <button
+                    className="themes-toggle-btn"
+                    aria-label="Toggle themes view"
+                  >
+                    <span>{showThemes ? "छिपाएं / Hide" : "विस्तार / View"}</span>
+                    <i
+                      className={`ri-arrow-${showThemes ? "up" : "down"}-s-line`}
+                    ></i>
+                  </button>
+                </div>
+
+                {showThemes && (
+                  <div className="themes-content">
+                    <ul>
+                      {chapter.keyThemes.points.map((pt, idx) => (
+                        <li key={idx}>
+                          <span className="theme-bullet">✦</span>
+                          <span>{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Intro with peacock feather watermark */}
             <div className="chapter-intro">
@@ -186,44 +334,127 @@ const ChapterPage = () => {
                 <PeacockFeather />
               </div>
               <h2>
-                <i className="ri-information-line"></i> Chapter Introduction
+                <i className="ri-information-line"></i> अध्याय परिचय (Chapter Overview)
               </h2>
               <p>{chapter.introduction}</p>
             </div>
 
-            {/* Shlokas */}
-            {shlokas.map((shlok) => (
-              <ShlokCard
-                key={shlok.number}
-                number={shlok.number}
-                sanskritText={shlok.sanskritText}
-                transliteration={shlok.transliteration}
-                wordMeanings={shlok.wordMeanings}
-                hindiMeaning={shlok.hindiMeaning}
-                englishMeaning={shlok.englishMeaning}
-                lifeLesson={shlok.lifeLesson}
-              />
-            ))}
+            {/* Reading Comfort Controls Toolbar */}
+            <div className="reading-toolbar">
+              <div className="toolbar-section">
+                <span className="toolbar-label">
+                  <i className="ri-translate"></i> भाषा / Language:
+                </span>
+                <div className="toolbar-btn-group">
+                  <button
+                    className={`toolbar-btn ${globalLang === "both" ? "active" : ""}`}
+                    onClick={() => setGlobalLang("both")}
+                  >
+                    🌐 दोनों / Both
+                  </button>
+                  <button
+                    className={`toolbar-btn ${globalLang === "hindi" ? "active" : ""}`}
+                    onClick={() => setGlobalLang("hindi")}
+                  >
+                    🇮🇳 हिंदी
+                  </button>
+                  <button
+                    className={`toolbar-btn ${globalLang === "english" ? "active" : ""}`}
+                    onClick={() => setGlobalLang("english")}
+                  >
+                    🇬🇧 English
+                  </button>
+                </div>
+              </div>
 
-            {/* Footer Nav */}
+              <div className="toolbar-section">
+                <span className="toolbar-label">
+                  <i className="ri-font-size-2"></i> फ़ॉन्ट आकार / Size:
+                </span>
+                <div className="toolbar-btn-group font-group">
+                  <button
+                    className={`toolbar-btn ${fontScale === "normal" ? "active" : ""}`}
+                    onClick={() => setFontScale("normal")}
+                    title="सामान्य आकार / Normal"
+                  >
+                    A
+                  </button>
+                  <button
+                    className={`toolbar-btn ${fontScale === "large" ? "active" : ""}`}
+                    onClick={() => setFontScale("large")}
+                    title="बड़ा आकार / Large"
+                  >
+                    A+
+                  </button>
+                  <button
+                    className={`toolbar-btn ${fontScale === "xlarge" ? "active" : ""}`}
+                    onClick={() => setFontScale("xlarge")}
+                    title="अति बड़ा आकार / Extra Large"
+                  >
+                    A++
+                  </button>
+                </div>
+              </div>
+
+              {/* Quick Shlok Jumper Form */}
+              <form className="shlok-jumper-form" onSubmit={handleJumpSubmit}>
+                <span className="toolbar-label">
+                  <i className="ri-search-eye-line"></i> सीधा श्लोक:
+                </span>
+                <div className="jumper-input-wrapper">
+                  <input
+                    type="number"
+                    min="1"
+                    max={chapter.totalShlokas}
+                    placeholder={`1-${chapter.totalShlokas}`}
+                    value={jumpInput}
+                    onChange={(e) => setJumpInput(e.target.value)}
+                    className="jumper-input"
+                  />
+                  <button type="submit" className="jumper-btn">
+                    जाएं
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* Shlokas List */}
+            <div className="shlokas-container">
+              {shlokas.map((shlok) => (
+                <ShlokCard
+                  key={shlok.number}
+                  number={shlok.number}
+                  sanskritText={shlok.sanskritText}
+                  transliteration={shlok.transliteration}
+                  wordMeanings={shlok.wordMeanings}
+                  hindiMeaning={shlok.hindiMeaning}
+                  englishMeaning={shlok.englishMeaning}
+                  lifeLesson={shlok.lifeLesson}
+                  globalLang={globalLang}
+                  fontScale={fontScale}
+                />
+              ))}
+            </div>
+
+            {/* Footer Navigation between chapters */}
             <div className="chapter-footer">
               {chapter.number > 1 && (
                 <Link
                   to={`/chapter/${chapter.number - 1}`}
                   className="btn light"
                 >
-                  ← Previous Chapter
+                  ← पिछला अध्याय (Ch {chapter.number - 1})
                 </Link>
               )}
               <Link to="/chapters" className="btn outline">
-                All Chapters
+                सभी 18 अध्याय
               </Link>
               {chapter.number < 3 && (
                 <Link
                   to={`/chapter/${chapter.number + 1}`}
                   className="btn dark"
                 >
-                  Next Chapter →
+                  अगला अध्याय (Ch {chapter.number + 1}) →
                 </Link>
               )}
             </div>
@@ -231,13 +462,15 @@ const ChapterPage = () => {
         </div>
       </div>
 
-      {/* Floating Nav Button */}
+      {/* Floating Shlok Navigation Button on Mobile */}
       <button
         className="floating-btn"
         onClick={() => setIsMobileNavOpen(true)}
-        title="Open Shlok Navigation"
+        title="श्लोक सूची खोलें / Open Shlok List"
+        aria-label="Open shlok navigation drawer"
       >
         <i className="ri-list-unordered"></i>
+        <span className="floating-badge">{currentShlok}</span>
       </button>
     </div>
   );
