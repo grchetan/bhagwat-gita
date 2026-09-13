@@ -29,24 +29,6 @@
   border: 1.5px solid rgba(212, 175, 55, 0.55);
 }
 
-/* Subtle reading progress indicator at bottom of navbar */
-.nav-reading-progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3.5px;
-  background: linear-gradient(90deg, var(--color-gold), var(--color-saffron), #ff9100);
-  box-shadow: 0 0 12px rgba(230, 81, 0, 0.6);
-  border-radius: 0 4px 4px 0;
-  z-index: 102;
-  transition: width 0.12s ease-out;
-}
-
-.navbar-scrolled .nav-reading-progress {
-  bottom: 0;
-  border-radius: 99px;
-}
-
 .navbar-container {
   max-width: 1200px;
   margin: auto;

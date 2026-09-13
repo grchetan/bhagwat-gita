@@ -6,19 +6,11 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isChaptersOpen, setIsChaptersOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 40);
-
-      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      if (scrollHeight > 0) {
-        const progress = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100));
-        setScrollProgress(progress);
-      }
+      setIsScrolled(window.scrollY > 40);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -67,15 +59,6 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
-        {/* Subtle reading progress indicator bar */}
-        {scrollProgress > 0 && (
-          <div
-            className="nav-reading-progress"
-            style={{ width: `${scrollProgress}%` }}
-            title={`Reading progress: ${Math.round(scrollProgress)}%`}
-          />
-        )}
-
         <div className="navbar-container">
           <div className="navbar-inner">
             {/* Logo */}
