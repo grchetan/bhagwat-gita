@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage, type Language } from "../../context/LanguageContext";
+import logoImg from "../../assets/images/logo.png";
 import "../../styles/navbar.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isChaptersOpen, setIsChaptersOpen] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,39 +25,47 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsChaptersOpen(false);
+    setIsLangOpen(false);
   }, [location.pathname]);
 
   const navLinks = [
-    { name: "Home", path: "/", hindi: "मुख्य पृष्ठ" },
-    { name: "Chapters", path: "/chapters", hindi: "सभी 18 अध्याय" },
-    { name: "About", path: "/about", hindi: "परिचय" },
-    { name: "Contact", path: "/contact", hindi: "संपर्क" },
+    { name: t("nav_home"), path: "/" },
+    { name: t("nav_chapters"), path: "/chapters" },
+    { name: t("nav_about"), path: "/about" },
+    { name: t("nav_contact"), path: "/contact" },
   ];
 
   const chapters = [
     {
       number: 1,
-      title: "Arjuna Vishada Yoga",
-      hindiTitle: "अर्जुन विषाद योग",
+      titleKey: "ch1_title",
+      subKey: "ch1_subtitle",
       path: "/chapter/1",
       shlokas: 47,
     },
     {
       number: 2,
-      title: "Sankhya Yoga",
-      hindiTitle: "सांख्य योग",
+      titleKey: "ch2_title",
+      subKey: "ch2_subtitle",
       path: "/chapter/2",
       shlokas: 72,
     },
     {
       number: 3,
-      title: "Karma Yoga",
-      hindiTitle: "कर्म योग",
+      titleKey: "ch3_title",
+      subKey: "ch3_subtitle",
       path: "/chapter/3",
       shlokas: 43,
     },
   ];
 
+  const languages: { code: Language; label: string; nativeName: string; flag: string }[] = [
+    { code: "en", label: "English", nativeName: "English", flag: "🇬🇧" },
+    { code: "hi", label: "Hindi", nativeName: "हिंदी", flag: "🇮🇳" },
+    { code: "te", label: "Telugu", nativeName: "తెలుగు", flag: "🇮🇳" },
+  ];
+
+  const currentLangObj = languages.find((l) => l.code === language) || languages[0];
   const isReadingChapter = location.pathname.startsWith("/chapter/");
 
   return (
@@ -64,12 +76,13 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="logo">
               <img
-                src="https://public.readdy.ai/ai/img_res/e8eb0435-7826-446b-80f5-0fa0e2da0efa.png"
+                src={logoImg}
                 alt="Bhagavad Gita Logo"
+                className="logo-img"
               />
               <div className="logo-text">
-                <span className="logo-title">Bhagavad Gita</span>
-                <span className="logo-subtitle">श्रीमद्भगवद्गीता</span>
+                <span className="logo-title">{t("logo_title")}</span>
+                <span className="logo-subtitle">{t("logo_subtitle")}</span>
               </div>
             </Link>
 
@@ -77,7 +90,7 @@ const Navbar = () => {
             <div className="nav-links">
               {navLinks.map((link) => (
                 <Link
-                  key={link.name}
+                  key={link.path}
                   to={link.path}
                   className={`nav-link ${
                     location.pathname === link.path ? "active" : ""
@@ -98,7 +111,8 @@ const Navbar = () => {
                   onClick={() => setIsChaptersOpen(!isChaptersOpen)}
                   aria-expanded={isChaptersOpen}
                 >
-                  <span>Quick Read</span>
+                  <i className="ri-book-open-line"></i>
+                  <span>{t("nav_quick_read")}</span>
                   <i
                     className={`ri-arrow-down-s-line ${
                       isChaptersOpen ? "rotate" : ""
@@ -109,7 +123,7 @@ const Navbar = () => {
                 {isChaptersOpen && (
                   <div className="chapters-dropdown">
                     <div className="dropdown-header">
-                      <span>उपलब्ध अध्याय / Available Chapters</span>
+                      <span>{t("nav_available_chapters")}</span>
                     </div>
 
                     {chapters.map((ch) => {
@@ -123,14 +137,14 @@ const Navbar = () => {
                           <div className="chapter-num">{ch.number}</div>
                           <div className="chapter-info">
                             <div className="chapter-title">
-                              {ch.hindiTitle}
+                              {t(ch.titleKey)}
                             </div>
                             <div className="chapter-sub">
-                              Chapter {ch.number} • {ch.title}
+                              {t(ch.subKey)}
                             </div>
                           </div>
                           <span className="chapter-shlok-count">
-                            {ch.shlokas} श्लोक
+                            {ch.shlokas} {t("verses_suffix")}
                           </span>
                           <i className="ri-arrow-right-line arrow"></i>
                         </Link>
@@ -142,11 +156,60 @@ const Navbar = () => {
                         <i className="ri-book-read-line"></i>
                       </div>
                       <div className="chapter-info">
-                        <div className="chapter-title">सभी 18 अध्याय देखें</div>
-                        <div className="chapter-sub">View All 18 Chapters</div>
+                        <div className="chapter-title">{t("nav_all_18_chapters")}</div>
+                        <div className="chapter-sub">18 Chapters • 700 Shlokas</div>
                       </div>
                       <i className="ri-arrow-right-line arrow"></i>
                     </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Language Switcher Dropdown */}
+              <div
+                className="lang-dropdown-wrapper"
+                onMouseEnter={() => setIsLangOpen(true)}
+                onMouseLeave={() => setIsLangOpen(false)}
+              >
+                <button
+                  className="lang-selector-btn"
+                  onClick={() => setIsLangOpen(!isLangOpen)}
+                  aria-expanded={isLangOpen}
+                  title="Select Language / भाषा चुनें / భాషను ఎంచుకోండి"
+                >
+                  <i className="ri-global-line"></i>
+                  <span className="lang-flag">{currentLangObj.flag}</span>
+                  <span className="lang-code-text">{currentLangObj.label}</span>
+                  <i
+                    className={`ri-arrow-down-s-line ${
+                      isLangOpen ? "rotate" : ""
+                    }`}
+                  ></i>
+                </button>
+
+                {isLangOpen && (
+                  <div className="lang-menu">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        className={`lang-option ${
+                          language === lang.code ? "active" : ""
+                        }`}
+                        onClick={() => {
+                          setLanguage(lang.code);
+                          setIsLangOpen(false);
+                        }}
+                      >
+                        <span className="lang-option-flag">{lang.flag}</span>
+                        <div className="lang-option-text">
+                          <span className="lang-native">{lang.nativeName}</span>
+                          <span className="lang-english">({lang.label})</span>
+                        </div>
+                        {language === lang.code && (
+                          <i className="ri-check-line lang-check"></i>
+                        )}
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
@@ -178,8 +241,8 @@ const Navbar = () => {
         <div className="mobile-menu">
           <div className="mobile-header">
             <div className="mobile-brand">
-              <span className="mobile-title">Bhagavad Gita</span>
-              <span className="mobile-tagline">श्रीमद्भगवद्गीता ज्ञान</span>
+              <span className="mobile-title">{t("logo_title")}</span>
+              <span className="mobile-tagline">{t("logo_subtitle")}</span>
             </div>
             <button
               className="mobile-close-btn"
@@ -190,10 +253,31 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="mobile-section-title">Navigation</div>
+          {/* Language Selector in Mobile Menu */}
+          <div className="mobile-lang-section">
+            <span className="mobile-section-title">
+              <i className="ri-global-line"></i> {t("nav_language")}
+            </span>
+            <div className="mobile-lang-pills">
+              {languages.map((l) => (
+                <button
+                  key={l.code}
+                  className={`mobile-lang-pill ${
+                    language === l.code ? "active" : ""
+                  }`}
+                  onClick={() => setLanguage(l.code)}
+                >
+                  <span>{l.flag}</span>
+                  <span>{l.nativeName}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="mobile-section-title">{t("mobile_nav_title")}</div>
           {navLinks.map((link) => (
             <Link
-              key={link.name}
+              key={link.path}
               to={link.path}
               className={`mobile-link ${
                 location.pathname === link.path ? "active" : ""
@@ -201,11 +285,10 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <span>{link.name}</span>
-              <span className="mobile-link-hindi">{link.hindi}</span>
             </Link>
           ))}
 
-          <div className="mobile-divider">अध्याय पढ़ें / Read Chapters</div>
+          <div className="mobile-divider">{t("mobile_chapters_title")}</div>
           {chapters.map((ch) => {
             const isActive = location.pathname === ch.path;
             return (
@@ -217,10 +300,12 @@ const Navbar = () => {
               >
                 <span className="mobile-ch-num">{ch.number}</span>
                 <div className="mobile-ch-text">
-                  <span className="mobile-ch-hindi">{ch.hindiTitle}</span>
-                  <span className="mobile-ch-eng">Chapter {ch.number}: {ch.title}</span>
+                  <span className="mobile-ch-hindi">{t(ch.titleKey)}</span>
+                  <span className="mobile-ch-eng">{t(ch.subKey)}</span>
                 </div>
-                <span className="mobile-shlok-badge">{ch.shlokas} श्लोक</span>
+                <span className="mobile-shlok-badge">
+                  {ch.shlokas} {t("verses_suffix")}
+                </span>
               </Link>
             );
           })}
@@ -231,7 +316,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <i className="ri-list-unordered"></i>
-            <span>सभी 18 अध्याय देखें (All Chapters)</span>
+            <span>{t("nav_all_18_chapters")}</span>
           </Link>
         </div>
       )}

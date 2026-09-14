@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import "../../styles/shlokCard.css";
 
 interface ShlokCardProps {
@@ -26,6 +27,7 @@ const ShlokCard = ({
   globalLang = "both",
   fontScale = "normal",
 }: ShlokCardProps) => {
+  const { t } = useLanguage();
   const [lang, setLang] = useState<"both" | "hindi" | "english">(globalLang);
   const [isCopied, setIsCopied] = useState(false);
 
@@ -72,11 +74,11 @@ const ShlokCard = ({
         <button
           className={`shlok-copy-btn ${isCopied ? "copied" : ""}`}
           onClick={handleCopy}
-          title="श्लोक और अर्थ कॉपी करें / Copy Shlok"
+          title="Copy Shlok"
           aria-label="Copy shlok and meaning"
         >
           <i className={isCopied ? "ri-check-line" : "ri-file-copy-line"}></i>
-          <span>{isCopied ? "कॉपी हो गया! / Copied" : "कॉपी करें / Copy"}</span>
+          <span>{isCopied ? t("btn_copied") : t("btn_copy")}</span>
         </button>
       </div>
 

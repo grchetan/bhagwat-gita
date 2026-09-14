@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import "../../styles/shlokNavigation.css";
 
 interface ShlokNavigationProps {
@@ -15,6 +16,7 @@ const ShlokNavigation = ({
   const [selectedShlok, setSelectedShlok] = useState(currentShlok);
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const [filterQuery, setFilterQuery] = useState("");
+  const { t } = useLanguage();
 
   useEffect(() => {
     setSelectedShlok(currentShlok);
@@ -49,7 +51,7 @@ const ShlokNavigation = ({
       {/* Header with View Toggle */}
       <div className="shlok-header">
         <div className="shlok-header-top">
-          <h3>श्लोक सूची / Shlokas</h3>
+          <h3>{t("shlokas_list")}</h3>
           <div className="view-mode-toggle">
             <button
               className={`mode-btn ${viewMode === "list" ? "active" : ""}`}
@@ -75,7 +77,7 @@ const ShlokNavigation = ({
           <i className="ri-search-line filter-icon"></i>
           <input
             type="text"
-            placeholder="श्लोक खोजें / Filter..."
+            placeholder={t("search_shlok_placeholder", { total: totalShlokas })}
             value={filterQuery}
             onChange={(e) => setFilterQuery(e.target.value)}
             className="nav-filter-input"
@@ -104,14 +106,16 @@ const ShlokNavigation = ({
               className={`shlok-item ${selectedShlok === number ? "active" : ""}`}
             >
               <div className="shlok-circle">{number}</div>
-              <span>श्लोक {number}</span>
+              <span>
+                {t("shlok_prefix")} {number}
+              </span>
               {selectedShlok === number && (
                 <i className="ri-arrow-right-line arrow"></i>
               )}
             </button>
           ))}
           {filteredNumbers.length === 0 && (
-            <div className="no-shlok-found">कोई श्लोक नहीं मिला</div>
+            <div className="no-shlok-found">{t("no_shlok_found")}</div>
           )}
         </div>
       ) : (
@@ -123,25 +127,25 @@ const ShlokNavigation = ({
               className={`shlok-grid-btn ${
                 selectedShlok === number ? "active" : ""
               }`}
-              title={`Shlok ${number}`}
+              title={`${t("shlok_prefix")} ${number}`}
             >
               {number}
             </button>
           ))}
           {filteredNumbers.length === 0 && (
-            <div className="no-shlok-found">कोई श्लोक नहीं मिला</div>
+            <div className="no-shlok-found">{t("no_shlok_found")}</div>
           )}
         </div>
       )}
 
       {/* Quick Jump Dropdown */}
       <div className="quick-jump">
-        <label>सीधा चयन / Quick Jump</label>
+        <label>{t("quick_jump")}</label>
         <select value={selectedShlok} onChange={handleQuickJump}>
-          <option value="">श्लोक चुनें / Select...</option>
+          <option value="">{t("select_shlok_dropdown")}</option>
           {allNumbers.map((number) => (
             <option key={number} value={number}>
-              श्लोक {number}
+              {t("shlok_prefix")} {number}
             </option>
           ))}
         </select>

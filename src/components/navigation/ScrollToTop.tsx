@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import "../../styles/scrollToTop.css";
 
 const ScrollToTop = () => {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -45,7 +47,7 @@ const ScrollToTop = () => {
       className={`scroll-to-top-btn ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
       aria-label="Scroll to top of page"
-      title="वापस ऊपर जाएं / Scroll to top"
+      title={t("scroll_to_top_tooltip")}
     >
       <svg className="progress-ring" viewBox="0 0 52 52">
         <circle
@@ -69,7 +71,7 @@ const ScrollToTop = () => {
       </svg>
       <i className="ri-arrow-up-line scroll-icon"></i>
       <span className="scroll-tooltip">
-        शीर्ष पर जाएं {Math.round(scrollProgress)}%
+        {t("scroll_to_top_tooltip")} {Math.round(scrollProgress)}%
       </span>
     </button>
   );
