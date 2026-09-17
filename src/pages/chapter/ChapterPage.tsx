@@ -6,6 +6,7 @@ import { useLanguage, type Language } from "../../context/LanguageContext";
 import { chapter1Shlokas, type Shlok } from "../../data/chapter1";
 import { chapter2Shlokas } from "../../data/chapter2";
 import { chapter3Shlokas } from "../../data/chapter3";
+import { chapter4Shlokas } from "../../data/chapter4";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -126,6 +127,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 43,
     shlokas: chapter3Shlokas,
+  },
+  "4": {
+    number: 4,
+    titleKey: "ch4_title",
+    subKey: "ch4_subtitle",
+    sanskritTitle: "ज्ञान कर्म संन्यास योग",
+    englishTitle: "Jnana Karma Sanyasa Yoga",
+    introduction:
+      "भगवद्गीता का चतुर्थ अध्याय 'ज्ञान कर्म संन्यास योग' दिव्य ज्ञान और कर्म के संन्यास का रहस्य उद्घाटित करता है। भगवान श्री कृष्ण यहाँ अवतार के उद्देश्य, चतुर्वर्ण व्यवस्था, कर्म-अकर्म-विकर्म के सूक्ष्म भेद और ज्ञान रूपी अग्नि द्वारा समस्त पापों व कर्म बंधनों के भस्म होने का उपदेश देते हैं। || The fourth chapter of the Bhagavad Gita, 'Jnana Karma Sanyasa Yoga', reveals the transcendental science of divine wisdom and renunciation of action. Sri Krishna expounds the purpose of divine incarnations (Avatara), the fourfold social order based on qualities and work, the subtle distinctions between action, inaction, and forbidden action, and how the blazing fire of spiritual wisdom consumes all karmic reactions.",
+    keyThemes: {
+      en: [
+        "The primordial lineage of Yoga and the eternal Guru-Shishya Parampara.",
+        "The divine nature of Lord Krishna's birth and deeds (Janma Karma Cha Me Divyam).",
+        "The subtle distinctions between Action (Karma), Inaction (Akarma), and Forbidden Action (Vikarma).",
+        "The blazing fire of transcendental knowledge that burns all karmic reactions to ashes (Jnanagnih Sarva-karmani)."
+      ],
+      hi: [
+        "योग की सनातन परंपरा और गुरु-शिष्य परंपरा का अविनाशी चक्र।",
+        "भगवान के दिव्य जन्म और कर्म का रहस्य (जन्म कर्म च मे दिव्यम्)।",
+        "कर्म, अकर्म और विकर्म का सूक्ष्म दार्शनिक अंतर।",
+        "ज्ञान रूपी पवित्र अग्नि जो समस्त कर्मों और पापों को भस्म कर देती है (ज्ञानाग्निः सर्वकर्माणि)।"
+      ],
+      te: [
+        "సనాతన యోగ పరంపర మరియు గురు-శిష్య సంబంధం.",
+        "భగవంతుని దివ్య జన్మ మరియు కర్మల రహస్యం (జన్మ కర్మ చ మే దివ్యమ్).",
+        "కర్మ, అకర్మ మరియు వికర్మల మధ్య సూక్ష్మ భేదం.",
+        "సమస్త కర్మ బంధాలను భస్మం చేసే దివ్య జ్ఞానాగ్ని (జ్ఞానాగ్నిః సర్వకర్మాణి)."
+      ],
+    },
+    totalShlokas: 42,
+    shlokas: chapter4Shlokas,
   },
 };
 
@@ -258,6 +290,13 @@ const ChapterPage = () => {
             >
               <span className="pill-num">3</span>
               <span>{t("ch3_title")}</span>
+            </Link>
+                        <Link
+              to="/chapter/4"
+              className={`chapter-pill ${chapter.number === 4 ? "active" : ""}`}
+            >
+              <span className="pill-num">4</span>
+              <span>{t("ch4_title")}</span>
             </Link>
             <Link to="/chapters" className="chapter-pill all-pill">
               <i className="ri-list-unordered"></i>
@@ -489,7 +528,7 @@ const ChapterPage = () => {
               <Link to="/chapters" className="btn outline">
                 {t("all_18_chapters_footer")}
               </Link>
-              {chapter.number < 3 && (
+              {chapter.number < 4 && (
                 <Link
                   to={`/chapter/${chapter.number + 1}`}
                   className="btn dark"

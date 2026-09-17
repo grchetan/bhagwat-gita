@@ -25,6 +25,13 @@ const HomePage = () => {
       shlokas: 43,
       description: "The philosophy of selfless action and duty",
     },
+    {
+      number: 4,
+      title: "Jnana Karma Sanyasa Yoga",
+      subtitle: "Transcendental Knowledge",
+      shlokas: 42,
+      description: "Divine wisdom and the science of renunciation of action",
+    },
   ];
 
   return (

@@ -6,7 +6,7 @@ const ChaptersPage = () => {
     { number: 1, title: "Arjuna Vishada Yoga", subtitle: "The Distress of Arjuna", shlokas: 47, available: true },
     { number: 2, title: "Sankhya Yoga", subtitle: "Transcendental Knowledge", shlokas: 72, available: true },
     { number: 3, title: "Karma Yoga", subtitle: "Path of Action", shlokas: 43, available: true },
-    { number: 4, title: "Jnana Karma Sanyasa Yoga", subtitle: "Transcendental Knowledge", shlokas: 42, available: false },
+    { number: 4, title: "Jnana Karma Sanyasa Yoga", subtitle: "Transcendental Knowledge", shlokas: 42, available: true },
     { number: 5, title: "Karma Sanyasa Yoga", subtitle: "Action and Renunciation", shlokas: 29, available: false },
     { number: 6, title: "Atma Samyama Yoga", subtitle: "The Science of Self Realization", shlokas: 47, available: false },
     { number: 7, title: "Paramahamsa Vijnana Yoga", subtitle: "Knowledge of the Ultimate Truth", shlokas: 30, available: false },
