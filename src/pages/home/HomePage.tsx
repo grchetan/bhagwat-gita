@@ -32,6 +32,13 @@ const HomePage = () => {
       shlokas: 42,
       description: "Divine wisdom and the science of renunciation of action",
     },
+    {
+      number: 5,
+      title: "Karma Sanyasa Yoga",
+      subtitle: "Action and Renunciation",
+      shlokas: 29,
+      description: "The path of renunciation of action and true inner detachment",
+    },
   ];
 
   return (

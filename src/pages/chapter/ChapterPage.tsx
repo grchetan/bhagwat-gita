@@ -7,6 +7,7 @@ import { chapter1Shlokas, type Shlok } from "../../data/chapter1";
 import { chapter2Shlokas } from "../../data/chapter2";
 import { chapter3Shlokas } from "../../data/chapter3";
 import { chapter4Shlokas } from "../../data/chapter4";
+import { chapter5Shlokas } from "../../data/chapter5";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -158,6 +159,40 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 42,
     shlokas: chapter4Shlokas,
+  },
+  "5": {
+    number: 5,
+    titleKey: "ch5_title",
+    subKey: "ch5_subtitle",
+    sanskritTitle: "कर्म संन्यास योग",
+    englishTitle: "Karma Sanyasa Yoga",
+    introduction:
+      "पांचवें अध्याय में अर्जुन पुनः संन्यास (ज्ञान मार्ग) और कर्मयोग (निष्काम कर्म) की तुलना करते हुए श्री कृष्ण से पूछते हैं कि दोनों में कौन सा मार्ग अधिक श्रेयस्कर है। भगवान श्री कृष्ण स्पष्ट करते हैं कि यद्यपि दोनों का गंतव्य एक ही मोक्ष है, किंतु साधन के रूप में कर्मयोग अधिक सुगम और श्रेष्ठ है। वे बताते हैं कि कर्म करते हुए भी अनासक्त भाव से कैसे ब्रह्म-निर्वाण और परम शांति प्राप्त की जा सकती है।",
+    keyThemes: {
+      en: [
+        "Decisive synthesis between the path of action (Karma Yoga) and renunciation (Sannyasa).",
+        "The true Sannyasi: Emotional freedom through transcending craving and aversion (Nirdvandva).",
+        "Equivalence of Sankhya and Yoga: Diverse roads culminating in the identical summit of liberation.",
+        "The lotus leaf analogy: Living untainted in the world by offering all actions to the Supreme.",
+        "Attainment of Brahmanirvana and inner serenity through self-control and meditation.",
+      ],
+      hi: [
+        "कर्म-संन्यास और निष्काम कर्मयोग का दिव्य समन्वय व तुलना।",
+        "नित्य संन्यासी का वास्तविक स्वरूप: राग-द्वेष से परे होकर सहज मुक्ति।",
+        "सांख्य और कर्मयोग का एकत्व: दोनों मार्गों का अंतिम फल एक ही परमात्मा की प्राप्ति।",
+        "कमल-पत्र की भाँति संसार में रहते हुए भी समस्त कर्मों के बंधनों से पूर्ण निर्लेप रहना।",
+        "इंद्रिय-संयम और आत्म-स्थिति द्वारा ब्रह्म-निर्वाण व परम शांति की प्राप्ति।",
+      ],
+      te: [
+        "కర్మ సన్న్యాసము మరియు నిష్కామ కర్మయోగం మధ్య సమన్వయం.",
+        "నిత్య సన్న్యాసి లక్షణాలు: రాగద్వేషాలకు అతీతమైన మనస్సు.",
+        "సాంఖ్య మరియు కర్మయోగాల ఏకత్వం: ఒకే ముక్తి స్థానం.",
+        "తామరాకుపై నీటిబొట్టులా సంసార బంధాలకు అంటని జీవన విధానం.",
+        "ఇంద్రియ నిగ్రహం మరియు ఆత్మస్థితి ద్వారా బ్రహ్మనిర్వాణ ప్రాప్తి.",
+      ],
+    },
+    totalShlokas: 29,
+    shlokas: chapter5Shlokas,
   },
 };
 

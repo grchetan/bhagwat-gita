@@ -31,6 +31,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch3_subtitle: "Path of Selfless Action",
     ch4_title: "Jnana Karma Sanyasa Yoga",
     ch4_subtitle: "Transcendental Knowledge",
+    ch5_title: "Karma Sanyasa Yoga",
+    ch5_subtitle: "Action and Renunciation",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -105,6 +107,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch3_subtitle: "सृष्टि का यज्ञ चक्र व लोक-संग्रह",
     ch4_title: "ज्ञान कर्म संन्यास योग",
     ch4_subtitle: "दिव्य ज्ञान एवं कर्म संन्यास",
+    ch5_title: "कर्म संन्यास योग",
+    ch5_subtitle: "कर्म एवं संन्यास का समन्वय",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -179,6 +183,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch3_subtitle: "నిష్కామ కర్మ మార్గం మరియు లోకసంగ్రహం",
     ch4_title: "జ్ఞాన కర్మ సన్యాస యోగము",
     ch4_subtitle: "దివ్య జ్ఞానము మరియు కర్మ సన్యాసము",
+    ch5_title: "కర్మ సన్న్యాస యోగము",
+    ch5_subtitle: "కర్మ మరియు సన్న్యాస సమన్వయము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
