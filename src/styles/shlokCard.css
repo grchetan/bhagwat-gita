@@ -322,88 +322,138 @@
 
 @media (max-width: 768px) {
   .shlok-card {
-    padding: 36px 20px 24px 20px;
-    margin-bottom: 40px;
+    padding: 34px 18px 22px 18px;
+    margin-bottom: 32px;
     border-radius: 16px;
   }
 
   .shlok-badge {
-    top: -20px;
-    left: 20px;
-    width: 42px;
-    height: 42px;
+    top: -18px;
+    left: 18px;
+    width: 38px;
+    height: 38px;
   }
 
   .shlok-badge span {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 
   .sanskrit-box {
-    margin-top: 16px;
-    padding: 18px 20px;
+    margin-top: 14px;
+    padding: 16px 14px;
     border-radius: 12px;
   }
 
   .sanskrit-text {
-    font-size: 17px;
-    line-height: 1.75;
+    font-size: 19px;
+    line-height: 1.85;
+    word-break: break-word;
   }
 
   .transliteration {
-    font-size: 14px;
+    font-size: 14.5px;
+    line-height: 1.65;
     margin-bottom: 16px;
   }
 
   .word-meanings {
-    padding: 12px 16px;
+    padding: 12px 14px;
     border-radius: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .word-meanings-text {
-    font-size: 13.5px;
-    line-height: 1.65;
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .lang-toggle {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     gap: 6px;
   }
 
   .lang-toggle button {
     padding: 6px 14px;
-    font-size: 11px;
+    font-size: 11.5px;
+    border-radius: 16px;
   }
 
   .meaning-hindi,
   .meaning-english {
-    padding: 16px 18px;
-    border-radius: 10px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 14px;
   }
 
   .meaning-hindi .explanation {
-    font-size: 15.5px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.75;
   }
 
   .meaning-english .explanation {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .life-lesson {
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-top: 16px;
+  }
+
+  .life-lesson-text {
     font-size: 14.5px;
     line-height: 1.7;
   }
 
-  .life-lesson {
-    padding: 16px 18px;
-    border-radius: 12px;
-    margin-top: 18px;
-  }
-
-  .life-lesson-text {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-
   .shlok-image img {
-    height: 200px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shlok-card {
+    padding: 30px 12px 18px 12px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+  }
+
+  .shlok-badge {
+    top: -16px;
+    left: 12px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .shlok-badge span {
+    font-size: 12px;
+  }
+
+  .sanskrit-box {
+    padding: 12px 10px;
+  }
+
+  .sanskrit-text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .word-meanings {
+    padding: 10px 12px;
+  }
+
+  .meaning-hindi,
+  .meaning-english,
+  .life-lesson {
+    padding: 12px 12px;
+  }
+
+  .meaning-hindi .explanation {
+    font-size: 15px;
+  }
+
+  .meaning-english .explanation {
+    font-size: 14.5px;
   }
 }
 

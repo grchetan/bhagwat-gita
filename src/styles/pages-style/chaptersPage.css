@@ -203,3 +203,47 @@
 .cta-btn:hover {
   transform: scale(1.05);
 }
+
+/* =====================================================
+   🎯 MOBILE RESPONSIVENESS
+   ===================================================== */
+@media (max-width: 768px) {
+  .chapters-page {
+    padding-top: 66px;
+  }
+
+  .chapters-container {
+    padding: 24px 16px;
+  }
+
+  .chapters-header {
+    margin-bottom: 36px;
+  }
+
+  .chapters-header h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .chapters-header p {
+    font-size: 15px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .chapter-card {
+    padding: 18px 16px;
+  }
+
+  .cta {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+
+  .cta h3 {
+    font-size: 24px;
+  }
+}

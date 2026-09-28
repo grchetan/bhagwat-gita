@@ -333,6 +333,13 @@ const ChapterPage = () => {
               <span className="pill-num">4</span>
               <span>{t("ch4_title")}</span>
             </Link>
+            <Link
+              to="/chapter/5"
+              className={`chapter-pill ${chapter.number === 5 ? "active" : ""}`}
+            >
+              <span className="pill-num">5</span>
+              <span>{t("ch5_title")}</span>
+            </Link>
             <Link to="/chapters" className="chapter-pill all-pill">
               <i className="ri-list-unordered"></i>
               <span>{t("all_chapters_btn")}</span>

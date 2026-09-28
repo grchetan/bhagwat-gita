@@ -367,7 +367,41 @@
   }
 
   .mobile-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    font-size: 24px;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .navbar-inner {
+    height: 62px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo-title {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .logo-subtitle {
+    font-size: 10.5px;
   }
 
   .navbar-scrolled {
