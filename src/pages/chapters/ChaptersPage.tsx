@@ -8,7 +8,7 @@ const ChaptersPage = () => {
     { number: 3, title: "Karma Yoga", subtitle: "Path of Action", shlokas: 43, available: true },
     { number: 4, title: "Jnana Karma Sanyasa Yoga", subtitle: "Transcendental Knowledge", shlokas: 42, available: true },
     { number: 5, title: "Karma Sanyasa Yoga", subtitle: "Action and Renunciation", shlokas: 29, available: true },
-    { number: 6, title: "Atma Samyama Yoga", subtitle: "The Science of Self Realization", shlokas: 47, available: false },
+    { number: 6, title: "Atma Samyama Yoga", subtitle: "The Science of Self Realization", shlokas: 47, available: true },
     { number: 7, title: "Paramahamsa Vijnana Yoga", subtitle: "Knowledge of the Ultimate Truth", shlokas: 30, available: false },
     { number: 8, title: "Aksara Parabrahma Yoga", subtitle: "Attaining the Supreme", shlokas: 28, available: false },
     { number: 9, title: "Raja Vidya Yoga", subtitle: "The Most Confidential Knowledge", shlokas: 34, available: false },

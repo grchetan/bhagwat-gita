@@ -8,6 +8,7 @@ import { chapter2Shlokas } from "../../data/chapter2";
 import { chapter3Shlokas } from "../../data/chapter3";
 import { chapter4Shlokas } from "../../data/chapter4";
 import { chapter5Shlokas } from "../../data/chapter5";
+import { chapter6Shlokas } from "../../data/chapter6";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -194,6 +195,43 @@ const chapterData: Record<string, ChapterData> = {
     totalShlokas: 29,
     shlokas: chapter5Shlokas,
   },
+  "6": {
+    number: 6,
+    titleKey: "ch6_title",
+    subKey: "ch6_subtitle",
+    sanskritTitle: "आत्मसंयम योग",
+    englishTitle: "Dhyana Yoga / Atma Samyama Yoga",
+    introduction:
+      "भगवद्गीता का छठा अध्याय 'आत्मसंयम योग' (जिसे 'ध्यान योग' भी कहा जाता है) मन की चंचलता को जीतकर आत्म-साक्षात्कार प्राप्त करने का व्यावहारिक विज्ञान है। भगवान श्री कृष्ण यहाँ ध्यान की संपूर्ण विधि—उचित आसन, एकाग्रता, आहार-विहार का नियमन, और प्राणायाम—विस्तार से समझाते हैं। वे अर्जुन को सिखाते हैं कि मनुष्य का अपना मन ही उसका सबसे बड़ा मित्र है और असंयमित होने पर वही उसका सबसे बड़ा शत्रु है। जब अर्जुन मन की चंचलता (वायु की भाँति रोकना कठिन) का प्रश्न उठाते हैं, तो श्री कृष्ण 'अभ्यास' और 'वैराग्य' द्वारा मन को वश में करने का मार्ग बताते हैं। || The sixth chapter of the Bhagavad Gita, 'Atma Samyama Yoga' (also known as 'Dhyana Yoga'), reveals the practical science of mastering the restless mind to attain divine self-realization. Sri Krishna elucidates the complete mechanics of meditation—proper posture, concentration, moderation in food and sleep, and breath harmony. He teaches that an individual's own mind is their greatest friend when disciplined, and deadliest enemy when uncontrolled. When Arjuna questions the uncontrollable turbulence of the mind, the Lord provides the ultimate solution: persistent practice (Abhyasa) and dispassion (Vairagya).",
+    keyThemes: {
+      en: [
+        "The mind as your greatest friend when disciplined, and worst enemy when uncontrolled.",
+        "The definition of a true Yogi: renouncing selfish mental projections (Sankalpa).",
+        "The ascending stages of Yoga: Selfless action (Karma) for aspirants and serenity (Shama) for the established.",
+        "The practical mechanics of meditation: posture, sacred environment, and breath harmony.",
+        "Moderation in living: Yoga is not for one who eats or sleeps too much, nor too little.",
+        "Conquering the restless mind through consistent practice (Abhyasa) and dispassion (Vairagya).",
+      ],
+      hi: [
+        "संयमित मन ही मनुष्य का सबसे बड़ा मित्र है और असंयमित मन सबसे बड़ा शत्रु।",
+        "सच्चे योगी की पहचान: स्वार्थपूर्ण संकल्पों और कामनाओं का संपूर्ण संन्यास।",
+        "योग की दो अवस्थाएं: साधक के लिए निष्काम कर्म और सिद्ध योगी के लिए शम (मानसिक शांति)।",
+        "ध्यान की व्यावहारिक प्रक्रिया: पवित्र स्थान, सम आसन और दृष्टि की एकाग्रता।",
+        "जीवन में सम्यक संतुलन: अति-भोजन या उपवास, और अति-निद्रा या जागरण से योग सिद्ध नहीं होता।",
+        "अभ्यास और वैराग्य द्वारा चंचल मन पर विजय प्राप्त करने का अमोघ उपाय।",
+      ],
+      te: [
+        "నిగ్రహించబడిన మనస్సు పరమ మిత్రుడు, నియంత్రణ లేని మనస్సు పరమ శత్రువు.",
+        "నిజమైన యోగి లక్షణం: స్వార్థ సంకల్పాల మరియు కోరికల త్యాగం.",
+        "యోగ సాధనలో రెండు దశలు: సాధకుడికి నిష్కామ కర్మ, సిద్ధుడికి మనశ్శాంతి (శమము).",
+        "ధ్యాన సాధన విధానం: పవిత్ర ప్రదేశం, సరైన ఆసనము మరియు దృష్టి ఏకాగ్రత.",
+        "జీవితంలో సమతుల్యత: అతిగా తినడం లేదా నిద్రపోవడం యోగానికి అనుకూలం కాదు.",
+        "అభ్యాసము మరియు వైరాగ్యము ద్వారా చంచల మనస్సును వశపరుచుకోవడం.",
+      ],
+    },
+    totalShlokas: 47,
+    shlokas: chapter6Shlokas,
+  },
 };
 
 const ChapterPage = () => {
@@ -339,6 +377,13 @@ const ChapterPage = () => {
             >
               <span className="pill-num">5</span>
               <span>{t("ch5_title")}</span>
+            </Link>
+            <Link
+              to="/chapter/6"
+              className={`chapter-pill ${chapter.number === 6 ? "active" : ""}`}
+            >
+              <span className="pill-num">6</span>
+              <span>{t("ch6_title")}</span>
             </Link>
             <Link to="/chapters" className="chapter-pill all-pill">
               <i className="ri-list-unordered"></i>
