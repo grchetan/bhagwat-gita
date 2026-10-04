@@ -30,6 +30,7 @@ const ShlokCard = ({
   const { t } = useLanguage();
   const [lang, setLang] = useState<"both" | "hindi" | "english">(globalLang);
   const [isCopied, setIsCopied] = useState(false);
+  const [showWordMeanings, setShowWordMeanings] = useState(false);
 
   // Sync with global language filter when changed by parent
   useEffect(() => {
@@ -92,13 +93,28 @@ const ShlokCard = ({
         <p className="transliteration">{transliteration}</p>
       )}
 
-      {/* Word Meanings Breakdown */}
+      {/* Word Meanings Breakdown (Collapsible Accordion) */}
       {wordMeanings && (
-        <div className="word-meanings">
-          <div className="word-meanings-header">
-            <span>📜 शब्दार्थ / Word Meanings</span>
-          </div>
-          <p className="word-meanings-text">{wordMeanings}</p>
+        <div className={`word-meanings ${showWordMeanings ? "expanded" : "collapsed"}`}>
+          <button
+            type="button"
+            className="word-meanings-toggle"
+            onClick={() => setShowWordMeanings(!showWordMeanings)}
+            aria-expanded={showWordMeanings}
+            aria-label="Toggle Sanskrit word by word meanings"
+          >
+            <span className="word-meanings-title">
+              📜 शब्दार्थ / Word Meanings
+            </span>
+            <span className="word-meanings-pill">
+              {showWordMeanings ? "छिपाएं / Hide ▲" : "देखें / View ▼"}
+            </span>
+          </button>
+          {showWordMeanings && (
+            <div className="word-meanings-content">
+              <p className="word-meanings-text">{wordMeanings}</p>
+            </div>
+          )}
         </div>
       )}
 

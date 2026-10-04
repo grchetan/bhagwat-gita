@@ -615,7 +615,7 @@ const ChapterPage = () => {
               <Link to="/chapters" className="btn outline">
                 {t("all_18_chapters_footer")}
               </Link>
-              {chapter.number < 4 && (
+              {chapterData[(chapter.number + 1).toString()] && (
                 <Link
                   to={`/chapter/${chapter.number + 1}`}
                   className="btn dark"

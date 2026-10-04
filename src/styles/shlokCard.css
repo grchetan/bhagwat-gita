@@ -84,51 +84,101 @@
   letter-spacing: 0.01em;
 }
 
-/* ── Sanskrit Word Breakdowns (Gold/Cream Tint) ─────── */
+/* ── Sanskrit Word Breakdowns (Collapsible Accordion) ─────── */
 .word-meanings {
   margin-top: 10px;
-  margin-bottom: 24px;
-  background: linear-gradient(135deg, rgba(250, 245, 230, 0.3) 0%, rgba(251, 235, 238, 0.3) 100%);
-  border: 1px dashed rgba(212, 175, 55, 0.6);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(250, 245, 230, 0.45) 0%, rgba(254, 243, 199, 0.3) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 14px;
-  padding: 16px 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.word-meanings-header {
-  margin-bottom: 8px;
+.word-meanings.expanded {
+  border-color: rgba(212, 175, 55, 0.7);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.08);
 }
 
-.word-meanings-header span {
+.word-meanings-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.word-meanings-toggle:hover {
+  background: rgba(212, 175, 55, 0.12);
+}
+
+.word-meanings-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-ui);
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: var(--color-maroon);
+}
+
+.word-meanings-pill {
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--color-maroon-dark);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  transition: all 0.2s ease;
+}
+
+.word-meanings-toggle:hover .word-meanings-pill {
+  background: var(--color-saffron);
+  color: #ffffff;
+  border-color: var(--color-saffron);
+}
+
+.word-meanings-content {
+  padding: 8px 20px 18px 20px;
+  border-top: 1px dashed rgba(212, 175, 55, 0.4);
 }
 
 .word-meanings-text {
   font-family: var(--font-english);
   font-size: 14.5px;
-  line-height: 1.75;
+  line-height: 1.8;
   color: var(--color-maroon-dark);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 450;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
-/* ── Language Toggle Buttons ──────────────────────── */
+/* ── Language Toggle Buttons (Sleek Segmented Pill Control) ── */
 .lang-toggle {
-  display: flex;
-  gap: 8px;
-  margin: 12px 0 24px 0;
+  display: inline-flex;
+  gap: 6px;
+  margin: 8px 0 22px 0;
+  padding: 4px;
+  background: rgba(250, 245, 230, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 24px;
   flex-wrap: wrap;
 }
 
 .lang-toggle button {
-  padding: 8px 18px;
+  padding: 7px 16px;
   border-radius: 20px;
-  border: 1.5px solid rgba(212, 175, 55, 0.5);
-  background: var(--color-gold-light);
+  border: none;
+  background: transparent;
   color: var(--color-maroon);
   font-family: var(--font-ui);
   font-size: 12px;
@@ -136,20 +186,16 @@
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 6px rgba(92, 6, 18, 0.03);
 }
 
 .lang-toggle button:hover {
-  background: var(--color-saffron-light);
-  border-color: var(--color-saffron);
-  transform: translateY(-1px);
+  background: rgba(212, 175, 55, 0.25);
 }
 
 .lang-toggle button.active {
   background: linear-gradient(135deg, var(--color-saffron), var(--color-saffron-dark));
   color: #ffffff;
-  border-color: var(--color-saffron);
-  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.25);
+  box-shadow: 0 3px 10px rgba(230, 81, 0, 0.25);
 }
 
 /* ── Meaning Sections (Hindi & English Blocks) ────── */
@@ -199,9 +245,11 @@
 .meaning-hindi .explanation {
   font-family: var(--font-hindi);
   font-size: var(--size-hindi);
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--color-maroon-dark);
   font-weight: 500;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 /* English block — Lora */
@@ -224,9 +272,11 @@
 .meaning-english .explanation {
   font-family: var(--font-english);
   font-size: var(--size-english);
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--color-maroon-dark);
   font-weight: 450;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 /* ── Life Lesson Block (Golden Amber Theme) ────────── */
@@ -357,24 +407,42 @@
   }
 
   .word-meanings {
-    padding: 12px 14px;
-    border-radius: 10px;
+    padding: 0;
+    border-radius: 12px;
     margin-bottom: 16px;
   }
 
+  .word-meanings-toggle {
+    padding: 10px 14px;
+  }
+
+  .word-meanings-title {
+    font-size: 11.5px;
+  }
+
+  .word-meanings-pill {
+    font-size: 10.5px;
+    padding: 3px 10px;
+  }
+
+  .word-meanings-content {
+    padding: 6px 14px 14px 14px;
+  }
+
   .word-meanings-text {
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.7;
   }
 
   .lang-toggle {
     margin-bottom: 16px;
-    gap: 6px;
+    gap: 4px;
+    padding: 3px;
   }
 
   .lang-toggle button {
-    padding: 6px 14px;
-    font-size: 11.5px;
+    padding: 5px 12px;
+    font-size: 11px;
     border-radius: 16px;
   }
 
@@ -439,7 +507,7 @@
   }
 
   .word-meanings {
-    padding: 10px 12px;
+    padding: 0;
   }
 
   .meaning-hindi,
