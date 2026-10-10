@@ -9,6 +9,7 @@ import { chapter3Shlokas } from "../../data/chapter3";
 import { chapter4Shlokas } from "../../data/chapter4";
 import { chapter5Shlokas } from "../../data/chapter5";
 import { chapter6Shlokas } from "../../data/chapter6";
+import { chapter7Shlokas } from "../../data/chapter7";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -231,6 +232,40 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 47,
     shlokas: chapter6Shlokas,
+  },
+  "7": {
+    number: 7,
+    titleKey: "ch7_title",
+    subKey: "ch7_subtitle",
+    sanskritTitle: "ज्ञानविज्ञान योग",
+    englishTitle: "Jnana Vijnana Yoga",
+    introduction:
+      "भगवद्गीता का सातवाँ अध्याय 'ज्ञानविज्ञान योग' तत्वज्ञान (सैद्धांतिक सत्य) और विज्ञान (प्रत्यक्ष आत्म-अनुभूति) का अनुपम संगम है। भगवान श्री कृष्ण यहाँ अपनी दो प्रकृतियों—अपरा (आठ घटकों वाली भौतिक प्रकृति: भूमि, जल, अग्नि, वायु, आकाश, मन, बुद्धि, अहंकार) और परा (जीव शक्ति/चेतना)—का रहस्य खोलते हैं। वे बताते हैं कि जैसे धागे में मणियाँ पिरोई होती हैं, वैसे ही संपूर्ण ब्रह्मांड उन्हीं में ओत-प्रोत है। वे जल में रस, सूर्य-चंद्रमा में प्रभा, और ओंकार में शब्द हैं। भगवान यहाँ चार प्रकार के भक्तों (आर्त, जिज्ञासु, अर्थार्थी, ज्ञानी) का वर्णन करते हैं और अनन्य ज्ञानी भक्त को अपना ही स्वरूप बताते हैं। || The seventh chapter of the Bhagavad Gita, 'Jnana Vijnana Yoga' (The Yoga of Knowledge and Wisdom), reveals the mystery of the Absolute Truth and experiential divine realization. Sri Krishna explains His two energies—Apara Prakriti (the eightfold material energy: earth, water, fire, air, space, mind, intellect, and ego) and Para Prakriti (the spiritual energy of conscious souls). He declares that all existence is strung upon Him like pearls on a sacred thread. He identifies the four types of pious seekers—the distressed, the seeker of knowledge, the seeker of wealth, and the wise seer—and proclaims the wise, surrendered devotee as His very Self.",
+    keyThemes: {
+      en: [
+        "The dual energies of the Divine: Material nature (Apara Prakriti) and the living conscious soul (Para Prakriti).",
+        "Sri Krishna as the ultimate source, sustainer, and dissolver of the entire cosmic manifestation.",
+        "The Divine essence in all elements: The taste in water, the radiance of the sun, and the sacred Om in the Vedas.",
+        "Maya and the three Gunas: The divine illusory energy that is impossible to overcome without surrender.",
+        "The four types of seekers: The distressed, the seeker of wealth, the curious inquirer, and the wise devotee."
+      ],
+      hi: [
+        "भगवान की दोहरी प्रकृतियाँ: आठ तत्वों वाली अपरा (भौतिक) प्रकृति और परा (चेतन जीव) प्रकृति।",
+        "श्री कृष्ण ही संपूर्ण ब्रह्मांड के मूल उद्भव, पालनकर्ता और प्रलयकर्ता हैं (सूत्र में मणियों के समान)।",
+        "सृष्टि के समस्त तत्वों में परमात्मा का सार: जल में रस, सूर्य-चंद्र में प्रकाश, और वेदों में प्रणव (ॐ)।",
+        "त्रिगुणमयी दैवी माया: जिसे पार करना दुष्कर है, किंतु भगवान की शरण लेने पर सहज ही पार हो जाती है।",
+        "चार प्रकार के भक्त: आर्त (दुःखी), अर्थार्थी (इच्छुक), जिज्ञासु और ज्ञानी (जिसमें ज्ञानी भक्त भगवान को अत्यंत प्रिय है)।"
+      ],
+      te: [
+        "పరమాత్మ యొక్క ద్వంద్వ శక్తులు: అపరా ప్రకృతి (భౌతిక జగత్తు) మరియు పరా ప్రకృతి (జీవశక్తి).",
+        "సమస్త విశ్వానికి శ్రీకృష్ణుడే మూలకారణం, పోషకుడు మరియు లయకారుడు.",
+        "సృష్టిలోని ప్రతి వస్తువులో పరమాత్మ సారాంశం: నీటిలో రుచి, సూర్యచంద్రులలో కాంతి, వేదాలలో ఓంకారము.",
+        "త్రిగుణాత్మక దైవీ మాయ: భగవంతునికి ఆత్మసమర్పణ చేసినప్పుడే ఈ మాయను దాటగలము.",
+        "నాలుగు రకాల భక్తులు: ఆర్తుడు, అర్థార్థి, జిజ్ఞాసువు మరియు జ్ఞాని (జ్ఞాని భగవంతునికి అత్యంత ప్రియమైనవాడు)."
+      ],
+    },
+    totalShlokas: 30,
+    shlokas: chapter7Shlokas,
   },
 };
 

@@ -35,6 +35,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch5_subtitle: "Action and Renunciation",
     ch6_title: "Dhyana Yoga",
     ch6_subtitle: "The Science of Meditation",
+    ch7_title: "Jnana Vijnana Yoga",
+    ch7_subtitle: "Knowledge of the Ultimate Truth",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -113,6 +115,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch5_subtitle: "कर्म एवं संन्यास का समन्वय",
     ch6_title: "आत्मसंयम योग",
     ch6_subtitle: "ध्यान एवं आत्मसंयम का विज्ञान",
+    ch7_title: "ज्ञानविज्ञान योग",
+    ch7_subtitle: "परम सत्य और दिव्य ज्ञान का विज्ञान",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -191,6 +195,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch5_subtitle: "కర్మ మరియు సన్న్యాస సమన్వయము",
     ch6_title: "ఆత్మసంయమ యోగము",
     ch6_subtitle: "ధ్యానము మరియు ఆత్మనిగ్రహము",
+    ch7_title: "జ్ఞానవిజ్ఞాన యోగము",
+    ch7_subtitle: "పరమ సత్యము మరియు దివ్య జ్ఞానము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
