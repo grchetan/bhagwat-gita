@@ -37,6 +37,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch6_subtitle: "The Science of Meditation",
     ch7_title: "Jnana Vijnana Yoga",
     ch7_subtitle: "Knowledge of the Ultimate Truth",
+    ch8_title: "Akshara Brahma Yoga",
+    ch8_subtitle: "Attaining the Supreme",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -117,6 +119,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch6_subtitle: "ध्यान एवं आत्मसंयम का विज्ञान",
     ch7_title: "ज्ञानविज्ञान योग",
     ch7_subtitle: "परम सत्य और दिव्य ज्ञान का विज्ञान",
+    ch8_title: "अक्षरब्रह्म योग",
+    ch8_subtitle: "परम अविनाशी ब्रह्म और मोक्ष का मार्ग",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -197,6 +201,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch6_subtitle: "ధ్యానము మరియు ఆత్మనిగ్రహము",
     ch7_title: "జ్ఞానవిజ్ఞాన యోగము",
     ch7_subtitle: "పరమ సత్యము మరియు దివ్య జ్ఞానము",
+    ch8_title: "అక్షరబ్రహ్మ యోగము",
+    ch8_subtitle: "పరమ పద ప్రాప్తి మార్గము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",

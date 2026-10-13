@@ -10,6 +10,7 @@ import { chapter4Shlokas } from "../../data/chapter4";
 import { chapter5Shlokas } from "../../data/chapter5";
 import { chapter6Shlokas } from "../../data/chapter6";
 import { chapter7Shlokas } from "../../data/chapter7";
+import { chapter8Shlokas } from "../../data/chapter8";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -266,6 +267,40 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 30,
     shlokas: chapter7Shlokas,
+  },
+  "8": {
+    number: 8,
+    titleKey: "ch8_title",
+    subKey: "ch8_subtitle",
+    sanskritTitle: "अक्षरब्रह्म योग",
+    englishTitle: "Akshara Brahma Yoga",
+    introduction:
+      "भगवद्गीता का आठवाँ अध्याय 'अक्षरब्रह्म योग' जीवन, मृत्यु और परम मुक्ति (मोक्ष) के परम विज्ञान का अनावरण करता है। अर्जुन के सात प्रश्नों—ब्रह्म, अध्यात्म, कर्म, अधिभूत, अधिदैव, अधियज्ञ और मृत्यु के समय परमात्मा के स्मरण—का उत्तर देते हुए भगवान श्री कृष्ण समझाते हैं कि अंतकाल में मनुष्य जिस भाव का स्मरण करते हुए देह त्यागता है, उसी भाव को वह प्राप्त होता है ('यं यं वापि स्मरन्भावं')। अतः वे निरंतर 'मामनुस्मर युध्य च' (मेरा स्मरण करते हुए कर्तव्य-युद्ध करो) का अमर संदेश देते हैं। वे ओंकार (ॐ) की साधना, योगधारणा, और उत्तरायण-दक्षिणायन (शुक्ल और कृष्ण) दोनों मार्गों का आध्यात्मिक रहस्य प्रकट करते हैं। || The eighth chapter of the Bhagavad Gita, 'Akshara Brahma Yoga' (The Yoga of the Imperishable Absolute), unveils the profound science of life, death, and supreme spiritual liberation. Answering Arjuna’s seven inquiries regarding Brahman, Adhyatma, Karma, Adhibhuta, Adhidaiva, Adhiyajna, and consciousness at the moment of passing, Sri Krishna reveals that one’s final state of mind determines their next destination. Thus, He delivers the timeless directive: 'Remember Me at all times and perform your duty.' He expounds the meditation on the sacred syllable Om, yogic concentration, and the two cosmic paths of departure—the path of light (leading to liberation) and the path of darkness (leading to return).",
+    keyThemes: {
+      en: [
+        "The definitions of Brahman (the Absolute), Adhyatma (the soul), Karma (creation), and Adhiyajna (the indwelling Lord).",
+        "The pivotal law of transition: One attains whatever state of being they remember at the time of death (Yam Yam Vapi Smaran Bhavam).",
+        "The supreme prescription: 'Remember Me at all times and fight' (Mam Anusmara Yudhya Cha)—harmonizing meditation with daily duty.",
+        "Yoga of the sacred syllable Om (Pranava) and concentrating the life-force in the Ajna chakra.",
+        "The two cosmic pathways after death: The Path of Light (Shukla Gati - no return) and the Path of Darkness (Krishna Gati - cycle of return)."
+      ],
+      hi: [
+        "ब्रह्म (परम सत्य), अध्यात्म (जीवात्मा), कर्म (सृष्टि-चक्र) और अधियज्ञ (हृदयस्थ परमात्मा) की वैज्ञानिक परिभाषाएं।",
+        "मृत्यु के समय चेतना का शाश्वत नियम: अंतकाल में मनुष्य जिस भाव का स्मरण करता है, वही गति प्राप्त करता है।",
+        "जीवन का मूल मंत्र: 'मामनुस्मर युध्य च'—हर क्षण परमात्मा का स्मरण करते हुए अपने सांसारिक कर्तव्यों का निष्ठा से पालन।",
+        "ओंकार (ॐ) की एकाग्र साधना और प्राणों को आज्ञा चक्र में स्थित करने की यौगिक विधि।",
+        "प्रयाण के दो मार्ग: शुक्ल मार्ग (प्रकाश का मार्ग, जिससे मोक्ष मिलता है) और कृष्ण मार्ग (अंधकार का मार्ग, जिससे पुनर्जन्म होता है)।"
+      ],
+      te: [
+        "బ్రహ్మము, అధ్యాత్మము, కర్మము మరియు అధియజ్ఞము యొక్క దైవీయ నిర్వచనాలు.",
+        "మరణ సమయ నియమము: అంతకాలమందు మానవుడు దేనిని స్మరించునో ఆ భావాన్నే పొందుతాడు.",
+        "జీవన మూల సూత్రం: 'మామనుస్మర యుధ్య చ'—ప్రతి క్షణం పరమాత్మను స్మరిస్తూ కర్తవ్యాన్ని నిర్వహించడం.",
+        "ఓంకార (ॐ) ఏకాగ్ర సాధన మరియు ప్రాణవాయువును ఆజ్ఞా చక్రంలో నిలుపు యోగ పద్ధతి.",
+        "ప్రయాణ మార్గాలు: శుక్ల మార్గం (ముక్తి మార్గము) మరియు కృష్ణ మార్గం (పునర్జన్మ మార్గము)."
+      ],
+    },
+    totalShlokas: 28,
+    shlokas: chapter8Shlokas,
   },
 };
 
