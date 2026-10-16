@@ -327,7 +327,8 @@ const ChapterPage = () => {
   useEffect(() => {
     const handleScrollTracking = () => {
       const shlokCards = document.querySelectorAll<HTMLElement>("[data-shlok-number]");
-      const scrollPosition = window.scrollY + 180;
+      // Dynamically calculate based on viewport height for accurate mobile/desktop detection
+      const scrollPosition = window.scrollY + Math.min(window.innerHeight * 0.45, 260);
 
       for (let i = shlokCards.length - 1; i >= 0; i--) {
         const card = shlokCards[i];
@@ -343,6 +344,27 @@ const ChapterPage = () => {
     return () => window.removeEventListener("scroll", handleScrollTracking);
   }, [chapterNumber]);
 
+  // Lock body scroll and handle Escape key when mobile shlok drawer is open
+  useEffect(() => {
+    if (isMobileNavOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isMobileNavOpen) {
+        setIsMobileNavOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isMobileNavOpen]);
+
   const handleShlokSelect = (shlok: number) => {
     setCurrentShlok(shlok);
     setIsMobileNavOpen(false);
@@ -351,7 +373,7 @@ const ChapterPage = () => {
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }, 50);
+    }, 150);
   };
 
   const handleJumpSubmit = (e: React.FormEvent) => {
@@ -463,27 +485,18 @@ const ChapterPage = () => {
         </div>
 
         <div className="chapter-layout">
-          {/* Mobile Nav Toggle */}
+          {/* Mobile Nav Trigger Button */}
           <div className="mobile-nav">
             <button
-              onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
-              aria-label="Toggle shlok list"
+              type="button"
+              onClick={() => setIsMobileNavOpen(true)}
+              aria-label="Open shlok list"
             >
               <span>
                 <i className="ri-book-open-line"></i> {t("shlokas_list")} ({t("shlok_prefix")} {currentShlok}/{chapter.totalShlokas})
               </span>
-              <i
-                className={`ri-arrow-${isMobileNavOpen ? "up" : "down"}-s-line`}
-              ></i>
+              <i className="ri-menu-search-line"></i>
             </button>
-
-            {isMobileNavOpen && (
-              <ShlokNavigation
-                totalShlokas={chapter.totalShlokas}
-                currentShlok={currentShlok}
-                onShlokSelect={handleShlokSelect}
-              />
-            )}
           </div>
 
           {/* Sidebar */}
@@ -698,15 +711,76 @@ const ChapterPage = () => {
         </div>
       </div>
 
+      {/* Mobile Shlok Navigation Drawer Overlay */}
+      {isMobileNavOpen && (
+        <div
+          className="shlok-drawer-backdrop"
+          onClick={() => setIsMobileNavOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Mobile Shlok Navigation Drawer (Bottom Sheet) */}
+      <aside
+        className={`shlok-drawer ${isMobileNavOpen ? "open" : ""}`}
+        aria-label="Mobile shlok navigation drawer"
+        aria-hidden={!isMobileNavOpen}
+      >
+        <div className="shlok-drawer-header">
+          <div
+            className="shlok-drawer-handle-bar"
+            onClick={() => setIsMobileNavOpen(false)}
+            role="button"
+            tabIndex={0}
+            aria-label="Close drawer"
+          />
+          <div className="shlok-drawer-title-row">
+            <div className="shlok-drawer-title-info">
+              <span className="shlok-drawer-badge">
+                {language === "hi"
+                  ? `अध्याय ${chapter.number}`
+                  : language === "te"
+                  ? `అధ్యాయం ${chapter.number}`
+                  : `Chapter ${chapter.number}`}
+              </span>
+              <h3 className="shlok-drawer-heading">{t("shlokas_list")}</h3>
+              <span className="shlok-drawer-count">
+                ({t("shlok_prefix")} {currentShlok}/{chapter.totalShlokas})
+              </span>
+            </div>
+            <button
+              type="button"
+              className="shlok-drawer-close"
+              onClick={() => setIsMobileNavOpen(false)}
+              aria-label="Close shlok list"
+            >
+              <i className="ri-close-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div className="shlok-drawer-content">
+          <ShlokNavigation
+            totalShlokas={chapter.totalShlokas}
+            currentShlok={currentShlok}
+            onShlokSelect={handleShlokSelect}
+          />
+        </div>
+      </aside>
+
       {/* Floating Shlok Navigation Button on Mobile */}
       <button
-        className="floating-btn"
-        onClick={() => setIsMobileNavOpen(true)}
+        type="button"
+        className={`floating-btn ${isMobileNavOpen ? "active" : ""}`}
+        onClick={() => setIsMobileNavOpen((prev) => !prev)}
         title={t("shlokas_list")}
-        aria-label="Open shlok navigation drawer"
+        aria-label="Toggle shlok navigation drawer"
+        aria-expanded={isMobileNavOpen}
       >
-        <i className="ri-list-unordered"></i>
-        <span className="floating-badge">{currentShlok}</span>
+        <i className={isMobileNavOpen ? "ri-close-line" : "ri-list-unordered"}></i>
+        {!isMobileNavOpen && (
+          <span className="floating-badge">{currentShlok}</span>
+        )}
       </button>
     </div>
   );

@@ -644,11 +644,20 @@
   box-shadow: 0 8px 24px rgba(230, 81, 0, 0.35);
   z-index: 980;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .floating-btn:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 12px 30px rgba(230, 81, 0, 0.45);
+}
+
+.floating-btn.active {
+  background: linear-gradient(135deg, var(--color-maroon), var(--color-maroon-dark));
+  border-color: var(--color-gold);
+  transform: scale(1.05);
 }
 
 .floating-badge {
@@ -663,6 +672,183 @@
   border-radius: 99px;
   padding: 2px 6px;
   border: 1px solid var(--color-gold);
+  pointer-events: none;
+}
+
+/* ── Mobile Shlok Navigation Drawer (Bottom Sheet) ──── */
+.shlok-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  animation: fadeInDrawerBackdrop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInDrawerBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.shlok-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  max-height: 84vh;
+  background: linear-gradient(180deg, #fffdf8 0%, #fef8ee 100%);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border: 2px solid var(--color-gold);
+  border-bottom: none;
+  box-shadow: 0 -12px 40px rgba(92, 6, 18, 0.28), 0 -2px 10px rgba(212, 175, 55, 0.35);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(105%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.shlok-drawer.open {
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.shlok-drawer-header {
+  padding: 10px 18px 12px 18px;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.35);
+  background: rgba(254, 243, 199, 0.5);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  flex-shrink: 0;
+}
+
+.shlok-drawer-handle-bar {
+  width: 44px;
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(170, 130, 10, 0.45);
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.shlok-drawer-handle-bar:hover {
+  background: var(--color-gold);
+}
+
+.shlok-drawer-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.shlok-drawer-title-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shlok-drawer-badge {
+  background: linear-gradient(135deg, var(--color-maroon), var(--color-maroon-dark));
+  color: var(--color-gold-light);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--color-gold);
+}
+
+.shlok-drawer-heading {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-maroon);
+}
+
+.shlok-drawer-count {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-saffron-dark);
+}
+
+.shlok-drawer-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  background: #ffffff;
+  color: var(--color-maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shlok-drawer-close:hover {
+  background: var(--color-maroon);
+  color: var(--color-gold-light);
+  border-color: var(--color-maroon);
+}
+
+.shlok-drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 16px 24px 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Reset .shlok-nav for mobile drawer container */
+.shlok-drawer-content .shlok-nav {
+  position: static;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  max-height: none;
+  top: auto;
+}
+
+.shlok-drawer-content .shlok-list {
+  max-height: 48vh;
+}
+
+.shlok-drawer-content .shlok-grid {
+  max-height: 48vh;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+@media (max-width: 480px) {
+  .shlok-drawer-content .shlok-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shlok-drawer,
+  .shlok-drawer-backdrop {
+    display: none !important;
+  }
 }
 
 .chapter-error {
