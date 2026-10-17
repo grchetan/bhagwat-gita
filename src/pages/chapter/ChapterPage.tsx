@@ -11,6 +11,7 @@ import { chapter5Shlokas } from "../../data/chapter5";
 import { chapter6Shlokas } from "../../data/chapter6";
 import { chapter7Shlokas } from "../../data/chapter7";
 import { chapter8Shlokas } from "../../data/chapter8";
+import { chapter9Shlokas } from "../../data/chapter9";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -301,6 +302,40 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 28,
     shlokas: chapter8Shlokas,
+  },
+  "9": {
+    number: 9,
+    titleKey: "ch9_title",
+    subKey: "ch9_subtitle",
+    sanskritTitle: "राजविद्याराजगुह्य योग",
+    englishTitle: "Raja Vidya Raja Guhya Yoga",
+    introduction:
+      "भगवद्गीता का नवम अध्याय 'राजविद्याराजगुह्य योग' गीता का सर्वाधिक पावन और परम गोपनीय हृदय-स्थल है। भगवान श्री कृष्ण यहाँ अर्जुन को 'राजविद्या' (समस्त विद्याओं का राजा) और 'राजगुह्य' (समस्त रहस्यों का राजा) का उद्घाटन करते हैं। वे समझाते हैं कि यह संपूर्ण जगत उनके अव्यक्त रूप से व्याप्त है, सब प्राणी उनमें स्थित हैं किंतु वे भौतिक रूप से उनमें सीमित नहीं हैं। प्रकृति उनकी अध्यक्षता में समस्त सृष्टि को रचती है। वे सकाम कर्म और निष्काम अनन्य भक्ति का भेद स्पष्ट करते हुए अपना विश्व-प्रसिद्ध अभय-वचन देते हैं: 'अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्'—जो अनन्य भाव से मेरा चिंतन करते हैं, उनका योगक्षेम मैं स्वयं वहन करता हूँ। || The ninth chapter of the Bhagavad Gita, 'Raja Vidya Raja Guhya Yoga' (The Yoga of the Sovereign Science and Sovereign Secret), is the spiritual summit and sanctum sanctorum of the Gita. Sri Krishna reveals to Arjuna the sovereign king of all sciences and secrets—knowledge that is supremely pure, directly realizable, righteous, blissful to practice, and eternal. He expounds His cosmic relationship with creation: pervading the entire cosmos in His unmanifest form, holding all beings within His energy, yet remaining completely transcendent and unattached. Material nature operates under His divine supervision. He contrasts ritualistic fruitive desire with pure unalloyed devotion, crowning the discourse with His immortal covenant: 'To those who always worship Me with exclusive devotion, I personally carry what they lack and preserve what they have (Yoga-kshemam vahamy aham).'",
+    keyThemes: {
+      en: [
+        "The Sovereign Science and Sovereign Secret (Raja Vidya Raja Guhya) — supremely pure, directly realizable, righteous, and eternal.",
+        "Cosmic Omnipresence & Transcendence: All beings dwell in the Divine, yet the Divine is not confined by them (Maya Tatam Idam Sarvam).",
+        "Prakriti (Material Nature) creates and dissolves all cosmic manifestations under the supervision of the Supreme Lord.",
+        "The Deluded vs. The Great Souls: Fools mock the Divine in human form, while Mahatmas worship Him with single-minded devotion.",
+        "The Immortal Promise of Total Grace: 'To those who worship Me with undivided mind, I personally provide their needs and protect what they have' (Yoga-kshemam Vahamy Aham)."
+      ],
+      hi: [
+        "राजविद्या एवं राजगुह्य: यह ज्ञान समस्त विद्याओं का राजा, परम पवित्र, प्रत्यक्ष अनुभूत होने वाला, धर्मयुक्त और अविनाशी है।",
+        "ईश्वर की सर्वव्यापकता और असंगता: यह संपूर्ण जगत भगवान के अव्यक्त रूप से व्याप्त है; सब प्राणी उनमें हैं, पर वे उनमें सीमित नहीं हैं।",
+        "प्रकृति भगवान की अध्यक्षता में चर-अचर सहित संपूर्ण सृष्टि का सृजन और संहार करती है (मयाध्यक्षेण प्रकृतिः सूयते सचराचरम्)।",
+        "अज्ञानी बनाम महात्मा: मूढ़ मनुष्य भगवान के मनुष्य रूप का उपहास करते हैं, जबकि महात्मा जन अनन्य प्रेम से उनका भजन करते हैं।",
+        "भगवान का अमर अभय-वचन: 'जो अनन्य भाव से मेरा चिंतन करते हैं, उनके योगक्षेम (आवश्यकताओं की पूर्ति और संरक्षण) का भार मैं स्वयं उठाता हूँ।' (योगक्षेमं वहाम्यहम्)"
+      ],
+      te: [
+        "రాజవిద్య మరియు రాజగుహ్యము: సమస్త విద్యలలో శ్రేష్ఠమైనది, పరమ పవిత్రమైనది, ప్రత్యక్ష అనుభవము మరియు శాశ్వతమైనది.",
+        "సర్వవ్యాపకత్వము: సమస్త ప్రాణులు భగవంతునియందే ఉన్నవి, కానీ భగవంతుడు దేనికీ బద్ధుడై లేడు (మయా తతమిదం సర్వం).",
+        "భగవంతుని పర్యవేక్షణలోనే ప్రకృతి సమస్త చరాచర సృష్టిని నడుపుతుంది.",
+        "మూఢులు భగవంతుని దివ్యత్వాన్ని గుర్తించలేరు, కానీ మహాత్ములు అనన్య భక్తితో సేవిస్తారు.",
+        "పరమాత్మ యొక్క అమృత వాగ్దానము: అనన్య భక్తితో సేవించే భక్తుల యోగక్షేమాలను భగవంతుడే స్వయంగా వహిస్తాడు (యోగక్షేమం వహామ్యహమ్)."
+      ],
+    },
+    totalShlokas: 34,
+    shlokas: chapter9Shlokas,
   },
 };
 

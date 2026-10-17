@@ -39,6 +39,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch7_subtitle: "Knowledge of the Ultimate Truth",
     ch8_title: "Akshara Brahma Yoga",
     ch8_subtitle: "Attaining the Supreme",
+    ch9_title: "Raja Vidya Raja Guhya Yoga",
+    ch9_subtitle: "The Sovereign Science and Sovereign Secret",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -121,6 +123,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch7_subtitle: "परम सत्य और दिव्य ज्ञान का विज्ञान",
     ch8_title: "अक्षरब्रह्म योग",
     ch8_subtitle: "परम अविनाशी ब्रह्म और मोक्ष का मार्ग",
+    ch9_title: "राजविद्याराजगुह्य योग",
+    ch9_subtitle: "परम गोपनीय ज्ञान और दिव्य विज्ञान का योग",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -203,6 +207,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch7_subtitle: "పరమ సత్యము మరియు దివ్య జ్ఞానము",
     ch8_title: "అక్షరబ్రహ్మ యోగము",
     ch8_subtitle: "పరమ పద ప్రాప్తి మార్గము",
+    ch9_title: "రాజవిద్యా రాజగుహ్య యోగము",
+    ch9_subtitle: "పరమ రహస్యమైన మరియు శ్రేష్ఠమైన జ్ఞాన యోగము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
