@@ -12,7 +12,7 @@ const ChaptersPage = () => {
     { number: 7, title: "Paramahamsa Vijnana Yoga", subtitle: "Knowledge of the Ultimate Truth", shlokas: 30, available: true },
     { number: 8, title: "Aksara Parabrahma Yoga", subtitle: "Attaining the Supreme", shlokas: 28, available: true },
     { number: 9, title: "Raja Vidya Yoga", subtitle: "The Most Confidential Knowledge", shlokas: 34, available: true },
-    { number: 10, title: "Vibhuti Vistara Yoga", subtitle: "The Infinite Glories of the Ultimate Truth", shlokas: 42, available: false },
+    { number: 10, title: "Vibhuti Yoga", subtitle: "The Yoga of Divine Glories", shlokas: 42, available: true },
     { number: 11, title: "Visvarupa Darsana Yoga", subtitle: "The Vision of the Universal Form", shlokas: 55, available: false },
     { number: 12, title: "Bhakti Yoga", subtitle: "The Path of Devotion", shlokas: 20, available: false },
     { number: 13, title: "Ksetra Ksetrajna Vibhaga Yoga", subtitle: "The Field and the Knower of the Field", shlokas: 35, available: false },

@@ -41,6 +41,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch8_subtitle: "Attaining the Supreme",
     ch9_title: "Raja Vidya Raja Guhya Yoga",
     ch9_subtitle: "The Sovereign Science and Sovereign Secret",
+    ch10_title: "Vibhuti Yoga",
+    ch10_subtitle: "The Yoga of Divine Glories",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -209,6 +211,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch8_subtitle: "పరమ పద ప్రాప్తి మార్గము",
     ch9_title: "రాజవిద్యా రాజగుహ్య యోగము",
     ch9_subtitle: "పరమ రహస్యమైన మరియు శ్రేష్ఠమైన జ్ఞాన యోగము",
+    ch10_title: "విభూతి యోగము",
+    ch10_subtitle: "పరమాత్మ యొక్క దివ్య విభూతులు",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",

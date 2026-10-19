@@ -12,6 +12,7 @@ import { chapter6Shlokas } from "../../data/chapter6";
 import { chapter7Shlokas } from "../../data/chapter7";
 import { chapter8Shlokas } from "../../data/chapter8";
 import { chapter9Shlokas } from "../../data/chapter9";
+import { chapter10Shlokas } from "../../data/chapter10";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -336,6 +337,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 34,
     shlokas: chapter9Shlokas,
+  },
+  "10": {
+    number: 10,
+    titleKey: "ch10_title",
+    subKey: "ch10_subtitle",
+    sanskritTitle: "विभूति योग",
+    englishTitle: "Vibhuti Yoga",
+    introduction:
+      "भगवद्गीता का दशम अध्याय 'विभूति योग' परमात्मा की असीम, अनंत और दिव्य विभूतियों (ऐश्वर्यों) का महाकाव्य है। भगवान श्रीकृष्ण यहाँ अर्जुन को — और समस्त मानवजाति को — यह अद्भुत रहस्य बताते हैं कि इस ब्रह्मांड में जो भी श्रेष्ठ, सुंदर, शक्तिशाली, तेजस्वी और प्रभावशाली है, वह सब परमात्मा का ही एक अंश और प्रकाश है। देवता हों या ऋषि, ग्रह हों या नक्षत्र, नदियाँ हों या पर्वत, वीर योद्धा हों या परम ज्ञानी — सबकी श्रेष्ठता उसी एक परम दिव्य चेतना की विभूति है। इस अध्याय का अध्ययन साधक की आँखें खोल देता है और वह संसार की हर वस्तु में परमात्मा का दर्शन करने लगता है।",
+    keyThemes: {
+      en: [
+        "The unknowable divine origin: Even gods and sages cannot fully comprehend the Lord's prabhava (true nature and advent).",
+        "Twenty divine emanations: Qualities like intelligence, wisdom, forgiveness, non-violence, equanimity, and even sorrow and fear all arise from the Divine.",
+        "The immense catalog of vibhutis: Krishna reveals Himself as the best, greatest, and most luminous among all categories of existence.",
+        "The essence of Yoga: All of creation is sustained by merely a fragment of divine power — Ekāṁśena sthito jagat.",
+      ],
+      hi: [
+        "परम अज्ञेय उद्भव: देवता और महर्षि भी परमात्मा के प्रभव को पूर्णतः नहीं जान सकते।",
+        "बीस दिव्य विभूतियाँ: बुद्धि, ज्ञान, क्षमा, अहिंसा, समता, सुख-दुख — सब परमात्मा से ही प्रकट होते हैं।",
+        "विभूतियों की विशाल सूची: श्रीकृष्ण सृष्टि के प्रत्येक वर्ग में अपना सर्वश्रेष्ठ रूप प्रकट करते हैं।",
+        "योग का सार: संपूर्ण जगत् उनकी शक्ति के एक अंश मात्र से धारण किया जाता है (एकांशेन स्थितो जगत्)।",
+      ],
+      te: [
+        "తెలుసుకోలేని దివ్య ఉద్భవం: దేవతలు మరియు మహర్షులు కూడా భగవంతుని ప్రభవాన్ని పూర్తిగా అర్థం చేసుకోలేరు.",
+        "ఇరవై దివ్య విభూతులు: బుద్ధి, జ్ఞానం, క్షమ, అహింస, సమత్వం, సుఖదుఃఖాలు అన్నీ భగవంతుని నుండే ఉద్భవిస్తాయి.",
+        "విభూతుల వివరణ: శ్రీకృష్ణుడు సృష్టిలోని ప్రతి వర్గంలో తన అత్యుత్తమ రూపాన్ని వెల్లడిస్తాడు.",
+        "యోగ సారం: సమస్త జగత్తు భగవంతుని శక్తిలో ఒక అంశం మాత్రమే (ఏకాంశేన స్థితో జగత్).",
+      ],
+    },
+    totalShlokas: 42,
+    shlokas: chapter10Shlokas,
   },
 };
 
