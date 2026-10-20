@@ -12,7 +12,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 1,
     sanskritText:
-      "धृतराष्ट्र उवाच |\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||१||",
+      "धृतराष्ट्र उवाच ।\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥१॥",
     transliteration:
       "dhṛitarāśhtra uvācha |\ndharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ |\nmāmakāḥ pāṇḍavāśhchaiva kimakurvata sañjaya ||1||",
     wordMeanings:
@@ -27,7 +27,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 2,
     sanskritText:
-      "सञ्जय उवाच |\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ||२||",
+      "सञ्जय उवाच ।\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥२॥",
     transliteration:
       "sañjaya uvācha |\ndṛiṣhṭvā tu pāṇḍavānīkaṁ vyūḍhaṁ duryodhanastadā |\nāchāryamupasaṅgamya rājā vachanamabravīt ||2||",
     wordMeanings:
@@ -42,7 +42,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 3,
     sanskritText:
-      "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||३||",
+      "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥३॥",
     transliteration:
       "paśhyaitāṁ pāṇdu-putrāṇāmāchārya mahatīṁ chamūm |\nvyūḍhāṁ drupada-putreṇa tava śhiṣhyeṇa dhīmatā ||3||",
     wordMeanings:
@@ -57,7 +57,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 4,
     sanskritText:
-      "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि |\nयुयुधानो विराटश्च द्रुपदश्च महारथः ||४||",
+      "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥४॥",
     transliteration:
       "atra śhūrā maheṣhvāsā bhīmārjuna-samā yudhi |\nyuyudhāno virāṭaśhcha drupadaśhcha mahārathaḥ ||4||",
     wordMeanings:
@@ -72,7 +72,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 5,
     sanskritText:
-      "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् |\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ||५||",
+      "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥५॥",
     transliteration:
       "dhṛiṣhṭaketuśhchekitānaḥ kāśhirājaśhcha vīryavān |\npurujit kuntibhojaśhcha śhaibyaśhcha nara-puṅgavaḥ ||5||",
     wordMeanings:
@@ -87,7 +87,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 6,
     sanskritText:
-      "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् |\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ||६||",
+      "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥६॥",
     transliteration:
       "yudhāmanyuśhcha vikrānta uttamaujāśhcha vīryavān |\nsaubhadro draupadeyāśhcha sarva eva mahārathāḥ ||6||",
     wordMeanings:
@@ -102,7 +102,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 7,
     sanskritText:
-      "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम |\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ||७||",
+      "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम ।\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥७॥",
     transliteration:
       "asmākaṁ tu viśhiṣhṭā ye tānnibodha dvijottama |\nnāyakā mama sainyasya saṁjñārthaṁ tānbravīmi te ||7||",
     wordMeanings:
@@ -117,7 +117,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 8,
     sanskritText:
-      "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः |\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ||८||",
+      "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः ।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥८॥",
     transliteration:
       "bhavānbhīṣhmaśhcha karṇaśhcha kṛipaśhcha samitiñjayaḥ |\naśhvatthāmā vikarṇaśhcha saumadattistathaiva cha ||8||",
     wordMeanings:
@@ -132,7 +132,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 9,
     sanskritText:
-      "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः |\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ||९||",
+      "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः ।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥९॥",
     transliteration:
       "anye cha bahavaḥ śhūrā madarthe tyakta-jīvitāḥ |\nnānā-śhastra-praharaṇāḥ sarve yuddha-viśhāradāḥ ||9||",
     wordMeanings:
@@ -147,7 +147,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 10,
     sanskritText:
-      "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् |\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ||१०||",
+      "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् ।\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥१०॥",
     transliteration:
       "aparyāptaṁ tadasmākaṁ balaṁ bhīṣhmābhirakṣhitam |\nparyāptaṁ tvidameteṣhāṁ balaṁ bhīmābhirakṣhitam ||10||",
     wordMeanings:
@@ -162,7 +162,7 @@ export const chapter1Shlokas: Shlok[] = [
 {
     number: 11,
     sanskritText:
-      "अयनेषु च सर्वेषु यथाभागमवस्थिताः |\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ||११||",
+      "अयनेषु च सर्वेषु यथाभागमवस्थिताः ।\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥११॥",
     transliteration:
       "ayaneṣhu cha sarveṣhu yathābhāgamavasthitāḥ |\nbhīṣhmamevābhirakṣhantu bhavantaḥ sarva eva hi ||11||",
     wordMeanings:
@@ -177,7 +177,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 12,
     sanskritText:
-      "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः |\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ||१२||",
+      "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः ।\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ॥१२॥",
     transliteration:
       "tasya sañjanayan harṣhaṁ kuruvṛiddhaḥ pitāmahaḥ |\nsiṁhanādaṁ vinadyochchaiḥ śhaṅkhaṁ dadhmau pratāpavān ||12||",
     wordMeanings:
@@ -192,7 +192,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 13,
     sanskritText:
-      "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः |\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ||१३||",
+      "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः ।\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥१३॥",
     transliteration:
       "tataḥ śhaṅkhāśhcha bheryaśhcha paṇavānaka-gomukhāḥ |\nsahasaivābhyahanyanta sa śhabdastumulo'bhavat ||13||",
     wordMeanings:
@@ -207,7 +207,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 14,
     sanskritText:
-      "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ |\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ||१४||",
+      "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ ।\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥१४॥",
     transliteration:
       "tataḥ śhvetairhayairyukte mahati syandane sthitau |\nmādhaḥ pāṇḍavaśhchaiva divyau śhaṅkhau pradadhmatuḥ ||14||",
     wordMeanings:
@@ -222,7 +222,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 15,
     sanskritText:
-      "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः |\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ||१५||",
+      "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः ।\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥१५॥",
     transliteration:
       "pāñchajanyaṁ hṛiṣhīkeśho devadattaṁ dhanañjayaḥ |\npauṇḍraṁ dadhmau mahāśhaṅkhaṁ bhīmakarmā vṛikodaraḥ ||15||",
     wordMeanings:
@@ -237,7 +237,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 16,
     sanskritText:
-      "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः |\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ||१६||",
+      "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः ।\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥१६॥",
     transliteration:
       "anantavijayaṁ rājā kuntī-putro yudhiṣhṭhiraḥ |\nnakulaḥ sahadevaśhcha sughoṣha-maṇipuṣhpakau ||16||",
     wordMeanings:
@@ -252,7 +252,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 17,
     sanskritText:
-      "काश्यश्च परमेष्वासः शिखण्डी च महारथः |\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ||१७||",
+      "काश्यश्च परमेष्वासः शिखण्डी च महारथः ।\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥१७॥",
     transliteration:
       "kāśhyaśhcha parameṣhvāsaḥ śhikhaṇḍī cha mahārathaḥ |\ndhṛiṣhṭadyumno virāṭaśhcha sātyakiśhchāparājitaḥ ||17||",
     wordMeanings:
@@ -267,7 +267,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 18,
     sanskritText:
-      "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते |\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ||१८||",
+      "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते ।\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ॥१८॥",
     transliteration:
       "drupado draupadeyāśhcha sarvaśhaḥ pṛithivīpate |\nsaubhadraśhcha mahābāhuḥ śhaṅkhāndadhmuḥ pṛithakpṛithak ||18||",
     wordMeanings:
@@ -282,7 +282,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 19,
     sanskritText:
-      "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् |\nनभश्च पृथिवीं चैव तुमुलो व्यनुनादयन् ||१९||",
+      "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् ।\nनभश्च पृथिवीं चैव तुमुलो व्यनुनादयन् ॥१९॥",
     transliteration:
       "sa ghoṣho dhārtarāṣhṭrāṇāṁ hṛidayāni vyadārayat |\nnabhaśhcha pṛithivīṁ chaiva tumulo vyanunādayan ||19||",
     wordMeanings:
@@ -297,7 +297,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 20,
     sanskritText:
-      "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः |\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः |\nहृषीकेशं तदा वाक्यमिदमाह महीपते ||२०||",
+      "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः ।\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः ।\nहृषीकेशं तदा वाक्यमिदमाह महीपते ॥२०॥",
     transliteration:
       "atha vyavasthitān dṛiṣhṭvā dhārtarāṣhṭrān kapi-dhvajaḥ |\npravṛitte śhastra-sampāte dhanur udyamya pāṇḍavaḥ |\nhṛiṣhīkeśhaṁ tadā vākyam idam āha mahīpate ||20||",
     wordMeanings:
@@ -312,7 +312,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 21,
     sanskritText:
-      "अर्जुन उवाच |\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ||२१||",
+      "अर्जुन उवाच ।\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ॥२१॥",
     transliteration:
       "arjuna uvācha |\nsenayor ubhayor madhye rathaṁ sthāpaya me'chyuta ||21||",
     wordMeanings:
@@ -327,7 +327,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 22,
     sanskritText:
-      "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् |\nकैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे ||२२||",
+      "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् ।\nकैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे ॥२२॥",
     transliteration:
       "yāvadetān nirīkṣhe'haṁ yoddhu-kāmān avasthitān |\nkairmayā saha yoddhavyam asmin raṇa-samudyame ||22||",
     wordMeanings:
@@ -342,7 +342,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 23,
     sanskritText:
-      "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः |\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ||२३||",
+      "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः ।\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ॥२३॥",
     transliteration:
       "yotsyamānān avekṣhe'haṁ ya ete'tra samāgatāḥ |\ndhārtarāṣhṭrasya durbuddher yuddhe priya-chikīrṣhavaḥ ||23||",
     wordMeanings:
@@ -357,7 +357,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 24,
     sanskritText:
-      "सञ्जय उवाच |\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत |\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ||२४||",
+      "सञ्जय उवाच ।\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत ।\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥२४॥",
     transliteration:
       "sañjaya uvācha |\nevam ukto hṛiṣhīkeśho guḍākeśhena bhārata |\nsenayor ubhayor madhye sthāpayitvā rathottamam ||24||",
     wordMeanings:
@@ -372,7 +372,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 25,
     sanskritText:
-      "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् |\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ||२५||",
+      "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् ।\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ॥२५॥",
     transliteration:
       "bhīṣhma-droṇa-pramukhatah sarveṣhāṁ cha mahī-kṣhitām |\nuvācha pārtha paśhyaitān samavetān kurūn iti ||25||",
     wordMeanings:
@@ -387,7 +387,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 26,
     sanskritText:
-      "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् |\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा ||२६||",
+      "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् ।\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा ॥२६॥",
     transliteration:
       "tatrāpaśhyat sthitān pārthaḥ pitṝīn atha pitāmahān |\nāchāryān mātulān bhrātṝīn putrān pautrān sakhīṁs tathā ||26||",
     wordMeanings:
@@ -402,7 +402,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 27,
     sanskritText:
-      "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि |\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान् ||२७||",
+      "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि ।\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान् ॥२७॥",
     transliteration:
       "śhvaśhurān suhṛidaśhchaiva senayor ubhayor api |\ntān samīkṣhya sa kaunteyaḥ sarvān bandhūn avasthitān ||27||",
     wordMeanings:
@@ -417,7 +417,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 28,
     sanskritText:
-      "कृपया परयाविष्टो विषीदन्निदमब्रवीत् |\nअर्जुन उवाच |\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ||२८||",
+      "कृपया परयाविष्टो विषीदन्निदमब्रवीत् ।\nअर्जुन उवाच ।\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ॥२८॥",
     transliteration:
       "kṛipayā parayāviṣhṭo viṣhīdann idamabravīt |\narjuna uvācha |\ndṛiṣhṭvemaṁ svajanakṛiṣhṇa yuyutsuṁ samupasthitam ||28||",
     wordMeanings:
@@ -432,7 +432,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 29,
     sanskritText:
-      "सीदन्ति मम गात्राणि मुखं च परिशुष्यति |\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते ||२९||",
+      "सीदन्ति मम गात्राणि मुखं च परिशुष्यति ।\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥२९॥",
     transliteration:
       "sīdanti mama gātrāṇi mukhaṁ cha pariśhuṣhyati |\nvepathuśhcha śharīre me roma-harṣhaśhcha jāyate ||29||",
     wordMeanings:
@@ -447,7 +447,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 30,
     sanskritText:
-      "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते |\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ||३०||",
+      "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते ।\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥३०॥",
     transliteration:
       "gāṇḍīvaṁ sraṁsate hastāt tvak chaiva paridahyate |\nna cha śhaknomyavasthātuṁ bhramatīva cha me manaḥ ||30||",
     wordMeanings:
@@ -462,7 +462,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 31,
     sanskritText:
-      "निमित्तानि च पश्यामि विपरीतानि केशव |\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ||३१||",
+      "निमित्तानि च पश्यामि विपरीतानि केशव ।\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ॥३१॥",
     transliteration:
       "nimittāni cha paśhyāmi viparītāni keśhava |\nna cha śhreyo'nupaśhyāmi hatvā svajanam āhave ||31||",
     wordMeanings:
@@ -477,7 +477,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 32,
     sanskritText:
-      "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च |\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ||३२||",
+      "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ।\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ॥३२॥",
     transliteration:
       "na kāṅkṣhe vijayaṁ kṛiṣhṇa na cha rājyaṁ sukhāni cha |\nkiṁ no rājyena govinda kiṁ bhogair jīvitena vā ||32||",
     wordMeanings:
@@ -492,7 +492,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 33,
     sanskritText:
-      "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च |\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ||३३||",
+      "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च ।\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥३३॥",
     transliteration:
       "yeṣhām arthe kāṅkṣhitaṁ no rājyaṁ bhogāḥ sukhāni cha |\nta ime'vasthitā yuddhe prāṇāṁs tyaktvā dhanāni cha ||33||",
     wordMeanings:
@@ -507,7 +507,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 34,
     sanskritText:
-      "आचार्याः पितरः पुत्रास्तथैव च पितामहाः |\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ||३४||",
+      "आचार्याः पितरः पुत्रास्तथैव च पितामहाः ।\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ॥३४॥",
     transliteration:
       "āchāryāḥ pitaraḥ putrās tathaiva cha pitāmahāḥ |\nmātulāḥ śhvaśhurāḥ pautrāḥ śhyālāḥ sambandhinastathā ||34||",
     wordMeanings:
@@ -522,7 +522,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 35,
     sanskritText:
-      "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन |\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ||३५||",
+      "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन ।\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ॥३५॥",
     transliteration:
       "etān na hantum ichchhāmi ghnato'pi madhusūdana |\napi trailokya-rājyasya hetoḥ kiṁ nu mahī-kṛite ||35||",
     wordMeanings:
@@ -537,7 +537,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 36,
     sanskritText:
-      "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन |\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ||३६||",
+      "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन ।\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ॥३६॥",
     transliteration:
       "nihatya dhārtarāṣhṭrān naḥ kā prītiḥ syāj janārdana |\npāpam evāśhrayet asmān hatvaitān ātatāyinaḥ ||36||",
     wordMeanings:
@@ -552,7 +552,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 37,
     sanskritText:
-      "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् |\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव ||३७||",
+      "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् ।\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव ॥३७॥",
     transliteration:
       "tasmān nārhā vayaṁ hantuṁ dhārtarāṣhṭrān svabāndhavān |\nsvajanṁ hi kathaṁ hatvā sukhinaḥ syāma mādhava ||37||",
     wordMeanings:
@@ -567,7 +567,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 38,
     sanskritText:
-      "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः |\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ||३८||",
+      "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः ।\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥३८॥",
     transliteration:
       "yady apy ete na paśhyanti lobhopahata-chetasaḥ |\nkula-kṣhaya-kṛitaṁ doṣhaṁ mitra-drohe cha pātakam ||38||",
     wordMeanings:
@@ -582,7 +582,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 39,
     sanskritText:
-      "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् |\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ||३९||",
+      "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् ।\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥३९॥",
     transliteration:
       "kathaṁ na jñeyam asmābhiḥ pāpād asmān nivartitum |\nkula-kṣhaya-kṛitaṁ doṣhaṁ prapaśhyadbhir janārdana ||39||",
     wordMeanings:
@@ -597,7 +597,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 40,
     sanskritText:
-      "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः |\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ||४०||",
+      "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः ।\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥४०॥",
     transliteration:
       "kula-kṣhaye praṇaśhyanti kula-dharmāḥ sanātanāḥ |\ndharme naṣhṭe kulaṁ kṛitsnam adharmo'bhibhavaty uta ||40||",
     wordMeanings:
@@ -612,7 +612,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 41,
     sanskritText:
-      "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः |\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ||४१||",
+      "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः ।\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ॥४१॥",
     transliteration:
       "adharmābhibhavāt kṛiṣhṇa praduṣhyanti kula-striyaḥ |\nstrīṣhu duṣhṭāsu vārṣhṇeya jāyate varṇa-saṅkaraḥ ||41||",
     wordMeanings:
@@ -627,7 +627,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 42,
     sanskritText:
-      "सङ्करो नरकायैव कुलघ्नानां कुलस्य च |\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ||४२||",
+      "सङ्करो नरकायैव कुलघ्नानां कुलस्य च ।\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ॥४२॥",
     transliteration:
       "saṅkaro narakāyaiva kula-ghnānāṁ kulasya cha |\npatanti pitaro hyeṣhāṁ lupta-piṇḍodaka-kriyāḥ ||42||",
     wordMeanings:
@@ -642,7 +642,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 43,
     sanskritText:
-      "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः |\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ||४३||",
+      "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः ।\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ॥४३॥",
     transliteration:
       "doṣhair etaiḥ kula-ghnānāṁ varṇa-saṅkara-kārakaiḥ |\nutsādyante jāti-dharmāḥ kula-dharmāśhcha śhāśhvatāḥ ||43||",
     wordMeanings:
@@ -657,7 +657,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 44,
     sanskritText:
-      "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन |\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम ||४४||",
+      "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन ।\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम ॥४४॥",
     transliteration:
       "utsanna-kula-dharmāṇāṁ manuṣhyāṇāṁ janārdana |\nnrake'niyataṁ vāso bhavatīty anuśhuśhruma ||44||",
     wordMeanings:
@@ -672,7 +672,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 45,
     sanskritText:
-      "अहो बत महत्पापं कर्तुं व्यवसिता वयम् |\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ||४५||",
+      "अहो बत महत्पापं कर्तुं व्यवसिता वयम् ।\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥४५॥",
     transliteration:
       "aho bata mahat pāpaṁ kartuṁ vyavasitā vayam |\nyad rājya-sukha-lobhena hantuṁ svajanam udyatāḥ ||45||",
     wordMeanings:
@@ -687,7 +687,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 46,
     sanskritText:
-      "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः |\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ||४६||",
+      "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः ।\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥४६॥",
     transliteration:
       "yadi mām apratīkāram aśhastraṁ śhastra-pāṇayaḥ |\ndhārtarāṣhṭrā raṇe hanyus tan me kṣhemataram bhavet ||46||",
     wordMeanings:
@@ -702,7 +702,7 @@ export const chapter1Shlokas: Shlok[] = [
   {
     number: 47,
     sanskritText:
-      "सञ्जय उवाच |\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् |\nविसृज्य सशरं चापं शोकसंविग्नमानसः ||४७||",
+      "सञ्जय उवाच ।\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् ।\nविसृज्य सशरं चापं शोकसंविग्नमानसः ॥४७॥",
     transliteration:
       "sañjaya uvācha |\nevam uktvārjunaḥ saṅkhye rathopastha upāviśhat |\nvisṛijya saśharaṁ chāpaṁ śhoka-saṁvigna-mānasaḥ ||47||",
     wordMeanings:
