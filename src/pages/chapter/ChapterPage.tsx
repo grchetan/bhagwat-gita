@@ -13,6 +13,7 @@ import { chapter7Shlokas } from "../../data/chapter7";
 import { chapter8Shlokas } from "../../data/chapter8";
 import { chapter9Shlokas } from "../../data/chapter9";
 import { chapter10Shlokas } from "../../data/chapter10";
+import { chapter11Shlokas } from "../../data/chapter11";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -368,6 +369,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 42,
     shlokas: chapter10Shlokas,
+  },
+  "11": {
+    number: 11,
+    titleKey: "ch11_title",
+    subKey: "ch11_subtitle",
+    sanskritTitle: "विश्वरूप दर्शन योग",
+    englishTitle: "Vishwaroopa Darshana Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का एकादश अध्याय 'विश्वरूप दर्शन योग' संपूर्ण गीता का सबसे विस्मयकारी, अलौकिक और रोमांचकारी शिखर है। अर्जुन की उत्कट प्रार्थना पर भगवान श्रीकृष्ण उसे 'दिव्य दृष्टि' (दिव्य चक्षु) प्रदान करते हैं और अपना चराचर-व्यापक विराट विश्वरूप प्रकट करते हैं। इस रूप में अर्जुन सहस्रों मुख, नेत्र, सूर्य-समान तेज, समस्त लोकों, काल-मुख, और संपूर्ण ब्रह्मांड को एक ही स्थान पर समाहित देखता है। इस अध्याय में परमात्मा का सौम्य और संहारक दोनों रूप प्रकट होता है, जिससे अर्जुन को यह अंतिम बोध होता है कि काल के रूप में भगवान ही सब कुछ संचालित कर रहे हैं और मनुष्य केवल 'निमित्त मात्र' है।",
+    keyThemes: {
+      en: [
+        "Arjuna's yearning for direct realization: Transitioning from hearing theoretical wisdom to seeking visual, experiential confrontation with the Divine.",
+        "The gift of divine sight: Mortal eyes cannot behold the Infinite; Krishna grants the divine eye (Divya Chakshu) to reveal His cosmic form.",
+        "The infinite cosmic vision: Millions of blazing suns, all gods, sages, planets, and realms coexisting in a single transcendental body.",
+        "The revelation of Kala (Time): God reveals Himself as all-devouring Time, demanding that Arjuna arise as an instrument of cosmic destiny (Nimitta-matra).",
+      ],
+      hi: [
+        "प्रत्यक्ष दर्शन की उत्कट प्रार्थना: सिद्धांत सुनने से आगे बढ़कर परमात्मा के विराट रूप का साक्षात् अनुभव करने की जिज्ञासा।",
+        "दिव्य दृष्टि का वरदान: चर्म-चक्षुओं से अनंत को नहीं देखा जा सकता; श्रीकृष्ण अर्जुन को 'दिव्य चक्षु' प्रदान करते हैं।",
+        "अनंत विश्वरूप का प्राकट्य: सहस्रों सूर्य, समस्त देवगण, ऋषि, ग्रह-नक्षत्र और काल-चक्र एक ही विराट देह में प्रत्यक्ष।",
+        "महाकाल का साक्षात्कार: परमात्मा का सर्वग्रासी संहारक रूप और अर्जुन को ईश्वरीय कार्य में केवल 'निमित्त मात्र' बनने का आदेश।",
+      ],
+      te: [
+        "ప్రత్యక్ష దర్శన కాంక్ష: బోధనలు వినడమే కాక పరమాత్మ విరాట్ రూపాన్ని ప్రత్యక్షంగా దర్శించాలనే అర్జునుని ఆకాంక్ష.",
+        "దివ్య దృష్టి ప్రసాదం: సాధారణ నేత్రాలతో అనంతాన్ని చూడలేము; శ్రీకృష్ణుడు అర్జునునికి దివ్య చక్షువులను ప్రసాదిస్తాడు.",
+        "అనంత విశ్వరూప దర్శనం: వేలాది సూర్యుల తేజస్సు, సమస్త దేవతలు, లోకాలు పరమాత్మ శరీరంలో ఏకకాలంలో దర్శనమిస్తాయి.",
+        "మహాకాలుని సాక్షాత్కారం: సమస్తాన్ని లయం చేసే కాల స్వరూపంగా పరమాత్మ దర్శనమిచ్చి, అర్జునుడిని కేవలం నిమిత్తమాత్రునిగా నిలవమని ఆదేశిస్తాడు.",
+      ],
+    },
+    totalShlokas: 55,
+    shlokas: chapter11Shlokas,
   },
 };
 

@@ -43,6 +43,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch9_subtitle: "The Sovereign Science and Sovereign Secret",
     ch10_title: "Vibhuti Yoga",
     ch10_subtitle: "The Yoga of Divine Glories",
+    ch11_title: "Vishwaroopa Darshana Yoga",
+    ch11_subtitle: "The Vision of the Universal Form",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -127,6 +129,10 @@ const translations: Record<Language, Record<string, string>> = {
     ch8_subtitle: "परम अविनाशी ब्रह्म और मोक्ष का मार्ग",
     ch9_title: "राजविद्याराजगुह्य योग",
     ch9_subtitle: "परम गोपनीय ज्ञान और दिव्य विज्ञान का योग",
+    ch10_title: "विभूति योग",
+    ch10_subtitle: "भगवान के दिव्य ऐश्वर्यों और स्वरूपों का योग",
+    ch11_title: "विश्वरूप दर्शन योग",
+    ch11_subtitle: "परमात्मा के विराट विश्वरूप का साक्षात् दर्शन",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -213,6 +219,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch9_subtitle: "పరమ రహస్యమైన మరియు శ్రేష్ఠమైన జ్ఞాన యోగము",
     ch10_title: "విభూతి యోగము",
     ch10_subtitle: "పరమాత్మ యొక్క దివ్య విభూతులు",
+    ch11_title: "విశ్వరూప దర్శన యోగము",
+    ch11_subtitle: "పరమాత్మ యొక్క విరాట్ విశ్వరూప దర్శనము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
