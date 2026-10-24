@@ -45,6 +45,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch10_subtitle: "The Yoga of Divine Glories",
     ch11_title: "Vishwaroopa Darshana Yoga",
     ch11_subtitle: "The Vision of the Universal Form",
+    ch12_title: "Bhakti Yoga",
+    ch12_subtitle: "The Path of Loving Devotion",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -133,6 +135,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch10_subtitle: "भगवान के दिव्य ऐश्वर्यों और स्वरूपों का योग",
     ch11_title: "विश्वरूप दर्शन योग",
     ch11_subtitle: "परमात्मा के विराट विश्वरूप का साक्षात् दर्शन",
+    ch12_title: "भक्ति योग",
+    ch12_subtitle: "परम प्रेममयी भक्ति और समर्पण का पावन मार्ग",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -221,6 +225,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch10_subtitle: "పరమాత్మ యొక్క దివ్య విభూతులు",
     ch11_title: "విశ్వరూప దర్శన యోగము",
     ch11_subtitle: "పరమాత్మ యొక్క విరాట్ విశ్వరూప దర్శనము",
+    ch12_title: "భక్తి యోగము",
+    ch12_subtitle: "పరమ ప్రేమ పూర్వక భక్తి మార్గము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",

@@ -14,6 +14,7 @@ import { chapter8Shlokas } from "../../data/chapter8";
 import { chapter9Shlokas } from "../../data/chapter9";
 import { chapter10Shlokas } from "../../data/chapter10";
 import { chapter11Shlokas } from "../../data/chapter11";
+import { chapter12Shlokas } from "../../data/chapter12";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -400,6 +401,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 55,
     shlokas: chapter11Shlokas,
+  },
+  "12": {
+    number: 12,
+    titleKey: "ch12_title",
+    subKey: "ch12_subtitle",
+    sanskritTitle: "भक्ति योग",
+    englishTitle: "Bhakti Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का द्वादश अध्याय 'भक्ति योग' संपूर्ण गीता के सबसे मधुर, प्रामाणिक और हृदयस्पर्शी अध्यायों में से एक है। अध्याय 11 के विराट विश्वरूप दर्शन के उपरांत, अर्जुन जिज्ञासा करते हैं कि सगुण-साकार भगवान की अनन्य उपासना श्रेष्ठ है या निर्गुण-निराकार ब्रह्म का ध्यान? भगवान श्रीकृष्ण दोनों मार्गों की प्रामाणिकता स्वीकार करते हुए देहधारियों के लिए सगुण भक्तियोग को परम सुगम, मधुर और सर्वोत्तम घोषित करते हैं। इसके साथ ही भगवान सच्चे भक्त के 35 से अधिक दिव्य लक्षणों — समता, क्षमा, करुणा, अनासक्ति, और निर्मल प्रेम — का विशद वर्णन करते हैं जो भगवान को अत्यंत प्रिय हैं।",
+    keyThemes: {
+      en: [
+        "Saguṇa vs Nirguṇa Upāsanā: Resolving the ancient paradox between worshiping a personal loving God and meditating on the unmanifest Absolute.",
+        "The supremacy and sweetness of Bhakti: Why devotional surrender is the most accessible, direct, and joyous path for embodied beings.",
+        "The graded hierarchy of spiritual practice: From total mind absorption to regular yoga practice, dedicated selfless service, and finally renunciation of results.",
+        "The 35 divine virtues of the ideal devotee: Living in freedom from envy, malice, attachment, and agitation, dear to the Divine.",
+      ],
+      hi: [
+        "सगुण बनाम निर्गुण उपासना: सगुण-साकार भगवान की प्रेममयी भक्ति और अव्यक्त-निराकार ब्रह्म के ध्यान का तुलनात्मक बोध।",
+        "भक्तियोग की सुगमता और मधुरता: देहधारियों के लिए अव्यक्त मार्ग का कठिन होना तथा सगुण भक्ति का सर्वसुलभ और कल्याणकारी मार्ग होना।",
+        "आध्यात्मिक साधना के व्यावहारिक सोपान: मन को ईश्वर में लगाना, अभ्यास योग, भगवदर्थ कर्म करना, और कर्मफल का त्याग।",
+        "आदर्श भक्त के दिव्य लक्षण: समता, क्षमा, अनासक्ति, निर्वैर भाव और शांत चित्त वाले भक्त भगवान को अत्यंत प्रिय हैं।",
+      ],
+      te: [
+        "సగుణ వర్సెస్ నిర్గుణ ఉపాసన: సాకార భగవంతుని భక్తి మరియు నిరాకార బ్రహ్మ ధ్యానాల మధ్య తారతమ్య విచారణ.",
+        "భక్తి యోగ సులభత మరియు మాధుర్యం: దేహధారులకు అవ్యక్త మార్గం కష్టతరం, సగుణ భక్తి అత్యంత సులభం మరియు శ్రేష్ఠం.",
+        "ఆధ్యాత్మిక సాధనా క్రమం: మనస్సును భగవంతునిపై లగ్నం చేయడం, అభ్యాస యోగం, భగవత్ ప్రీత్యర్థ కర్మలు, కర్మఫల త్యాగం.",
+        "భక్తుని దివ్య లక్షణాలు: అద్వేషం, కరుణ, సమత్వం, అహంకార రాహిత్యంతో కూడిన భక్తుడు భగవంతునికి అత్యంత ప్రియుడు.",
+      ],
+    },
+    totalShlokas: 20,
+    shlokas: chapter12Shlokas,
   },
 };
 
