@@ -15,7 +15,7 @@ const ChaptersPage = () => {
     { number: 10, title: "Vibhuti Yoga", subtitle: "The Yoga of Divine Glories", shlokas: 42, available: true },
     { number: 11, title: "Visvarupa Darsana Yoga", subtitle: "The Vision of the Universal Form", shlokas: 55, available: true },
     { number: 12, title: "Bhakti Yoga", subtitle: "The Path of Devotion", shlokas: 20, available: true },
-    { number: 13, title: "Ksetra Ksetrajna Vibhaga Yoga", subtitle: "The Field and the Knower of the Field", shlokas: 35, available: false },
+    { number: 13, title: "Ksetra Ksetrajna Vibhaga Yoga", subtitle: "The Field and the Knower of the Field", shlokas: 35, available: true },
     { number: 14, title: "Gunatraya Vibhaga Yoga", subtitle: "The Three Modes of Material Nature", shlokas: 27, available: false },
     { number: 15, title: "Purusottama Yoga", subtitle: "The Supreme Divine Personality", shlokas: 20, available: false },
     { number: 16, title: "Daivasura Sampad Vibhaga Yoga", subtitle: "The Divine and Demoniac Natures", shlokas: 24, available: false },

@@ -15,6 +15,7 @@ import { chapter9Shlokas } from "../../data/chapter9";
 import { chapter10Shlokas } from "../../data/chapter10";
 import { chapter11Shlokas } from "../../data/chapter11";
 import { chapter12Shlokas } from "../../data/chapter12";
+import { chapter13Shlokas } from "../../data/chapter13";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -432,6 +433,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 20,
     shlokas: chapter12Shlokas,
+  },
+  "13": {
+    number: 13,
+    titleKey: "ch13_title",
+    subKey: "ch13_subtitle",
+    sanskritTitle: "क्षेत्र-क्षेत्रज्ञ विभाग योग",
+    englishTitle: "Kshetra Kshetragya Vibhaga Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का त्रयोदश अध्याय 'क्षेत्र-क्षेत्रज्ञ विभाग योग' ज्ञान-षटक (अध्याय 13-18) का भव्य शुभारंभ है। यहाँ भगवान श्रीकृष्ण अर्जुन के छह मौलिक प्रश्नों — प्रकृति, पुरुष, क्षेत्र (शरीर), क्षेत्रज्ञ (आत्मा), ज्ञान, और ज्ञेय (परमात्मा) — का विशद दार्शनिक विवेचन करते हैं। भगवान स्पष्ट करते हैं कि यह 24 तत्वों से बना नाशवान शरीर 'क्षेत्र' है और इसमें साक्षी रूप से निवास करने वाली अजर-अमर चेतना 'क्षेत्रज्ञ' है। समस्त शरीरों में विद्यमान इस चेतन आत्मा को परमात्मा का ही अविभाज्य स्वरूप जानना और जड़ व चेतन के भेद को समझना ही सच्चा 'ज्ञान' है।",
+    keyThemes: {
+      en: [
+        "The Six Metaphysical Pillars: In-depth inquiry into Prakriti (Nature), Purusha (Spirit), Kshetra (Field), Kshetragna (Knower), Jnana (Wisdom), and Jneya (Truth).",
+        "The Field and the Knower: Distinguishing between the 24 material components of the body-mind complex and the silent conscious observer within.",
+        "The Universal Knower: The profound non-dual truth that the indwelling consciousness in all creatures is one and the same Supreme Lord (Kshetrajnam capi mam viddhi).",
+        "The 20 Virtues of True Knowledge: Humility, non-violence, patience, purity, steadfastness, self-control, and unswerving devotion as the hallmarks of genuine wisdom.",
+      ],
+      hi: [
+        "छह तात्विक आधार: प्रकृति, पुरुष, क्षेत्र (शरीर), क्षेत्रज्ञ (जीवात्मा), ज्ञान और ज्ञेय (परमात्मा) का वैज्ञानिक व दार्शनिक विवेचन।",
+        "क्षेत्र और क्षेत्रज्ञ का भेद: 24 तत्वों से बने भौतिक देह-मन के ढांचे (दृश्य) और उसके साक्षी ज्ञाता (द्रष्टा) का सूक्ष्म अंतर।",
+        "सर्वव्यापी क्षेत्रज्ञ: घट-घट में वास करने वाली चैतन्य सत्ता को एक ही परमात्मा का स्वरूप जानना (क्षेत्रज्ञं चापि मां विद्धि)।",
+        "ज्ञान के 20 दिव्य सद्गुण: अमानित्व (विनम्रता), अहिंसा, क्षमाशीलता, अंतःकरण की शुद्धि और अनन्य भक्ति ही सच्चा ज्ञान है।",
+      ],
+      te: [
+        "ఆరు తాత్విక అంశాలు: ప్రకృతి, పురుషుడు, క్షేత్రం, క్షేత్రజ్ఞుడు, జ్ఞానం మరియు జ్ఞేయముల సమగ్ర విచారణ.",
+        "క్షేత్ర మరియు క్షేత్రజ్ఞుల భేదం: 24 తత్వాల దేహ స్వభావం మరియు దానిని గమనించే అంతరాత్మ సాక్షి చైతన్య వివేకం.",
+        "సర్వవ్యాప్త క్షేత్రజ్ఞుడు: సర్వ దేహములలో విలసిల్లే ఆత్మ చైతన్యం పరమాత్మయేనని తెలుసుకొనుట.",
+        "జ్ఞాన సాధన దివ్య గుణాలు: వినయం, అహింస, ఓర్పు, శుద్ధి మరియు భగవద్భక్తులే నిజమైన జ్ఞాన లక్షణాలు.",
+      ],
+    },
+    totalShlokas: 35,
+    shlokas: chapter13Shlokas,
   },
 };
 

@@ -47,6 +47,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch11_subtitle: "The Vision of the Universal Form",
     ch12_title: "Bhakti Yoga",
     ch12_subtitle: "The Path of Loving Devotion",
+    ch13_title: "Kshetra Kshetragya Vibhaga Yoga",
+    ch13_subtitle: "The Field and the Knower of the Field",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -137,6 +139,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch11_subtitle: "परमात्मा के विराट विश्वरूप का साक्षात् दर्शन",
     ch12_title: "भक्ति योग",
     ch12_subtitle: "परम प्रेममयी भक्ति और समर्पण का पावन मार्ग",
+    ch13_title: "क्षेत्र-क्षेत्रज्ञ विभाग योग",
+    ch13_subtitle: "प्रकृति, पुरुष तथा क्षेत्र और क्षेत्रज्ञ का विवेक",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -227,6 +231,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch11_subtitle: "పరమాత్మ యొక్క విరాట్ విశ్వరూప దర్శనము",
     ch12_title: "భక్తి యోగము",
     ch12_subtitle: "పరమ ప్రేమ పూర్వక భక్తి మార్గము",
+    ch13_title: "క్షేత్ర క్షేత్రజ్ఞ విభాగ యోగము",
+    ch13_subtitle: "ప్రకృతి మరియు పురుషుల వివేకము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
