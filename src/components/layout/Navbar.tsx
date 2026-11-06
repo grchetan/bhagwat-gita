@@ -127,6 +127,13 @@ const Navbar = () => {
       path: "/chapter/13",
       shlokas: 35,
     },
+    {
+      number: 14,
+      titleKey: "ch14_title",
+      subKey: "ch14_subtitle",
+      path: "/chapter/14",
+      shlokas: 27,
+    },
   ];
 
   const languages: { code: Language; label: string; nativeName: string; flag: string }[] = [

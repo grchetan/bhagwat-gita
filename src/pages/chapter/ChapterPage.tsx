@@ -16,6 +16,7 @@ import { chapter10Shlokas } from "../../data/chapter10";
 import { chapter11Shlokas } from "../../data/chapter11";
 import { chapter12Shlokas } from "../../data/chapter12";
 import { chapter13Shlokas } from "../../data/chapter13";
+import { chapter14Shlokas } from "../../data/chapter14";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -464,6 +465,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 35,
     shlokas: chapter13Shlokas,
+  },
+  "14": {
+    number: 14,
+    titleKey: "ch14_title",
+    subKey: "ch14_subtitle",
+    sanskritTitle: "गुणत्रय विभाग योग",
+    englishTitle: "Gunatraya Vibhaga Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का चौदहवाँ अध्याय 'गुणत्रय विभाग योग' प्रकृति के तीन मौलिक गुणों — सत्त्व, रज और तम — का गहन आध्यात्मिक और मनोवैज्ञानिक विश्लेषण प्रस्तुत करता है। भगवान श्रीकृष्ण बताते हैं कि किस प्रकार प्रकृति से उत्पन्न ये तीनों गुण अविनाशी चेतन जीवात्मा को देह-बंधन में बांधते हैं। इन गुणों के लक्षणों, उनके प्रभाव, कर्म-फलों और मृत्यु के पश्चात जीव की गतियों का विवेक देकर, भगवान अनन्य भक्ति द्वारा इन तीनों गुणों से सर्वथा अतीत होकर 'गुणातीत' बनने तथा सच्चिदानंद परमात्मा को प्राप्त करने का मार्ग उद्घाटित करते हैं।",
+    keyThemes: {
+      en: [
+        "The Supreme Knowledge: The highest wisdom knowing which all ancient sages attained ultimate spiritual perfection beyond mortal existence.",
+        "The Cosmic Womb of Creation: Material Nature (Mahat-Brahma) is the cosmic matrix impregnated by the Divine Consciousness, giving birth to all entities.",
+        "The Nature of the Three Modes: Sattva binds through happiness and knowledge; Rajas binds through passion and feverish action; Tamas binds through ignorance and indolence.",
+        "The State of Gunatita: Transcending the three modes through unwavering devotion (Bhakti Yoga) and realizing one's eternal nature in Supreme Brahman.",
+      ],
+      hi: [
+        "परम ज्ञान का उद्घाटन: समस्त ज्ञानों में सर्वोत्तम ज्ञान, जिसको जानकर प्राचीन मुनियों ने इस नश्वर संसार से मुक्त होकर परम सिद्धि प्राप्त की।",
+        "सृष्टि का मूल गर्भ: महद्ब्रह्म (मूल प्रकृति) भगवान का गर्भ है, जिसमें परमात्मा चैतन्य-बीज स्थापित करते हैं और समस्त चराचर जगत का जन्म होता है।",
+        "प्रकृति के तीन गुण: सत्त्वगुण सुख और ज्ञान से बांधता है; रजोगुण आसक्ति, कामना और कर्मों से बांधता है; तथा तमोगुण अज्ञान, प्रमाद और आलस्य से बांधता है।",
+        "गुणातीत अवस्था और भक्ति: अव्यभिचारिणी भक्ति और समभाव द्वारा तीनों गुणों से अतीत होकर सच्चिदानंद ब्रह्म-भाव की अमर प्राप्ति।",
+      ],
+      te: [
+        "ఉత్తమ జ్ఞానము: పూర్వపు మునులందరూ సంసార బంధములను దాటి పరమ సిద్ధిని పొందిన సర్వోన్నత దివ్య జ్ఞానము.",
+        "సృష్టి యోని మరియు జన్మ: మహద్బ్రహ్మము పరమాత్ముని గర్భము, అందులో పరమాత్ముడు చైతన్య బీజమును ఉంచగా సమస్త ప్రాణులు జన్మించును.",
+        "త్రిగుణముల స్వభావం: సత్వగుణము సుఖము మరియు జ్ఞానముతో బంధించును; రజోగుణము కామము మరియు కర్మలతో బంధించును; తమోగుణము అజ్ఞానము, సోమరితనముతో బంధించును.",
+        "గుణాతీత స్థితి మరియు భక్తి: ఏకాగ్ర భక్తి యోగము ద్వారా త్రిగుణములను దాటి పరబ్రహ్మ ప్రాప్తిని పొందుట.",
+      ],
+    },
+    totalShlokas: 27,
+    shlokas: chapter14Shlokas,
   },
 };
 
