@@ -51,6 +51,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch13_subtitle: "The Field and the Knower of the Field",
     ch14_title: "Gunatraya Vibhaga Yoga",
     ch14_subtitle: "The Three Modes of Material Nature",
+    ch15_title: "Purushottama Yoga",
+    ch15_subtitle: "The Yoga of the Supreme Divine Personality",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -145,6 +147,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch13_subtitle: "प्रकृति, पुरुष तथा क्षेत्र और क्षेत्रज्ञ का विवेक",
     ch14_title: "गुणत्रय विभाग योग",
     ch14_subtitle: "प्रकृति के तीन गुणों (सत्त्व, रज और तम) का रहस्य एवं गुणातीत अवस्था",
+    ch15_title: "पुरुषोत्तम योग",
+    ch15_subtitle: "संसार-वृक्ष का स्वरूप, क्षर-अक्षर से परे पुरुषोत्तम तत्त्व का रहस्य",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -239,6 +243,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch13_subtitle: "ప్రకృతి మరియు పురుషుల వివేకము",
     ch14_title: "గుణత్రయ విభాగ యోగము",
     ch14_subtitle: "ప్రకృతి యొక్క మూడు గుణముల విచారణ",
+    ch15_title: "పురుషోత్తమ యోగము",
+    ch15_subtitle: "క్షరాక్షరాతీతుడైన పరమోత్కృష్ట పురుషోత్తమ తత్వము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",

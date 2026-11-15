@@ -17,6 +17,7 @@ import { chapter11Shlokas } from "../../data/chapter11";
 import { chapter12Shlokas } from "../../data/chapter12";
 import { chapter13Shlokas } from "../../data/chapter13";
 import { chapter14Shlokas } from "../../data/chapter14";
+import { chapter15Shlokas } from "../../data/chapter15";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -496,6 +497,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 27,
     shlokas: chapter14Shlokas,
+  },
+  "15": {
+    number: 15,
+    titleKey: "ch15_title",
+    subKey: "ch15_subtitle",
+    sanskritTitle: "पुरुषोत्तम योग",
+    englishTitle: "Purushottama Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का पंद्रहवाँ अध्याय 'पुरुषोत्तम योग' संपूर्ण वेदों का सार-सर्वस्व है। इसे 'वेद-सार' और भगवान का सर्वाधिक गुह्यतम शास्त्र कहा जाता है। भगवान श्रीकृष्ण संसार के नश्वर रूप को एक उल्टे अश्वत्थ (पीपल) वृक्ष के रूपक से उद्घाटित करते हैं, जिसकी जड़ें ऊपर परमात्मा में हैं। वैराग्य रूपी तीव्र शस्त्र से इस संसार-वृक्ष की आसक्ति को काटकर, जीव अविनाशी परम पद को खोजता है। इस अध्याय में भगवान क्षर (नाशवान जगत), अक्षर (अविनाशी जीवात्मा) और इन दोनों से परे स्वयं को 'पुरुषोत्तम' (सर्वोच्च पुरुष) के रूप में प्रतिष्ठित करते हैं।",
+    keyThemes: {
+      en: [
+        "The Inverted Cosmic Tree: The material world described as an Ashvattha tree with roots above in Brahman and branches spreading below into the mortal plane.",
+        "The Weapon of Detachment: Severing attachment to the cosmic tree with the strong, sharp weapon of dispassion (Asanga-shastra) to attain the eternal abode.",
+        "The Transmigration of the Soul: How the embodied soul carries the senses and mind from one body to another, just as the wind carries scents.",
+        "The Kshara, Akshara, and Purushottama: Transcendence of the perishable (Kshara) and imperishable (Akshara) into the Supreme Divine Personality (Purushottama).",
+      ],
+      hi: [
+        "संसार-वृक्ष का रहस्य: संसार को एक उल्टे अश्वत्थ वृक्ष के रूप में निरूपित किया गया है, जिसकी जड़ें ऊपर परमात्मा में और शाखाएं नीचे जगत में फैली हैं।",
+        "दृढ़ वैराग्य रूपी शस्त्र: आसक्ति और कामनाओं के इस विराट संसार-वृक्ष को 'असंग-शस्त्र' (तीव्र वैराग्य) से काटकर अविनाशी परम पद की खोज करना।",
+        "जीवात्मा का देहांतरण: जैसे वायु गंध को एक स्थान से दूसरे स्थान ले जाती है, वैसे ही देहाभिमानी जीव मन और इंद्रियों को एक शरीर से दूसरे शरीर में ले जाता है।",
+        "क्षर, अक्षर और पुरुषोत्तम तत्त्व: नाशवान जगत (क्षर) और अविनाशी जीवात्मा (अक्षर) से सर्वथा परे सच्चिदानंद परमात्मा का 'पुरुषोत्तम' स्वरूप।",
+      ],
+      te: [
+        "విశ్వ వృక్ష దర్శనము: పరబ్రహ్మము మూలముగా, ప్రాపంచిక విషయములు శాఖలుగా కలిగిన అశ్వత్థ వృక్ష రూపకము.",
+        "వైరాగ్యమనే దృఢ ఆయుధము: అసంగ శస్త్రము ద్వారా ప్రాపంచిక బంధములను ఛేదించి శాశ్వత దివ్య ధామమును చేరుకొనుట.",
+        "దేహాంతర గమనము: గాలి పరిమళములను మోసుకెళ్ళినట్లు, జీవుడు మనస్సును ఇంద్రియములను పూర్వ శరీరము నుండి నూతన శరీరమునకు గైకొనును.",
+        "క్షర, అక్షర మరియు పురుషోత్తమ తత్వము: నశించే సమస్తమును (క్షర), అవిభక్త ఆత్మను (అక్షర) దాటి విలసిల్లే పరమోన్నత పురుషోత్తమ పరమాత్మ తత్వము.",
+      ],
+    },
+    totalShlokas: 20,
+    shlokas: chapter15Shlokas,
   },
 };
 
