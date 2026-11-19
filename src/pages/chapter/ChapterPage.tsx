@@ -18,6 +18,7 @@ import { chapter12Shlokas } from "../../data/chapter12";
 import { chapter13Shlokas } from "../../data/chapter13";
 import { chapter14Shlokas } from "../../data/chapter14";
 import { chapter15Shlokas } from "../../data/chapter15";
+import { chapter16Shlokas } from "../../data/chapter16";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -528,6 +529,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 20,
     shlokas: chapter15Shlokas,
+  },
+  "16": {
+    number: 16,
+    titleKey: "ch16_title",
+    subKey: "ch16_subtitle",
+    sanskritTitle: "दैवासुरसम्पद्विभाग योग",
+    englishTitle: "Daivasura Sampad Vibhaga Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का सोलहवाँ अध्याय 'दैवासुरसम्पद्विभाग योग' मानव स्वभाव और अंतःकरण की प्रवृत्तियों का अद्वितीय दार्शनिक व मनोवैज्ञानिक विश्लेषण है। भगवान श्रीकृष्ण मानवीय वृत्तियों को दो श्रेणियों में विभाजित करते हैं — 'दैवी सम्पदा' (मुक्ति और आनंद प्रदान करने वाले २६ सद्गुण जैसे निर्भयता, सत्य, अहिंसा, दया, सरलता) तथा 'आसुरी सम्पदा' (बंधन, पतन और नरक के द्वार खोलने वाले दुर्गुण जैसे दम्भ, दर्प, क्रोध, कठोरता और अज्ञान)। भगवान स्पष्ट करते हैं कि काम, क्रोध और लोभ — ये तीन नरक के मुख्य द्वार हैं जो आत्मा का नाश करते हैं। यह अध्याय मनुष्य को शास्त्रसम्मत विवेकपूर्ण जीवन जीने की प्रेरणा देता है।",
+    keyThemes: {
+      en: [
+        "The 26 Divine Virtues (Daivi Sampad): Qualities such as fearlessness, purity of heart, charity, self-control, truth, and forgiveness that lead to liberation.",
+        "The Demoniac Nature (Asuri Sampad): Hypocrisy, arrogance, pride, anger, cruelty, and ignorance that bind the soul to perpetual suffering and ignorance.",
+        "The Materialistic Worldview: The nihilistic philosophy that denies truth, cosmic order, and God, driving destructive greed and exploitation.",
+        "The Three Gates to Darkness: Lust (Kama), Anger (Krodha), and Greed (Lobha) identified as the triple gates to self-destruction and spiritual ruin.",
+      ],
+      hi: [
+        "२६ दैवी गुण (दैवी सम्पदा): निर्भयता, चित्त-शुद्धि, ज्ञान, दान, दम, दया, क्षमा और सरलता आदि सद्गुण जो जीव को परम मोक्ष की ओर ले जाते हैं।",
+        "आसुरी प्रवृत्तियाँ (आसुरी सम्पदा): दंभ, घमंड, अहंकार, क्रोध, कठोरता और अज्ञान जो जीवात्मा को पतन और घोर बंधन में डालते हैं।",
+        "भौतिकवादी आसुरी दृष्टि: ईश्वर, सत्य और धर्म को नकारने वाली भोगवादी मानसिकता जो समाज में शोषण, हिंसा और विनाश लाती है।",
+        "नरक के तीन मुख्य द्वार: काम, क्रोध और लोभ — ये तीन आत्म-विनाशकारी द्वार हैं जिनका त्याग करके ही मनुष्य परम गति को प्राप्त कर सकता है।",
+      ],
+      te: [
+        "దైవీ సంపద (26 దివ్య గుణములు): నిర్భయత్వము, అంతఃకరణ శుద్ధి, దానము, ఇంద్రియ నిగ్రహము మొదలైన మోక్షదాయక గుణములు.",
+        "ఆసురీ సంపద: దంభము, గర్వము, అహంకారము, క్రోధము, అజ్ఞానము వంటి బంధన హేతువులైన దుర్గుణములు.",
+        "భౌతికవాద విచారధార: ధర్మమును, భగవంతుని నిరాకరించి కేవల భోగలాలసతో జీవించే వినాశకర ప్రవృత్తి.",
+        "నరకమునకు మూడు ద్వారములు: కామము, క్రోధము మరియు లోభము — ఆత్మను పతనము వైపు నడిపించే మూడు ప్రధాన ద్వారముల త్యాగము.",
+      ],
+    },
+    totalShlokas: 24,
+    shlokas: chapter16Shlokas,
   },
 };
 
