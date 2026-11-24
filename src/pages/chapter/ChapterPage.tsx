@@ -19,6 +19,7 @@ import { chapter13Shlokas } from "../../data/chapter13";
 import { chapter14Shlokas } from "../../data/chapter14";
 import { chapter15Shlokas } from "../../data/chapter15";
 import { chapter16Shlokas } from "../../data/chapter16";
+import { chapter17Shlokas } from "../../data/chapter17";
 import "../../styles/pages-style/chapterPage.css";
 
 // Styled vector Peacock Feather (More Pankh) SVG component representing Sri Krishna
@@ -560,6 +561,37 @@ const chapterData: Record<string, ChapterData> = {
     },
     totalShlokas: 24,
     shlokas: chapter16Shlokas,
+  },
+  "17": {
+    number: 17,
+    titleKey: "ch17_title",
+    subKey: "ch17_subtitle",
+    sanskritTitle: "श्रद्धात्रयविभाग योग",
+    englishTitle: "Sraddhatraya Vibhaga Yoga",
+    introduction:
+      "श्रीमद्भगवद्गीता का सत्रहवाँ अध्याय 'श्रद्धात्रयविभाग योग' मानव चेतना, विश्वास और जीवन-शैली का गहन मनोवैज्ञानिक और आध्यात्मिक विश्लेषण है। अर्जुन के प्रश्न से प्रारंभ होकर भगवान श्रीकृष्ण स्पष्ट करते हैं कि प्रत्येक मनुष्य की श्रद्धा उसके पूर्व संस्कारों और स्वभाव से उत्पन्न (स्वभावजा) होती है, जो सत्त्व, रज और तम के अनुसार तीन प्रकार की होती है। इस अध्याय में भगवान न केवल श्रद्धा के, बल्कि मनुष्य के भोजन (आहार), यज्ञ, तप और दान के भी तीन-तीन भेदों का सविस्तार विवेचन करते हैं। अध्याय के अंत में 'ॐ तत् सत्' महामंत्र की व्याख्या द्वारा समस्त कर्मों को परम सत्य परमात्मा को समर्पित करके निष्काम व सिद्ध बनाने का मार्ग प्रशस्त किया गया है।",
+    keyThemes: {
+      en: [
+        "Threefold Faith (Sattvic, Rajasic, Tamasic): Faith is shaped by innate character (Svabhava); Sattvic worship the Divine, Rajasic seek wealth and power, Tamasic succumb to darkness and spirits.",
+        "Threefold Food (Ahara): Wholesome, juicy, and pure foods foster longevity, health, and calm; pungent and dry foods cause distress; stale, impure foods breed sloth and disease.",
+        "Threefold Sacrifice, Austerity & Charity (Yajna, Tapas, Dana): Physical, verbal, and mental discipline performed selflessly elevates the soul, whereas ostentatious or harmful acts degrade it.",
+        "The Supreme Mantra 'Om Tat Sat': The threefold divine vibration that purifies, validates, and consecrates all sacred actions to the Eternal Reality.",
+      ],
+      hi: [
+        "त्रिविध श्रद्धा (सात्त्विकी, राजसी, तामसी): मनुष्य की श्रद्धा उसके स्वभाव से उत्पन्न होती है; सात्त्विक लोग देवों को, राजसी लोग यक्ष-राक्षसों को और तामसी लोग भूत-प्रेतों को पूजते हैं।",
+        "त्रिविध आहार (भोजन का प्रभाव): सात्त्विक भोजन आयु, बुद्धि और सुख बढ़ाता है; राजसी भोजन रोग और अशांति देता है; तामसी भोजन आलस्य, अज्ञान और अपवित्रता उत्पन्न करता है।",
+        "त्रिविध यज्ञ, तप और दान: शरीर, वाणी और मन का तप; निःस्वार्थ भाव से शास्त्रसम्मत आचरण ही सच्चा तप और कल्याणकारी दान है।",
+        "परम महामंत्र 'ॐ तत् सत्': समस्त यज्ञ, दान और तप के कर्मों को दोषमुक्त और पवित्र बनाकर सच्चिदानंद परमात्मा को समर्पित करने का दिव्य रहस्य।",
+      ],
+      te: [
+        "త్రివిధ శ్రద్ధ (సాత్త్విక, రాజస, తామస): మానవుని శ్రద్ధ అతని అంతఃకరణ స్వభావమును బట్టి ఉండును; సాత్త్వికులు దైవమును, రాజసికులు యక్షులను, తామసికులు భూతములను అర్చింతురు.",
+        "త్రివిధ ఆహారములు: సాత్త్విక ఆహారము ఆయురారోగ్య సుఖములను ప్రసాదించును; రాజస ఆహారము దుఃఖ రోగములను, తామస ఆహారము అలసత్వము మరియు అశుద్ధిని కలిగించును.",
+        "త్రివిధ యజ్ఞ తపస్సు దానములు: కాయక, వాచిక మరియు మానసిక తపస్సులు నిష్కామ భావముతో ఆచరించినప్పుడే ఆత్మను ఉద్ధరించును.",
+        "'ఓం తత్ సత్' పరమ మంత్రము: సమస్త సత్కర్మలను దోషరహితముగా చేసి పరమాత్మునికి సమర్పించే పరమ దివ్య రహస్యము.",
+      ],
+    },
+    totalShlokas: 28,
+    shlokas: chapter17Shlokas,
   },
 };
 

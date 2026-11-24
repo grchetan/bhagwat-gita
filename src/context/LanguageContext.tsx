@@ -55,6 +55,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch15_subtitle: "The Yoga of the Supreme Divine Personality",
     ch16_title: "Daivasura Sampad Vibhaga Yoga",
     ch16_subtitle: "The Division Between Divine and Demoniac Natures",
+    ch17_title: "Sraddhatraya Vibhaga Yoga",
+    ch17_subtitle: "The Threefold Division of Faith",
     
     // Chapter Pills & Switcher
     select_chapter: "Select Chapter:",
@@ -153,6 +155,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch15_subtitle: "संसार-वृक्ष का स्वरूप, क्षर-अक्षर से परे पुरुषोत्तम तत्त्व का रहस्य",
     ch16_title: "दैवासुरसम्पद्विभाग योग",
     ch16_subtitle: "दैवी और आसुरी प्रवृत्तियों तथा सम्पदा का विभाग और मोक्ष-बंधन का रहस्य",
+    ch17_title: "श्रद्धात्रयविभाग योग",
+    ch17_subtitle: "शास्त्रविधि से रहित स्वाभाविक श्रद्धा, आहार, यज्ञ, तप और दान का त्रिविध भेद",
     
     // Chapter Pills & Switcher
     select_chapter: "अध्याय चुनें:",
@@ -251,6 +255,8 @@ const translations: Record<Language, Record<string, string>> = {
     ch15_subtitle: "క్షరాక్షరాతీతుడైన పరమోత్కృష్ట పురుషోత్తమ తత్వము",
     ch16_title: "దైవాసుర సంపద్విభాగ యోగము",
     ch16_subtitle: "దైవీ మరియు ఆసురీ సంపదల విభాగము",
+    ch17_title: "శ్రద్ధాత్రయ విభాగ యోగము",
+    ch17_subtitle: "త్రివిధ శ్రద్ధల మరియు త్రివిధ ఆహార యజ్ఞ తపస్సుల వివేకము",
     
     // Chapter Pills & Switcher
     select_chapter: "అధ్యాయం ఎంచుకోండి:",
